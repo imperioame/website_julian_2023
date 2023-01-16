@@ -1,0 +1,319 @@
+html {
+    --background_color: #141414;
+    --background_with_transparency: #141414d0;
+    --text_color: #f2f2f2;
+    --porfolio_gradient: linear-gradient(-45deg, #bd34fe 50%, #ff3670 50%);
+    --porfolio_overlay_gradient: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(20,20,20,0) 25%);
+    --porfolio_gradient_filter: blur(72px);
+    --containers_color: #2f2f2f;
+    --containers_color_hovered: #4e4e4e;
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text_color);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    margin-top: 70px;
+    background-color: var(--background_color);
+}
+
+#seccion_mis_trabajos,
+#seccion_contacto,
+#banner_mi_persona,
+#seccion_escaneame {
+    height: 90vh;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 5vh 0;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+#header {
+    padding: 25px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background_with_transparency);
+    z-index: 5;
+}
+
+#logo {
+    /*
+    forma para colorear el svg. Algo anormal, pero funcion. Tomado de: https://codepen.io/sosuke/pen/Pjoqqp
+    */
+    filter: invert(99%) sepia(43%) saturate(3%) hue-rotate(288deg) brightness(111%) contrast(90%);
+    max-width: 75px;
+}
+
+
+#three_canvas {
+    margin: 0;
+    padding: 0;
+}
+
+#three_overlay {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    pointer-events: none;
+}
+
+/*
+.spacer-1, .spacer-2, .spacer-3, .spacer-4{
+    height: 100%;
+}
+*/
+.spacer-1 {
+    flex-grow: 1;
+}
+.spacer-2 {
+    flex-grow: 2;
+}
+.spacer-3 {
+    flex-grow: 3;
+}
+.spacer-4 {
+    flex-grow: 4;
+}
+
+#hero_section {
+    display: flex;
+    align-items: row;
+    flex-direction: column;
+    flex-grow: 3;
+    text-align: left;
+}
+
+
+#title {
+    margin: 0;
+    font-size: 6em;
+    font-style: 700;
+}
+
+
+
+#banner_mi_persona {
+    background-image: url('../imgs/foto_perfil_julian.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-clip: content-box;
+    display: flex;
+    align-items: center;
+
+}
+
+#extracto_banner {
+    font-size: 1em;
+    text-align: left;
+    flex-grow: 1;
+}
+
+#mis_trabajos_background{
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    top: calc(50% - 25vh);
+    left: calc(50% - 25vh);
+    background: var(--porfolio_gradient);
+    filter: var(--porfolio_gradient_filter);
+    opacity: 50%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+#porfolio_bloque_interior{
+    width: 100%;
+    height: 100%;
+}
+
+#bloque_trabajos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#bloque_trabajos_container{
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_row{
+    display: flex;
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+
+.card_trabajo{
+    height: 100%;
+    flex-grow: 3;
+    flex-shrink: 0;
+    position: relative;
+    text-align: center;
+}
+
+.img_trabajo{
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+
+#overlay_gradiente{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--porfolio_overlay_gradient);
+    pointer-events: none;
+}
+
+.title_trabajo{
+    position: absolute;
+    top: -3em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#bloque_de_trabajos{
+    display: flex;
+}
+
+
+.porfolio_prev_button, .porfolio_next_button{
+    position: absolute;
+    top: 0;
+    padding: 0 5vw;
+    height: 100%;
+    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.porfolio_prev_button i, .porfolio_next_button i{
+    width: 25px;
+    height: 25px;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: var(--containers_color);
+}
+
+.porfolio_prev_button i:hover, .porfolio_next_button i:hover{
+    transition: 0.3s ease;
+    background-color: var(--containers_color_hovered);
+}
+
+.porfolio_prev_button{
+    right: 0;
+}
+.porfolio_next_button{
+    left: 0;
+}
+
+
+
+
+
+#botones_mas_trabajos{
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.boton_mas_trabajos{
+    background-color: var(--containers_color);
+    padding: 15px 0;
+    flex-grow: 1;
+    border-radius: 8px;
+}
+
+.boton_mas_trabajos:hover{
+    transition: 0.3s ease;
+    background-color: var(--containers_color_hovered);
+}
+
+
+
+#modal_overlay, #modal{
+    position: fixed;
+    z-index: 10;
+}
+
+#modal_overlay{
+    top: 0;
+    left: 0;
+    background-color: var(--background_with_transparency);
+}
+
+#modal{
+    top: 5vh;
+    left: 20vw;
+    width: 60vw;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    border: 2px solid var(--containers_color_hovered);
+    border-radius: 8px;
+}
+
+#modal iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}

@@ -4,11 +4,16 @@ Personal website
 
 
 # Setup:
+run ...
 > npm install
-installs dependencies.
 
-have parcel installed 
+which installs dependencies.
+
+have parcel installed ... 
 > npm install parcel -g
-so you can
+
+... so you can ...
+
 > parcel ./src/index.html 
+
 for automatic build.

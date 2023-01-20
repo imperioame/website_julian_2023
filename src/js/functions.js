@@ -39,9 +39,10 @@ function getNextPrevCat(category = CATEGORIAS_PORFOLIO.DISENO) {
     return [prevItem, nextItem];
 }
 
-function buildPorfolio(sectionElement, category) {
+function buildPorfolio(sectionElement_id, category) {
     //Builds porfolio section with porfolio jobs from DATA
-    //deletes everything firs
+    //deletes everything first
+    let sectionElement = document.getElementById('porfolio_bloque_interior');
     sectionElement.innerHTML = '';
     
 

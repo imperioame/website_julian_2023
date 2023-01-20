@@ -88,7 +88,6 @@ seccion_mis_trabajos.appendChild(title);
 
 const bloque_interior = document.createElement('div');
 bloque_interior.id = 'porfolio_bloque_interior';
-buildPorfolio(bloque_interior, CATEGORIAS_PORFOLIO.DISENO);
 seccion_mis_trabajos.appendChild(bloque_interior);
 
 
@@ -96,6 +95,7 @@ const botones_mas_trabajos = document.createElement('footer');
 botones_mas_trabajos.id = 'botones_mas_trabajos';
 seccion_mis_trabajos.appendChild(botones_mas_trabajos);
 
+//Footer del porfolio
 URLS_PORFOLIO.forEach(porfolio_element => {
     let boton_mas_trabajos = document.createElement('a');
     boton_mas_trabajos.href = porfolio_element.url;
@@ -117,6 +117,11 @@ botones_mas_trabajos.appendChild(createSpacer());
 
 
 body.appendChild(seccion_mis_trabajos);
+buildPorfolio('porfolio_bloque_interior', CATEGORIAS_PORFOLIO.DISENO);
+
+
+
+
 
 //Sección escaneame
 const seccion_escaneame = document.createElement('section');

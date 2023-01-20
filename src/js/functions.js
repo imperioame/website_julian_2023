@@ -90,6 +90,10 @@ function buildPorfolio(sectionElement_id, category) {
             count++;
         }
     });
+    if(count != 0){
+        row.appendChild(createSpacer(1));
+        bloque_trabajos_container.appendChild(row);
+    }
     bloque_trabajos.appendChild(bloque_trabajos_container);
     sectionElement.appendChild(bloque_trabajos);
 
@@ -124,11 +128,13 @@ function buildPorfolio(sectionElement_id, category) {
 
 function createPorfolioCard(page_section, porfolio_job) {
     //Creates dom element with all provided in the parameter
-
+    console.log('intento crear una card');
+    console.log(page_section);
     page_section.appendChild(createSpacer(1));
 
     const card_trabajo = document.createElement('a');
     card_trabajo.classList.add('card_trabajo');
+    card_trabajo.target = '_blank';
     card_trabajo.title = porfolio_job.title;
     card_trabajo.dataset.trabajo_id = porfolio_job.id;
     if (porfolio_job.source == 'behance') {

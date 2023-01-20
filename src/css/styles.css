@@ -4,10 +4,11 @@ html {
     --text_color: #f2f2f2;
     --porfolio_gradient: linear-gradient(-45deg, #bd34fe 50%, #ff3670 50%);
     --porfolio_overlay_gradient: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(20,20,20,0) 25%);
+    --porfolio_overlay_gradient_horizontal_left: linear-gradient(-90deg, rgba(20,20,20,1) 0%, rgba(20,20,20,0) 100%);
+    --porfolio_overlay_gradient_horizontal_right: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(20,20,20,0) 100%);
     --porfolio_gradient_filter: blur(72px);
     --containers_color: #2f2f2f;
     --containers_color_hovered: #4e4e4e;
-
 }
 
 * {
@@ -37,6 +38,8 @@ body {
     margin: 0;
     margin-top: 70px;
     background-color: var(--background_color);
+    overflow-x: hidden;
+
 }
 
 #seccion_mis_trabajos,
@@ -176,6 +179,11 @@ body {
     overflow-y: scroll;
 }
 
+
+#bloque_trabajos::-webkit-scrollbar{
+    width: 0;
+}
+
 #bloque_trabajos_container{
     width: 100%;
     height: 100%;
@@ -202,7 +210,7 @@ body {
 }
 
 .img_trabajo{
-    max-width: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -237,7 +245,6 @@ body {
     top: 0;
     padding: 0 5vw;
     height: 100%;
-    width: 10vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -251,6 +258,13 @@ body {
     background-color: var(--containers_color);
 }
 
+.porfolio_prev_button i::before, .porfolio_next_button i::before{
+    position: relative;
+    top: 20%;
+}
+
+
+
 .porfolio_prev_button i:hover, .porfolio_next_button i:hover{
     transition: 0.3s ease;
     background-color: var(--containers_color_hovered);
@@ -258,9 +272,11 @@ body {
 
 .porfolio_prev_button{
     right: 0;
+    background: var(--porfolio_overlay_gradient_horizontal_left);
 }
 .porfolio_next_button{
     left: 0;
+    background: var(--porfolio_overlay_gradient_horizontal_right);
 }
 
 

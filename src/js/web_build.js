@@ -3,6 +3,8 @@ const body = document.body;
 const logo_img = new URL('../imgs/Logo_ImperioAme.svg',
     import.meta.url);
 
+const url_img_contacto_extra = new URL('../imgs/avion-de-papel.png',
+import.meta.url);
 
 
 //Creo un header simple
@@ -62,7 +64,7 @@ banner_mi_persona.appendChild(createSpacer());
 
 title = document.createElement('p');
 title.id = 'extracto_banner';
-title.innerHTML = "Diseñador Multimedial y líder de proyectos digitales.<br> Emprendedor y apasionado en la organización y organizaciones.<br> Técnico por naturaleza.";
+title.innerHTML = TEXTOS.BANNER_MI_PERSONA;
 banner_mi_persona.appendChild(title);
 banner_mi_persona.appendChild(createSpacer(4));
 
@@ -123,6 +125,9 @@ buildPorfolio('porfolio_bloque_interior', CATEGORIAS_PORFOLIO.DISENO);
 
 
 
+
+
+
 //Sección escaneame
 const seccion_escaneame = document.createElement('section');
 seccion_escaneame.id = 'seccion_escaneame';
@@ -131,6 +136,14 @@ title.innerHTML = 'Escaneame';
 
 seccion_escaneame.appendChild(title);
 body.appendChild(seccion_escaneame);
+
+
+
+
+
+
+
+
 
 //Sección contacto
 const seccion_contacto = document.createElement('section');
@@ -141,4 +154,30 @@ title.innerHTML = 'Contacto';
 seccion_contacto.appendChild(title);
 
 
+const bloque_contacto = document.createElement('div');
+bloque_contacto.id = 'bloque_contacto';
+
+const contacto_extra = document.createElement('div');
+contacto_extra.id = 'contacto_extra';
+
+const img_contacto_extra = document.createElement('img');
+img_contacto_extra.src = url_img_contacto_extra;
+img_contacto_extra.alt = 'Imagen representativa del formulario de contacto';
+contacto_extra.appendChild(img_contacto_extra);
+
+const parrafo_contacto_extra = document.createElement('div');
+parrafo_contacto_extra.innerHTML = TEXTOS.BLOQUE_CONTACTO;
+contacto_extra.appendChild(parrafo_contacto_extra);
+
+
+bloque_contacto.appendChild(contacto_extra);
+
+
+const form_contacto = document.createElement('form');
+form_contacto.id = 'form_contacto';
+buildContactForm(form_contacto);
+
+bloque_contacto.appendChild(form_contacto);
+
+seccion_contacto.appendChild(bloque_contacto);
 body.appendChild(seccion_contacto);

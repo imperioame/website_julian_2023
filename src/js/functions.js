@@ -44,7 +44,7 @@ function buildPorfolio(sectionElement_id, category) {
     //deletes everything first
     let sectionElement = document.getElementById('porfolio_bloque_interior');
     sectionElement.innerHTML = '';
-    
+
 
     subtitle = document.createElement('h3');
     subtitle.classList.add('subtitle');
@@ -90,7 +90,7 @@ function buildPorfolio(sectionElement_id, category) {
             count++;
         }
     });
-    if(count != 0){
+    if (count != 0) {
         row.appendChild(createSpacer(1));
         bloque_trabajos_container.appendChild(row);
     }
@@ -175,4 +175,26 @@ function openModal(e) {
 
     modal_overlay.appendChild(modal);
     document.body.appendChild(modal_overlay);
+}
+
+
+function buildContactForm(page_section, array_inputs = ['nombre', 'mail', 'mensaje']) {
+    array_inputs.forEach(value => {
+        const label = document.createElement('label');
+        label.innerHTML = value;
+        const input = document.createElement('input');
+        input.type = FORM_TYPES.find(type => type == value);
+        if (value == 'nombre'){
+            input.placeholder = 'Juan'
+        }else if (value == 'mail'){
+            input.placeholder = 'juan@correo.com.ar'
+        }else if (value == 'mensaje'){
+            input.placeholder = 'Vi tu perfil y tengo una idea de...'
+        }
+
+
+        page_section.appendChild(label);
+        page_section.appendChild(input);
+    });
+
 }

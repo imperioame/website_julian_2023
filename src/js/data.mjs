@@ -1,4 +1,11 @@
-const URLS_PORFOLIO = [];
+export const URLS_CV = {
+    ESPANOL: new URL('../pdfs/CV_Ame-2022_04-ESP.pdf',
+    import.meta.url),
+    INGLES: new URL('../pdfs/CV_Ame-2022_04-ING.pdf',
+    import.meta.url)
+};
+
+export const URLS_PORFOLIO = [];
 URLS_PORFOLIO.push({
         title: 'Behance',
         icon: 'fa-brands fa-behance',
@@ -19,7 +26,7 @@ URLS_PORFOLIO.push({
 
 );
 
-const CATEGORIAS_PORFOLIO = {
+export const CATEGORIAS_PORFOLIO = {
     DISENO: 'Diseño',
     PUBLICITARIO: 'Publicitario',
     D3: '3D',
@@ -27,7 +34,7 @@ const CATEGORIAS_PORFOLIO = {
     JUEGOS: 'Juegos'
 }
 
-const FORM_TYPES = {
+export const FORM_TYPES = {
     NOMBRE: 'text',
     MAIL: 'email',
     MENSAJE: 'textarea',
@@ -35,7 +42,7 @@ const FORM_TYPES = {
 }
 
 
-const TRABAJOS_PORFOLIO = [];
+export const TRABAJOS_PORFOLIO = [];
 TRABAJOS_PORFOLIO.push({
         id: 1,
         title: 'VoRges',
@@ -113,7 +120,8 @@ TRABAJOS_PORFOLIO.push({
 );
 
 
-const TEXTOS = {
+export const TEXTOS = {
+    SUBTITLE_HERO: 'Diseñador Multimedial | Lic. En Comunicación | Director de proyectos digitales | Quality Assurance Lead',
     BANNER_MI_PERSONA: "Diseñador Multimedial y líder de proyectos digitales.<br> Emprendedor y apasionado en la organización y organizaciones.<br> Técnico por naturaleza.",
     BLOQUE_CONTACTO: "Si buscás ponerte en contacto conmigo para llevar a cabo un proyecto puedes utilizar el siguiente formulario, suelo responder en una hora aproximadamente dependiendo del día y hora en el que se envíe el mensaje. En caso de que no responda, dejo mi mail para que me escribas directamente por dicho medio."
 }

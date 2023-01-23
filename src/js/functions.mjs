@@ -1,4 +1,7 @@
-function createSpacer(size = 1) {
+import * as DATA from './data.mjs';
+
+
+export function createSpacer(size = 1) {
     //Creates a Flebox spacer with the asigned grow value (check styles.css)
     let spacer = document.createElement('div');
     if (size > 4) {
@@ -9,20 +12,32 @@ function createSpacer(size = 1) {
     return spacer;
 }
 
-function createRow() {
+export function createRow() {
     let row = document.createElement('div');
     row.classList.add('flex_row');
 
     return row;
 }
 
-function getNextPrevCat(category = CATEGORIAS_PORFOLIO.DISENO) {
+export function findInObject(object, element){
+    // Receives an object and tries to find element in it.
+    // Returns index of object, Object transformed into an array
+    // Meant for Diccionaries
+
+    const array = Object.entries(object);
+
+    const objectElement = array.find(subArray => subArray[1] == element);
+    const index = array.indexOf(objectElement);
+
+    return [index,array,objectElement];
+}
+
+
+export function getNextPrevCat(category = DATA.CATEGORIAS_PORFOLIO.DISENO) {
     //Giving a Porfolio Category, returns next and previous categories
 
-    const categoryArray = Object.entries(CATEGORIAS_PORFOLIO);
-
-    const objectCategory = categoryArray.find(subArray => subArray[1] == category);
-    const currentIndex = categoryArray.indexOf(objectCategory);
+    const currentIndex = findInObject(DATA.CATEGORIAS_PORFOLIO, category)[0];
+    const categoryArray = findInObject(DATA.CATEGORIAS_PORFOLIO, category)[1]
 
     let nextIndex = currentIndex + 1;
     if (nextIndex == categoryArray.length) {
@@ -39,7 +54,7 @@ function getNextPrevCat(category = CATEGORIAS_PORFOLIO.DISENO) {
     return [prevItem, nextItem];
 }
 
-function buildPorfolio(sectionElement_id, category) {
+export function buildPorfolio(sectionElement_id, category) {
     //Builds porfolio section with porfolio jobs from DATA
     //deletes everything first
     let sectionElement = document.getElementById('porfolio_bloque_interior');
@@ -60,8 +75,7 @@ function buildPorfolio(sectionElement_id, category) {
     let row = createRow();
 
     let count = 0;
-    console.log(category);
-    TRABAJOS_PORFOLIO.filter(trabajo => (trabajo.priority == 1 && trabajo.category == category)).forEach(trabajo => {
+    DATA.TRABAJOS_PORFOLIO.filter(trabajo => (trabajo.priority == 1 && trabajo.category == category)).forEach(trabajo => {
         createPorfolioCard(row, trabajo);
 
         if (count == 2) {
@@ -76,7 +90,7 @@ function buildPorfolio(sectionElement_id, category) {
         }
     });
 
-    TRABAJOS_PORFOLIO.filter(trabajo => (trabajo.priority > 1 && trabajo.category == category)).forEach(trabajo => {
+    DATA.TRABAJOS_PORFOLIO.filter(trabajo => (trabajo.priority > 1 && trabajo.category == category)).forEach(trabajo => {
         createPorfolioCard(row, trabajo);
 
         if (count == 2) {
@@ -126,10 +140,8 @@ function buildPorfolio(sectionElement_id, category) {
 }
 
 
-function createPorfolioCard(page_section, porfolio_job) {
+export function createPorfolioCard(page_section, porfolio_job) {
     //Creates dom element with all provided in the parameter
-    console.log('intento crear una card');
-    console.log(page_section);
     page_section.appendChild(createSpacer(1));
 
     const card_trabajo = document.createElement('a');
@@ -157,7 +169,7 @@ function createPorfolioCard(page_section, porfolio_job) {
 }
 
 
-function openModal(e) {
+export function openModal(e) {
     const modal_overlay = document.createElement('div');
     modal_overlay.id = 'modal_overlay';
 
@@ -168,7 +180,7 @@ function openModal(e) {
 
     console.log(e.target.parentElement.dataset.trabajo_id);
 
-    let trabajo = TRABAJOS_PORFOLIO.find(trabajo => trabajo.id == e.target.parentElement.dataset.trabajo_id);
+    let trabajo = DATA.TRABAJOS_PORFOLIO.find(trabajo => trabajo.id == e.target.parentElement.dataset.trabajo_id);
     iframe.src = trabajo.link;
 
     modal.appendChild(iframe);
@@ -178,23 +190,28 @@ function openModal(e) {
 }
 
 
-function buildContactForm(page_section, array_inputs = ['nombre', 'mail', 'mensaje']) {
+export function buildContactForm(page_section, array_inputs = ['nombre', 'mail', 'mensaje']) {
     array_inputs.forEach(value => {
         const label = document.createElement('label');
         label.innerHTML = value;
         const input = document.createElement('input');
-        input.type = FORM_TYPES.find(type => type == value);
+        input.type = findInObject(DATA.FORM_TYPES, value)[2];
         if (value == 'nombre'){
-            input.placeholder = 'Juan'
+            input.placeholder = 'Juan';
         }else if (value == 'mail'){
-            input.placeholder = 'juan@correo.com.ar'
+            input.placeholder = 'juan@correo.com.ar';
         }else if (value == 'mensaje'){
-            input.placeholder = 'Vi tu perfil y tengo una idea de...'
+            input.placeholder = 'Vi tu perfil y tengo una idea de...';
         }
 
 
         page_section.appendChild(label);
         page_section.appendChild(input);
     });
+
+    const submit_button = document.createElement('button');
+    submit_button.type = 'submit';
+    submit_button.id = 'submit_button';
+    submit_button.innerHTML = 'Enviar';
 
 }

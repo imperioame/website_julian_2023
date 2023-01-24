@@ -19,7 +19,7 @@ export function createRow() {
     return row;
 }
 
-export function findInObject(object, element){
+export function findInObject(object, element) {
     // Receives an object and tries to find element in it.
     // Returns index of object, Object transformed into an array
     // Meant for Diccionaries
@@ -29,7 +29,7 @@ export function findInObject(object, element){
     const objectElement = array.find(subArray => subArray[1] == element);
     const index = array.indexOf(objectElement);
 
-    return [index,array,objectElement];
+    return [index, array, objectElement];
 }
 
 
@@ -170,6 +170,7 @@ export function createPorfolioCard(page_section, porfolio_job) {
 
 
 export function openModal(e) {
+    //This function manages an UI modal
     const modal_overlay = document.createElement('div');
     modal_overlay.id = 'modal_overlay';
 
@@ -177,7 +178,6 @@ export function openModal(e) {
     modal.id = 'modal';
 
     const iframe = document.createElement('iframe');
-
     console.log(e.target.parentElement.dataset.trabajo_id);
 
     let trabajo = DATA.TRABAJOS_PORFOLIO.find(trabajo => trabajo.id == e.target.parentElement.dataset.trabajo_id);
@@ -190,19 +190,35 @@ export function openModal(e) {
 }
 
 
-export function buildContactForm(page_section, array_inputs = ['nombre', 'mail', 'mensaje']) {
+export function buildContactForm(page_section, array_inputs = ['nombre', 'email', 'mensaje']) {
+    //This function receives an array of inputs and generates a form with them.
+    //Then appends it to the DOM object received.
+    page_section.addEventListener('submit', sendEmail);
+
     array_inputs.forEach(value => {
         const label = document.createElement('label');
-        label.innerHTML = value;
-        const input = document.createElement('input');
-        input.type = findInObject(DATA.FORM_TYPES, value)[2];
-        if (value == 'nombre'){
-            input.placeholder = 'Juan';
-        }else if (value == 'mail'){
-            input.placeholder = 'juan@correo.com.ar';
-        }else if (value == 'mensaje'){
-            input.placeholder = 'Vi tu perfil y tengo una idea de...';
+        label.innerHTML = capitalizeString(value);
+
+        let input;
+        if (value == 'mensaje'){
+            input = document.createElement('textarea');
+        }else{
+            input = document.createElement('input');
+            input.type = findInObject(DATA.FORM_TYPES, value)[2];
         }
+        
+        if (value == 'nombre') {
+            input.placeholder = 'Juan';
+            input.type = 'text';
+        } else if (value == 'email') {
+            input.placeholder = 'juan@correo.com.ar';
+            input.type = 'email';
+        } else if (value == 'mensaje') {
+            input.placeholder = 'Vi tu perfil y tengo una idea para...';
+        }
+
+        input.id = `contact_form_${value}`;
+        input.required = true;
 
 
         page_section.appendChild(label);
@@ -214,4 +230,29 @@ export function buildContactForm(page_section, array_inputs = ['nombre', 'mail',
     submit_button.id = 'submit_button';
     submit_button.innerHTML = 'Enviar';
 
+    page_section.appendChild(submit_button);
+}
+
+
+function capitalizeString(string){
+    //This function receives a string and turns the first char to uppercase
+    const firstChar = string.charAt(0).toUpperCase();
+    return firstChar + string.slice(1);
+}
+
+
+export function sendEmail(e){
+    //This function uses smtpjs to contact form email posting
+    e.preventDefault();
+    Email.send({
+        Host : "smtp.dreamhost.com",
+        Username : "noreply@julianmmame.com.ar",
+        Password : "",
+        To : 'contacto_webpage@julianmmame.com.ar',
+        From : document.getElementById('contact_form_mail').value,
+        Subject : `Contacto a través de la página web de ${document.getElementById('contact_form_nombre')}`,
+        Body : document.getElementById('contact_form_mensaje').value
+    }).then(
+      message => alert(message)
+    );
 }

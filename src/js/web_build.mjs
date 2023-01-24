@@ -11,6 +11,7 @@ import {
     createSpacer,
     buildPorfolio,
     buildContactForm,
+    sendEmail
 } from './functions.mjs';
 
 

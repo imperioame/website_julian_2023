@@ -6,6 +6,7 @@ html {
     --containers_color: #2f2f2f;
     --containers_color_hovered: #4e4e4e;
     --accent_color: #bd34fe;
+    --accent_color_hover: #c95dfc;
     
     --porfolio_gradient: linear-gradient(-45deg, #bd34fe 50%, #ff3670 50%);
     --porfolio_overlay_gradient: linear-gradient(0deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 25%);
@@ -21,6 +22,11 @@ html {
     margin: 0;
     padding: 0;
 }
+
+*:hover{
+    transition: 0.3s ease;
+}
+
 
 h1,
 h2,
@@ -288,7 +294,6 @@ body {
 
 .porfolio_prev_button i:hover,
 .porfolio_next_button i:hover {
-    transition: 0.3s ease;
     background-color: var(--containers_color_hovered);
 }
 
@@ -324,7 +329,6 @@ body {
 }
 
 .boton_gris:hover {
-    transition: 0.3s ease;
     background-color: var(--containers_color_hovered);
 }
 
@@ -401,7 +405,7 @@ body {
     text-align: left;
 }
 
-#form_contacto_container form input {
+#form_contacto_container form input, #form_contacto_container form textarea {
     height: 2em;
     padding-left: 8px;
     border-radius: 8px;
@@ -412,7 +416,13 @@ body {
     background-color: var(--containers_color_hovered);
 }
 
-#form_contacto_container form input::placeholder{
+#form_contacto_container form textarea{
+    height: 6em;
+}
+
+#form_contacto_container form input::placeholder, #form_contacto_container form textarea::placeholder{
+    padding-top: 0.5em;
+    padding-left: 5px;
     color: var(--dimmed_text_color);
 }
 
@@ -425,8 +435,16 @@ body {
 }
 
 #submit_button{
+    font-weight: 800;
+    width: 100%;
     border: none;
     border-radius: 8px;
     background-color: var(--accent_color);
+    padding: 1em 0;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+#submit_button:hover{
+    background-color: var(--accent_color_hover);
 }
 

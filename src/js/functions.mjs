@@ -1,4 +1,7 @@
 import * as DATA from './data.mjs';
+import {
+    MAIL_DATA
+} from './configs.mjs';
 
 
 export function createSpacer(size = 1) {
@@ -245,11 +248,11 @@ export function sendEmail(e){
     //This function uses smtpjs to contact form email posting
     e.preventDefault();
     Email.send({
-        Host : "smtp.dreamhost.com",
-        Username : "noreply@julianmmame.com.ar",
-        Password : "",
-        To : 'contacto_webpage@julianmmame.com.ar',
-        From : document.getElementById('contact_form_mail').value,
+        Host : MAIL_DATA.MAILHOST,
+        Username : MAIL_DATA.USERNAME,
+        Password : MAIL_DATA.PASSWORD,
+        To : MAIL_DATA.TO,
+        From : document.getElementById('contact_form_email').value,
         Subject : `Contacto a través de la página web de ${document.getElementById('contact_form_nombre')}`,
         Body : document.getElementById('contact_form_mensaje').value
     }).then(

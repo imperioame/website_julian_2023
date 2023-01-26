@@ -448,3 +448,13 @@ body {
     background-color: var(--accent_color_hover);
 }
 
+#footer{
+    padding: 2em 0;
+    text-align: center;
+    background-color: var(--containers_color);
+    color: var(--dimmed_text_color);
+}
+
+#footer a {
+    text-decoration: none;
+}

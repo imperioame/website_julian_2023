@@ -27,8 +27,10 @@ createMiPersona(DATA, body);
 //Sección mis trabajos
 createMisTrabajos(DATA, body);
 
+/*
 //Sección escaneame
 createEscaneame(body);
+*/
 
 //Sección contacto
 createContacto(DATA, body);

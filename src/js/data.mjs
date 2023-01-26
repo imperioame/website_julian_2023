@@ -1,7 +1,7 @@
 //Levanto imagenes externas al compilar
 export const logo_img = new URL('../imgs/Logo_ImperioAme.svg',
     import.meta.url);
-export const url_img_contacto_extra = new URL('../imgs/avion-de-papel.png',
+export const url_img_contacto_extra = new URL('../imgs/avion-de-papel.svg',
 import.meta.url);
 
 export const URLS_CV = {

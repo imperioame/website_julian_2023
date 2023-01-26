@@ -1,0 +1,486 @@
+html {
+    --background_color: #141414;
+    --background_with_transparency: #141414d0;
+    --text_color: #f2f2f2;
+    --dimmed_text_color: #d3d3d3;
+    --containers_color: #2f2f2f;
+    --containers_color_hovered: #4e4e4e;
+    --accent_color: #bd34fe;
+    --accent_color_hover: #c95dfc;
+    
+    --porfolio_gradient: linear-gradient(-45deg, #bd34fe 50%, #ff3670 50%);
+    --porfolio_overlay_gradient: linear-gradient(0deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 25%);
+    --porfolio_overlay_gradient_horizontal_left: linear-gradient(-90deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 100%);
+    --porfolio_overlay_gradient_horizontal_right: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 100%);
+    --porfolio_gradient_filter: blur(72px);
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text_color);
+    margin: 0;
+    padding: 0;
+}
+
+*:hover{
+    transition: 0.3s ease;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    margin-top: 70px;
+    background-color: var(--background_color);
+    overflow-x: hidden;
+
+}
+
+#seccion_mis_trabajos,
+#seccion_contacto,
+#banner_mi_persona,
+#seccion_escaneame {
+    height: 90vh;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 5vh 0;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+#header {
+    padding: 25px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background_with_transparency);
+    z-index: 5;
+}
+
+#logo {
+    /*
+    forma para colorear el svg. Algo anormal, pero funcion. Tomado de: https://codepen.io/sosuke/pen/Pjoqqp
+    */
+    filter: invert(99%) sepia(43%) saturate(3%) hue-rotate(288deg) brightness(111%) contrast(90%);
+    max-width: 75px;
+}
+
+
+#three_canvas {
+    margin: 0;
+    padding: 0;
+}
+
+#three_overlay {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    pointer-events: none;
+}
+
+/*
+.spacer-1, .spacer-2, .spacer-3, .spacer-4{
+    height: 100%;
+}
+*/
+.spacer-1 {
+    flex-grow: 1 !important;
+}
+.spacer-2 {
+    flex-grow: 2 !important;
+}
+.spacer-3 {
+    flex-grow: 3 !important;
+}
+.spacer-4 {
+    flex-grow: 4 !important;
+}
+
+.mt-1{
+    margin-top: 20px;
+}
+
+#hero_section {
+    display: flex;
+    align-items: row;
+    flex-direction: column;
+    flex-grow: 3;
+    text-align: left;
+}
+
+
+#title {
+    margin: 0;
+    font-size: 6em;
+    font-style: 700;
+}
+
+
+
+#banner_mi_persona {
+    background-image: url('../imgs/foto_perfil_julian.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    display: flex;
+    align-items: center;
+}
+
+#container_banner_mi_persona{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#container_banner_mi_persona > *{
+    flex: 1;
+}
+
+#extracto_banner {
+    font-size: 1em;
+    text-align: left;
+    flex-grow: 1;
+}
+
+#mis_trabajos_background {
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    top: calc(50% - 25vh);
+    left: calc(50% - 25vh);
+    background: var(--porfolio_gradient);
+    background-size: 200% 200%;
+    filter: var(--porfolio_gradient_filter);
+    opacity: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-animation-name: gradient-Anim;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes gradient-Anim {
+    0% {
+        top: calc(50% - 25vh);
+        left: calc(50% - 25vh);
+        background-position: 0% 50%;
+        transform: rotate(0deg);
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+        transform: rotate(90deg);
+    }
+}
+
+#porfolio_bloque_interior {
+    width: 100%;
+    height: 100%;
+}
+
+#bloque_trabajos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+#bloque_trabajos::-webkit-scrollbar {
+    width: 0;
+}
+
+#bloque_trabajos_container {
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_row {
+    display: flex;
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+
+.card_trabajo {
+    height: 100%;
+    flex-grow: 3;
+    flex-shrink: 0;
+    position: relative;
+    text-align: center;
+}
+
+.img_trabajo {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+
+#overlay_gradiente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--porfolio_overlay_gradient);
+    pointer-events: none;
+}
+
+.title_trabajo {
+    position: absolute;
+    top: -3em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#bloque_de_trabajos {
+    display: flex;
+}
+
+
+.porfolio_prev_button,
+.porfolio_next_button {
+    position: absolute;
+    top: 0;
+    padding: 0 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.porfolio_prev_button i,
+.porfolio_next_button i {
+    width: 25px;
+    height: 25px;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: var(--containers_color);
+}
+
+.porfolio_prev_button i::before,
+.porfolio_next_button i::before {
+    position: relative;
+    top: 20%;
+}
+
+
+
+.porfolio_prev_button i:hover,
+.porfolio_next_button i:hover {
+    background-color: var(--containers_color_hovered);
+}
+
+.porfolio_prev_button {
+    right: 0;
+    background: var(--porfolio_overlay_gradient_horizontal_left);
+}
+
+.porfolio_next_button {
+    left: 0;
+    background: var(--porfolio_overlay_gradient_horizontal_right);
+}
+
+
+
+
+
+#botones_mas_trabajos {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.boton_gris {
+    background-color: var(--containers_color);
+    padding: 15px 0;
+    flex-grow: 1;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.boton_gris:hover {
+    background-color: var(--containers_color_hovered);
+}
+
+
+
+#modal_overlay,
+#modal {
+    position: fixed;
+    z-index: 10;
+}
+
+#modal_overlay {
+    top: 0;
+    left: 0;
+    background-color: var(--background_with_transparency);
+}
+
+#modal {
+    top: 5vh;
+    left: 20vw;
+    width: 60vw;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    border: 2px solid var(--containers_color_hovered);
+    border-radius: 8px;
+}
+
+#modal iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+#bloque_contacto {
+    margin-top: 50px;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#contacto_extra, #form_contacto_container{
+    flex: 1;
+}
+
+
+#form_contacto_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+#form_contacto_container form, #contacto_extra div{
+    height: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    width: 90%;
+    margin: 0 10%;
+    padding: 20px 10% 0 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--containers_color);
+    border-radius: 8px;
+}
+
+#form_contacto_container form label{
+    font-size: 1.3em;
+    width: 100%;
+    text-align: left;
+}
+
+#form_contacto_container form input, #form_contacto_container form textarea {
+    height: 2em;
+    padding-left: 8px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    display: block;
+    margin-bottom: 2em;
+    background-color: var(--containers_color_hovered);
+}
+
+#form_contacto_container form textarea{
+    max-width: 100%;
+    height: 6em;
+}
+
+#form_contacto_container form input::placeholder, #form_contacto_container form textarea::placeholder{
+    padding-top: 0.5em;
+    padding-left: 5px;
+    color: var(--dimmed_text_color);
+}
+
+#contacto_extra img{
+    max-width: 25%;
+    padding: 2em;
+    filter: drop-shadow(0 0 25px #e3a8ff);
+}
+
+#contacto_extra p{
+    max-width: 100%;
+}
+
+#submit_button{
+    font-weight: 800;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent_color);
+    padding: 1em 0;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+#submit_button:hover{
+    background-color: var(--accent_color_hover);
+}
+
+#footer{
+    padding: 2em 0;
+    text-align: center;
+    background-color: var(--containers_color);
+    color: var(--dimmed_text_color);
+}
+
+#footer a {
+    text-decoration: none;
+}

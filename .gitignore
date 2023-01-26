@@ -1,3 +1,4 @@
+src/configs/environment.mjs
 .parcel-cache/
 dist/
 node_modules/

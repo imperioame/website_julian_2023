@@ -1,8 +1,8 @@
 export const MAIL_DATA = {
     MAILHOST: 'smtp.dreamhost.com',
-    USERNAME: 'contacto_website_saliente@julianmmame.com.ar',
+    USERNAME: '',
     PASSWORD: 'hag?yhs?',
-    TO: 'contacto_webpage@julianmmame.com.ar'
+    TO: ''
 }
 
 

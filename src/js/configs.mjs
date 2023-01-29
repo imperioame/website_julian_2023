@@ -1,13 +1,3 @@
-export const MAIL_DATA = {
-    MAILHOST: 'smtp.dreamhost.com',
-    USERNAME: '',
-    PASSWORD: 'hag?yhs?',
-    TO: ''
-}
-
-
-
-
 export const LANGUAGES = {
     ESPANOL: 'es',
     INGLES: 'en'

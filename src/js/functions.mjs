@@ -3,6 +3,11 @@ import {
     MAIL_DATA
 } from './configs.mjs';
 
+import {
+    SMTPClient,
+    MAIL_DATA
+} from '../configs/environment.mjs'
+
 
 export function createSpacer(size = 1) {
     //Creates a Flebox spacer with the asigned grow value (check styles.css)
@@ -203,13 +208,13 @@ export function buildContactForm(page_section, array_inputs = ['nombre', 'email'
         label.innerHTML = capitalizeString(value);
 
         let input;
-        if (value == 'mensaje'){
+        if (value == 'mensaje') {
             input = document.createElement('textarea');
-        }else{
+        } else {
             input = document.createElement('input');
             input.type = findInObject(DATA.FORM_TYPES, value)[2];
         }
-        
+
         if (value == 'nombre') {
             input.placeholder = 'Juan';
             input.type = 'text';
@@ -237,25 +242,26 @@ export function buildContactForm(page_section, array_inputs = ['nombre', 'email'
 }
 
 
-function capitalizeString(string){
+function capitalizeString(string) {
     //This function receives a string and turns the first char to uppercase
     const firstChar = string.charAt(0).toUpperCase();
     return firstChar + string.slice(1);
 }
 
 
-export function sendEmail(e){
-    //This function uses smtpjs to contact form email posting
+export function sendEmail(e) {
+    //This function uses emailjs to contact form email posting
     e.preventDefault();
-    Email.send({
-        Host : MAIL_DATA.MAILHOST,
-        Username : MAIL_DATA.USERNAME,
-        Password : MAIL_DATA.PASSWORD,
-        To : MAIL_DATA.TO,
-        From : document.getElementById('contact_form_email').value,
-        Subject : `Contacto a través de la página web de ${document.getElementById('contact_form_nombre')}`,
-        Body : document.getElementById('contact_form_mensaje').value
-    }).then(
-      message => alert(message)
+
+    client.send({
+            text: document.getElementById('contact_form_mensaje').value,
+            from: document.getElementById('contact_form_email').value,
+            to:  MAIL_DATA.TO,
+            subject: `Contacto a través de la página web de ${document.getElementById('contact_form_nombre')}`,
+        },
+        (err, message) => {
+            console.log(err || message);
+        }
     );
+
 }

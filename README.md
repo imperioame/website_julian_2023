@@ -14,6 +14,14 @@ have parcel installed ...
 
 ... so you can ...
 
+
+## Local
 > parcel ./src/index.html 
 
-for automatic build.
+for automatic build and virtual server.
+
+
+## Prod
+> npm run build
+
+to build in prod.

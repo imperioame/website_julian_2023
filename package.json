@@ -1,10 +1,11 @@
 {
-  "name": "geometryghosts",
+  "name": "Website Julián Amé",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "",

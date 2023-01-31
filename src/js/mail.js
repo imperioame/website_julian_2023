@@ -1,19 +1,18 @@
 "use strict";
-import {
-    MAIL_DATA
-} from '../configs/environment.mjs'
+require('dotenv').config();
+console.log(process.env);
 
 const nodemailer = require("nodemailer");
 
 async function sendEmailNodeMailer() {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: MAIL_DATA.MAILHOST,
-        port: MAIL_DATA.PORT,
+        host: process.env.MAIL_HOST,
+        port: process.env.MAIL_PORT,
         secure: true,
         auth: {
-            user: MAIL_DATA.USERNAME,
-            pass: MAIL_DATA.PASSWORD,
+            user: process.env.MAIL_USERNAME,
+            pass: process.env.MAIL_PASSWORD,
         },
         tls: {
             // do not fail on invalid certs
@@ -33,7 +32,7 @@ async function sendEmailNodeMailer() {
     // send mail with defined transport object
     let info = await transporter.sendMail({
         from: document.getElementById('contact_form_email').value,
-        to: MAIL_DATA.TO,
+        to: process.env.MAIL_TO,
         subject: `Contacto a través de la página web de ${document.getElementById('contact_form_nombre')}`,
         text: document.getElementById('contact_form_mensaje').value,
         html: "<b>Hello world?</b>", // html body

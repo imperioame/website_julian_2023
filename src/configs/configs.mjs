@@ -13,3 +13,4 @@ if (userLanguages.indexOf(LANGUAGES.ESPANOL) > -1){
 }
 
 document.documentElement.lang = currentLanguage;
+

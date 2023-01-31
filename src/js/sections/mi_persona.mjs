@@ -1,4 +1,4 @@
-import {currentLanguage, LANGUAGES} from '../configs.mjs';
+import {currentLanguage, LANGUAGES} from '../../configs/configs.mjs';
 import {
     createSpacer,
 } from '../functions.mjs';

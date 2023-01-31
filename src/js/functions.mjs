@@ -1,12 +1,7 @@
 import * as DATA from './data.mjs';
 import {
-    MAIL_DATA
-} from './configs.mjs';
-
-import {
-    SMTPClient,
-    MAIL_DATA
-} from '../configs/environment.mjs'
+    sendEmailNodeMailer
+} from './mail.mjs'
 
 
 export function createSpacer(size = 1) {
@@ -248,20 +243,10 @@ function capitalizeString(string) {
     return firstChar + string.slice(1);
 }
 
-
 export function sendEmail(e) {
     //This function uses emailjs to contact form email posting
     e.preventDefault();
 
-    client.send({
-            text: document.getElementById('contact_form_mensaje').value,
-            from: document.getElementById('contact_form_email').value,
-            to:  MAIL_DATA.TO,
-            subject: `Contacto a través de la página web de ${document.getElementById('contact_form_nombre')}`,
-        },
-        (err, message) => {
-            console.log(err || message);
-        }
-    );
+    sendEmailNodeMailer().catch(console.error);
 
 }

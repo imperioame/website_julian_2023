@@ -1,7 +1,4 @@
 import * as DATA from './data.mjs';
-import {
-    sendEmailNodeMailer
-} from './mail.mjs'
 
 
 export function createSpacer(size = 1) {

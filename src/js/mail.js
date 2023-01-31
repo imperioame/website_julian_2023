@@ -5,7 +5,7 @@ import {
 
 const nodemailer = require("nodemailer");
 
-export async function sendEmailNodeMailer() {
+async function sendEmailNodeMailer() {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         host: MAIL_DATA.MAILHOST,

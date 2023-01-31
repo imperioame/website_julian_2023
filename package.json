@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "dat.gui": "^0.7.9",
+    "dotenv": "^16.0.3",
     "nodemailer": "^6.9.1",
     "three": "^0.148.0"
   },

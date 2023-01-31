@@ -1,5 +1,4 @@
 .env
-.env.test
 .parcel-cache/
 dist/
 node_modules/

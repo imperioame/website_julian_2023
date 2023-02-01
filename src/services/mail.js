@@ -3,38 +3,42 @@ require('dotenv').config();
 console.log(process.env);
 
 const nodemailer = require("nodemailer");
+let transporter = nodemailer.createTransport({
+    host: process.env.MAIL_HOST,
+    port: process.env.MAIL_PORT,
+    secure: true,
+    auth: {
+        user: process.env.MAIL_USERNAME,
+        pass: process.env.MAIL_PASSWORD,
+    },
+    tls: {
+        // do not fail on invalid certs
+        rejectUnauthorized: false,
+    },
+});
 
-async function sendEmailNodeMailer() {
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-        host: process.env.MAIL_HOST,
-        port: process.env.MAIL_PORT,
-        secure: true,
-        auth: {
-            user: process.env.MAIL_USERNAME,
-            pass: process.env.MAIL_PASSWORD,
-        },
-        tls: {
-            // do not fail on invalid certs
-            rejectUnauthorized: false,
-        },
-    });
-/*
+
+export function verifyConnection() {
     // verify connection configuration
+    let result = null;
     transporter.verify(function (error, success) {
         if (error) {
             console.log(error);
         } else {
             console.log("Server is ready to take our messages");
+            result = success;
         }
     });
-*/
+    return result;
+}
+
+export async function sendEmailNodeMailer(from, subject, text) {
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: document.getElementById('contact_form_email').value,
+        from: from,
         to: process.env.MAIL_TO,
-        subject: `Contacto a través de la página web de ${document.getElementById('contact_form_nombre')}`,
-        text: document.getElementById('contact_form_mensaje').value,
+        subject: subject,
+        text: text,
         html: "<b>Hello world?</b>", // html body
     });
 

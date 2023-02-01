@@ -1,5 +1,10 @@
 import * as DATA from './data.mjs';
 
+import {
+    verifyConnection,
+    sendEmailNodeMailer
+} from '../services/mail.js'
+
 
 export function createSpacer(size = 1) {
     //Creates a Flebox spacer with the asigned grow value (check styles.css)
@@ -243,7 +248,9 @@ function capitalizeString(string) {
 export function sendEmail(e) {
     //This function uses emailjs to contact form email posting
     e.preventDefault();
+    if (verifyConnection()) {
+        sendEmailNodeMailer(document.getElementById('contact_form_email').value, `Contacto a través de la página web de ${document.getElementById('contact_form_nombre')}`, document.getElementById('contact_form_mensaje').value).catch(console.error);
+    };
 
-    sendEmailNodeMailer().catch(console.error);
 
 }

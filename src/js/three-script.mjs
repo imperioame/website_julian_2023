@@ -107,7 +107,7 @@ import {
 } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 //Esto es para que levante el archivo 3d al compilar
-const personajeURL = new URL('../3dModels/character_standing .glb',
+const personajeURL = new URL('../3dModels/character_standing.glb',
     import.meta.url);
 
 //Cargo el importador gltf.

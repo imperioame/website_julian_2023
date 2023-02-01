@@ -78,10 +78,11 @@ scene.add(directionaLight);
 directionaLight.position.set(0,0,10);
 directionaLight.castShadow = true;
 directionaLight.shadow.camera.left = 0;
+/*
 const dLightHelper = new THREE.DirectionalLightHelper(directionaLight, 50);
 scene.add(dLightHelper);
-
-
+*/
+/*
 const cubeGhost1Geometry = new THREE.BoxGeometry();
 const cubeGhost1Material = new THREE.MeshStandardMaterial({
     color: 0xffffff
@@ -91,8 +92,35 @@ const cubeGhost1 = new THREE.Mesh(cubeGhost1Geometry, cubeGhost1Material);
 scene.add(cubeGhost1);
 
 cubeGhost1.position.set(1.5, 0.2, 0);
+*/
 
 
+
+
+
+
+/* ***************************
+Importador
+*************************** */
+import {
+    GLTFLoader
+} from 'three/examples/jsm/loaders/GLTFLoader.js';
+
+//Esto es para que levante el archivo 3d al compilar
+const personajeURL = new URL('../3dModels/character_standing .glb',
+    import.meta.url);
+
+//Cargo el importador gltf.
+const assetLoader = new GLTFLoader();
+
+//Cargo el objeto 3d
+assetLoader.load(personajeURL.href, function (gltf) {
+    const model = gltf.scene;
+    scene.add(model);
+    model.position.set(1.5, 0.2, 0);
+}, undefined, function (error) {
+    console.error(error);
+});
 
 
 
@@ -108,7 +136,7 @@ function animate(time) {
     dLightHelper.update();
     */
 
-    cubeGhost1.rotation.set(time/10000, time/10000, time/10000)
+    //cubeGhost1.rotation.set(time/10000, time/10000, time/10000)
 
     renderer.render(scene, camera);
 

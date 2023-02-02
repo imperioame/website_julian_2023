@@ -1,9 +1,8 @@
 import * as DATA from './data.mjs';
 
 import {
-    verifyConnection,
-    sendEmailNodeMailer
-} from '../services/mail.js'
+    sendMail,
+} from '../services/mail.mjs'
 
 
 export function createSpacer(size = 1) {
@@ -233,6 +232,7 @@ export function buildContactForm(page_section, array_inputs = ['nombre', 'email'
     const submit_button = document.createElement('button');
     submit_button.type = 'submit';
     submit_button.id = 'submit_button';
+
     submit_button.innerHTML = 'Enviar';
 
     page_section.appendChild(submit_button);
@@ -248,9 +248,13 @@ function capitalizeString(string) {
 export function sendEmail(e) {
     //This function uses emailjs to contact form email posting
     e.preventDefault();
-    if (verifyConnection()) {
-        sendEmailNodeMailer(document.getElementById('contact_form_email').value, `Contacto a través de la página web de ${document.getElementById('contact_form_nombre')}`, document.getElementById('contact_form_mensaje').value).catch(console.error);
-    };
 
+    let result = sendMail(
+        `${document.getElementById('contact_form_email').value}`,
+        `${document.getElementById('contact_form_nombre').value}`,
+        "Contacto a través de la página web de " + `${document.getElementById('contact_form_nombre').value}`,
+        `${document.getElementById('contact_form_mensaje').value}`
+        );
 
+    console.log(result);
 }

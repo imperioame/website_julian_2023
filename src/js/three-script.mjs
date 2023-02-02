@@ -2,9 +2,6 @@ import * as THREE from 'three';
 import {
     OrbitControls
 } from 'three/examples/jsm/controls/OrbitControls';
-import {
-    DRACOLoader
-} from 'three/examples/jsm/loaders/dracoloader';
 
 /*
 import * as dat from 'dat.gui';
@@ -119,6 +116,11 @@ const assetLoader = new GLTFLoader();
 
 /*
 //Si el Objeto 3d está comprimido, tengo uqe descomprimirlo
+import {
+    DRACOLoader
+} from 'three/examples/jsm/loaders/dracoloader';
+
+
 const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath('three/examples/jsm/libs/draco/');
 assetLoader.setDRACOLoader(dracoLoader);

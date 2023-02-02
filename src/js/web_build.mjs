@@ -5,7 +5,7 @@ import {createHeader} from './sections/header.mjs'
 import {createHeroSection} from './sections/hero.mjs'
 import {createMiPersona} from './sections/mi_persona.mjs'
 import {createMisTrabajos} from './sections/mis_trabajos.mjs'
-import {createEscaneame} from './sections/escaneame.mjs'
+//import {createEscaneame} from './sections/escaneame.mjs'
 import {createContacto} from './sections/contacto.mjs'
 import {createFooter} from './sections/footer.mjs'
 

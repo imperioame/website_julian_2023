@@ -64,8 +64,8 @@ export function buildPorfolio(sectionElement_id, category) {
     let sectionElement = document.getElementById('porfolio_bloque_interior');
     sectionElement.innerHTML = '';
 
-
-    subtitle = document.createElement('h3');
+    
+    const subtitle = document.createElement('h3');
     subtitle.classList.add('subtitle');
     subtitle.innerHTML = category;
     sectionElement.appendChild(subtitle);

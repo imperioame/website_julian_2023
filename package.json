@@ -20,5 +20,8 @@
   "dependencies": {
     "dat.gui": "^0.7.9",
     "three": "^0.148.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0"
   }
 }

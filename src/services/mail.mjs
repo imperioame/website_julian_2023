@@ -1,4 +1,8 @@
 export function sendMail(from, name, subject, text) {
+    (function () {
+        emailjs.init("bw-B3soQ2MARRdfFx");
+    })();
+
 
     if (!from || !name || !subject || !text) {
         return 'error';

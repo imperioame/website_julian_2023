@@ -171,7 +171,7 @@ function animate(time) {
 
     //cubeGhost1.rotation.set(time/10000, time/10000, time/10000)
 
-    requestAnimationFrame(animate);
+    //requestAnimationFrame(animate);
 
     renderer.render(scene, camera);
 

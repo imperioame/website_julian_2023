@@ -44,16 +44,6 @@ window.addEventListener('resize', function () {
 });
 
 
-//Agrega controles para rotación y movimiento de la cámara
-const orbit = new OrbitControls(camera, renderer.domElement);
-orbit.enableZoom = false;
-camera.position.set(0, 0, 10);
-orbit.target.set(0, 1, 3);
-orbit.update();
-
-
-
-
 /*
 //Agrego una area light
 const light1 = new THREE.RectAreaLight(0xFFFFFF);
@@ -99,7 +89,6 @@ cubeGhost1.position.set(1.5, 0.2, 0);
 
 
 
-
 /* ***************************
 Importador
 *************************** */
@@ -113,7 +102,6 @@ const personajeURL = new URL('../3dModels/character_standing.glb',
 
 //Cargo el importador gltf.
 const assetLoader = new GLTFLoader();
-
 /*
 //Si el Objeto 3d está comprimido, tengo uqe descomprimirlo
 import {
@@ -126,24 +114,31 @@ dracoLoader.setDecoderPath('three/examples/jsm/libs/draco/');
 assetLoader.setDRACOLoader(dracoLoader);
 */
 
-
+let mixer;
+const model_position = {
+    'x': 1.2,
+    'y': 0.20,
+    'z': 0
+};
+let imported_model_height;
 //Cargo el objeto 3d
 assetLoader.load(personajeURL.href,
     function (gltf) {
         //Función llamada cuando el recurso se carga
         const model = gltf.scene;
         scene.add(model);
-        model.position.set(1.2, 0.20, 0);
+        model.position.set(model_position.x, model_position.y, model_position.z);
 
+        //Esto es para poder saber la altura del personaje importado
+        const box = new THREE.Box3().setFromObject(model);
+        imported_model_height = box.getSize(new THREE.Vector3());
 
-        const mixer = new THREE.AnimationMixer(model);
-        const animations = gltf.animations;
-        const animation = THREE.AnimationClip.findByName(animations, 'idle');
-
-        const action = mixer.clipAction(animation);
+        //Esto es para la animación
+        mixer = new THREE.AnimationMixer(model);
+        const clips = gltf.animations;
+        const clip = THREE.AnimationClip.findByName(clips, 'idle');
+        const action = mixer.clipAction(clip);
         action.play();
-
-
 
     },
     function (xhr) {
@@ -157,11 +152,15 @@ assetLoader.load(personajeURL.href,
 
 
 
+//Agrega controles para rotación y movimiento de la cámara
+const orbit = new OrbitControls(camera, renderer.domElement);
+orbit.enableZoom = false;
+camera.position.set(0, 3, 10);
+orbit.target.set(model_position.x - 1.3, model_position.y + 1.1, model_position.z);
+orbit.update();
 
 
-
-
-
+const clock = new THREE.Clock();
 //Función principal para animación. Reemplazar contenidos con lo que se quiera animar
 function animate(time) {
     /*
@@ -171,9 +170,17 @@ function animate(time) {
 
     //cubeGhost1.rotation.set(time/10000, time/10000, time/10000)
 
-    //requestAnimationFrame(animate);
+    if (mixer) {
+        mixer.update(clock.getDelta());
+    }
 
     renderer.render(scene, camera);
 
+    if (imported_model_height) {
+        camera.position.set(0, 3, 0);
+        orbit.target.set(model_position.x, imported_model_height.y * 1000, model_position.z );
+        orbit.update();
+        imported_model_height = null;
+    }
 }
 renderer.setAnimationLoop(animate);

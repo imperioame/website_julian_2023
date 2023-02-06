@@ -153,6 +153,7 @@ body {
     background-clip: content-box;
     display: flex;
     align-items: center;
+    padding-top: 0;
 }
 
 #container_banner_mi_persona{

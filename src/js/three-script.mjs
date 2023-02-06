@@ -32,7 +32,7 @@ const camera = new THREE.PerspectiveCamera(
     15,
     window.innerWidth / window.innerHeight,
     0.1,
-    1000
+    10000
 );
 renderer.render(scene, camera);
 
@@ -57,18 +57,20 @@ scene.add(light1Helper);
 */
 
 //Agrego una ambient light
-const light2 = new THREE.AmbientLight(0x222222, .9);
+const light2 = new THREE.AmbientLight(0x222222, 5.9);
 scene.add(light2);
 light2.position.set(0, 0, 10);
 light2.castShadow = true;
 light2.angle = 0.2;
 
 //Agrego una luz direccional
+/*
 const directionaLight = new THREE.DirectionalLight(0xFFFFFF, 1.5);
 scene.add(directionaLight);
 directionaLight.position.set(0, 0, 10);
 directionaLight.castShadow = true;
 directionaLight.shadow.camera.left = 0;
+*/
 /*
 const dLightHelper = new THREE.DirectionalLightHelper(directionaLight, 50);
 scene.add(dLightHelper);
@@ -126,6 +128,7 @@ assetLoader.load(personajeURL.href,
     function (gltf) {
         //Función llamada cuando el recurso se carga
         const model = gltf.scene;
+        model.frustumCulled = false;
         scene.add(model);
         model.position.set(model_position.x, model_position.y, model_position.z);
 
@@ -155,7 +158,10 @@ assetLoader.load(personajeURL.href,
 //Agrega controles para rotación y movimiento de la cámara
 const orbit = new OrbitControls(camera, renderer.domElement);
 orbit.enableZoom = false;
-camera.position.set(0, 3, 10);
+camera.position.x =-1;
+camera.position.y =2;
+camera.position.z =6;
+//camera.position.set(0, 3, 10);
 orbit.target.set(model_position.x - 1.3, model_position.y + 1.1, model_position.z);
 orbit.update();
 
@@ -177,8 +183,8 @@ function animate(time) {
     renderer.render(scene, camera);
 
     if (imported_model_height) {
-        camera.position.set(0, 3, 0);
-        orbit.target.set(model_position.x, imported_model_height.y * 1000, model_position.z );
+        //camera.position.set(0,0,5);
+        //orbit.target.set(imported_model_height.x, imported_model_height.y, imported_model_height.z * 500);
         orbit.update();
         imported_model_height = null;
     }

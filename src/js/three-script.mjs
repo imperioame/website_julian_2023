@@ -64,13 +64,13 @@ light2.castShadow = true;
 light2.angle = 0.2;
 
 //Agrego una luz direccional
-/*
-const directionaLight = new THREE.DirectionalLight(0xFFFFFF, 1.5);
+
+const directionaLight = new THREE.DirectionalLight(0xFFFFFF, 1);
 scene.add(directionaLight);
 directionaLight.position.set(0, 0, 10);
 directionaLight.castShadow = true;
 directionaLight.shadow.camera.left = 0;
-*/
+
 /*
 const dLightHelper = new THREE.DirectionalLightHelper(directionaLight, 50);
 scene.add(dLightHelper);
@@ -104,17 +104,6 @@ const personajeURL = new URL('../3dModels/character_standing.glb',
 
 //Cargo el importador gltf.
 const assetLoader = new GLTFLoader();
-/*
-//Si el Objeto 3d está comprimido, tengo uqe descomprimirlo
-import {
-    DRACOLoader
-} from 'three/examples/jsm/loaders/dracoloader';
-
-
-const dracoLoader = new DRACOLoader();
-dracoLoader.setDecoderPath('three/examples/jsm/libs/draco/');
-assetLoader.setDRACOLoader(dracoLoader);
-*/
 
 let mixer;
 const model_position = {
@@ -122,19 +111,25 @@ const model_position = {
     'y': 0.20,
     'z': 0
 };
-let imported_model_height;
+let finished_import = false;
 //Cargo el objeto 3d
 assetLoader.load(personajeURL.href,
     function (gltf) {
         //Función llamada cuando el recurso se carga
+        gltf.scene.traverse((child) => {
+            child.frustumCulled = false;
+        })
         const model = gltf.scene;
-        model.frustumCulled = false;
         scene.add(model);
         model.position.set(model_position.x, model_position.y, model_position.z);
+        finished_import = true;
 
+        /*
         //Esto es para poder saber la altura del personaje importado
         const box = new THREE.Box3().setFromObject(model);
         imported_model_height = box.getSize(new THREE.Vector3());
+
+        */
 
         //Esto es para la animación
         mixer = new THREE.AnimationMixer(model);
@@ -158,10 +153,7 @@ assetLoader.load(personajeURL.href,
 //Agrega controles para rotación y movimiento de la cámara
 const orbit = new OrbitControls(camera, renderer.domElement);
 orbit.enableZoom = false;
-camera.position.x =-1;
-camera.position.y =2;
-camera.position.z =6;
-//camera.position.set(0, 3, 10);
+camera.position.set(-1, 2, 6);
 orbit.target.set(model_position.x - 1.3, model_position.y + 1.1, model_position.z);
 orbit.update();
 
@@ -182,11 +174,11 @@ function animate(time) {
 
     renderer.render(scene, camera);
 
-    if (imported_model_height) {
-        //camera.position.set(0,0,5);
-        //orbit.target.set(imported_model_height.x, imported_model_height.y, imported_model_height.z * 500);
+    if (finished_import) {
+        camera.position.set(0, 0.5, 3.1);
+        orbit.target.set(model_position.x - 0.7,model_position.y + 1,model_position.z + 0.9);
         orbit.update();
-        imported_model_height = null;
+        finished_import = null;
     }
 }
 renderer.setAnimationLoop(animate);

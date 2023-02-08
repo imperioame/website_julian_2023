@@ -7,7 +7,7 @@ html {
     --containers_color: #2f2f2f;
     --containers_color_hovered: #4e4e4e;
     --accent_color: #bd34fe;
-    --accent_color_hover: #c95dfc;
+    --accent_color_hover: #9f18dd;
     
     --porfolio_gradient: linear-gradient(-45deg, #bd34fe 50%, #ff3670 50%);
     --porfolio_overlay_gradient: linear-gradient(0deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 25%);
@@ -403,7 +403,7 @@ body {
     align-items: center ;
 }
 
-#form_contacto_container form, #contacto_extra div{
+#form_contacto_container div, #contacto_extra div{
     height: 100%;
     box-sizing: border-box;
     text-align: left;
@@ -419,15 +419,22 @@ body {
     border-radius: 8px;
 }
 
+#form_contacto_container div h3{
+    margin: 1em 0 2em 0;
+}
+
+#form_contacto_container div form {
+    width: 100%;
+}
+
 #form_contacto_container form label{
-    font-size: 1.3em;
+    font-size: 1.1em;
     width: 100%;
     text-align: left;
 }
 
 #form_contacto_container form input, #form_contacto_container form textarea {
     height: 2em;
-    padding-left: 8px;
     border-radius: 8px;
     border: none;
     width: 100%;
@@ -443,7 +450,7 @@ body {
 
 #form_contacto_container form input::placeholder, #form_contacto_container form textarea::placeholder{
     padding-top: 0.5em;
-    padding-left: 5px;
+    padding-left: 15px;
     color: var(--dimmed_text_color);
 }
 
@@ -465,6 +472,7 @@ body {
     background-color: var(--accent_color);
     padding: 1em 0;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 #submit_button:hover{

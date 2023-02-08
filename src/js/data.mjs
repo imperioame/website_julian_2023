@@ -129,5 +129,6 @@ TRABAJOS_PORFOLIO.push({
 export const TEXTOS = {
     SUBTITLE_HERO: 'Diseñador Multimedial | Lic. En Comunicación | Director de proyectos digitales | Quality Assurance Lead',
     BANNER_MI_PERSONA: "Diseñador Multimedial y líder de proyectos digitales.<br> Emprendedor y apasionado en la organización y organizaciones.<br> Técnico por naturaleza.",
-    BLOQUE_CONTACTO: "Si buscás ponerte en contacto conmigo para llevar a cabo un proyecto puedes utilizar el siguiente formulario, suelo responder en una hora aproximadamente dependiendo del día y hora en el que se envíe el mensaje. En caso de que no responda, dejo mi mail para que me escribas directamente por dicho medio."
+    BLOQUE_CONTACTO_TITULO: 'Escribime aquí 👇',
+    BLOQUE_CONTACTO_PARRAFO: "Si buscás ponerte en contacto conmigo para llevar a cabo un proyecto puedes utilizar el siguiente formulario, suelo responder en una hora aproximadamente dependiendo del día y hora en el que se envíe el mensaje. En caso de que no responda, dejo mi mail para que me escribas directamente por dicho medio."
 }

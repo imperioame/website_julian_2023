@@ -14,3 +14,6 @@ if (userLanguages.indexOf(LANGUAGES.ESPANOL) > -1){
 
 document.documentElement.lang = currentLanguage;
 
+export const IS_MOBILE = window.innerWidth < 768;
+//Also defined in css/mobile.css
+

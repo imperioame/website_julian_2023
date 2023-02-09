@@ -2,16 +2,27 @@ import {currentLanguage, LANGUAGES} from '../../configs/configs.mjs';
 import {
     createSpacer,
 } from '../functions.mjs';
+import {
+    IS_MOBILE
+} from '../../configs/configs.mjs';
+
+
 
 export function createMiPersona(DATA, body) {
     const banner_mi_persona = document.createElement('section');
     banner_mi_persona.id = 'banner_mi_persona';
-    banner_mi_persona.appendChild(createSpacer());
+    
+    if (IS_MOBILE){
+        const overlay_gradiente = document.createElement('div');
+        overlay_gradiente.id = 'overlay_gradiente_mi_persona';
+        banner_mi_persona.appendChild(overlay_gradiente);
+    }
 
+    banner_mi_persona.appendChild(createSpacer());
     const container_banner_mi_persona = document.createElement('div');
     container_banner_mi_persona.id = 'container_banner_mi_persona';
 
-    title = document.createElement('p');
+    const title = document.createElement('p');
     title.id = 'extracto_banner';
     title.innerHTML = DATA.TEXTOS.BANNER_MI_PERSONA;
     container_banner_mi_persona.appendChild(title);

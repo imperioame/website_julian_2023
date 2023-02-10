@@ -13,7 +13,7 @@ export function createMisTrabajos(DATA, body) {
     mis_trabajos_background.innerHTML = ' ';
     seccion_mis_trabajos.appendChild(mis_trabajos_background);
 
-    title = document.createElement('h2');
+    const title = document.createElement('h2');
     title.innerHTML = 'Porfolio';
     seccion_mis_trabajos.appendChild(title);
 

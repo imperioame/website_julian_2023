@@ -2,6 +2,10 @@ import * as THREE from 'three';
 import {
     OrbitControls
 } from 'three/examples/jsm/controls/OrbitControls';
+import {
+    IS_MOBILE
+} from '../configs/configs.mjs';
+
 
 /*
 import * as dat from 'dat.gui';
@@ -175,8 +179,14 @@ function animate(time) {
     renderer.render(scene, camera);
 
     if (finished_import) {
-        camera.position.set(0, 0.5, 3.1);
-        orbit.target.set(model_position.x - 0.7,model_position.y + 1,model_position.z + 0.9);
+
+        if (IS_MOBILE) {
+            camera.position.set(-0.6, 0.9, 2.0);
+            orbit.target.set(model_position.x - 0, model_position.y + 1.3, model_position.z + 0);
+        } else {
+            camera.position.set(0, 0.9, 2.0);
+            orbit.target.set(model_position.x - 0.7, model_position.y + 1.045, model_position.z + 0.9);
+        }
         orbit.update();
         finished_import = null;
     }

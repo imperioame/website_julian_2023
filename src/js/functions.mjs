@@ -2,7 +2,10 @@ import * as DATA from './data.mjs';
 
 import {
     sendMail,
-} from '../services/mail.mjs'
+} from '../services/mail.mjs';
+import {
+    IS_MOBILE
+} from '../configs/configs.mjs';
 
 
 export function createSpacer(size = 1) {
@@ -61,7 +64,7 @@ export function getNextPrevCat(category = DATA.CATEGORIAS_PORFOLIO.DISENO) {
 export function buildPorfolio(sectionElement_id, category) {
     //Builds porfolio section with porfolio jobs from DATA
     //deletes everything first
-    let sectionElement = document.getElementById('porfolio_bloque_interior');
+    let sectionElement = document.getElementById(sectionElement_id);
     sectionElement.innerHTML = '';
 
     
@@ -82,7 +85,7 @@ export function buildPorfolio(sectionElement_id, category) {
     DATA.TRABAJOS_PORFOLIO.filter(trabajo => (trabajo.priority == 1 && trabajo.category == category)).forEach(trabajo => {
         createPorfolioCard(row, trabajo);
 
-        if (count == 2) {
+        if (count == 2 || IS_MOBILE) {
             //Hago salto de línea
             row.appendChild(createSpacer(1));
             bloque_trabajos_container.appendChild(row);
@@ -92,12 +95,13 @@ export function buildPorfolio(sectionElement_id, category) {
         } else {
             count++;
         }
+
     });
 
     DATA.TRABAJOS_PORFOLIO.filter(trabajo => (trabajo.priority > 1 && trabajo.category == category)).forEach(trabajo => {
         createPorfolioCard(row, trabajo);
 
-        if (count == 2) {
+        if (count == 2 || IS_MOBILE) {
             //Hago salto de línea
             row.appendChild(createSpacer(1));
             bloque_trabajos_container.appendChild(row);
@@ -116,9 +120,9 @@ export function buildPorfolio(sectionElement_id, category) {
     sectionElement.appendChild(bloque_trabajos);
 
 
-    const overlay_gradiente = document.createElement('div');
-    overlay_gradiente.id = 'overlay_gradiente';
-    sectionElement.appendChild(overlay_gradiente);
+    const overlay_gradiente_trabajos = document.createElement('div');
+    overlay_gradiente_trabajos.id = 'overlay_gradiente_trabajos';
+    sectionElement.appendChild(overlay_gradiente_trabajos);
 
     const next_prev_cat = getNextPrevCat(category);
 

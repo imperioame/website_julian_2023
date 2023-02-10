@@ -9,7 +9,6 @@
     transition: 0.3s ease;
 }
 
-
 h1,
 h2,
 h3,
@@ -39,7 +38,7 @@ body {
 #seccion_contacto,
 #banner_mi_persona,
 #seccion_escaneame {
-    height: 90vh;
+    min-height: 90vh;
     flex-direction: row;
     align-items: center;
     text-align: center;
@@ -54,7 +53,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: var(--background_with_transparency);
     z-index: 5;
 }
@@ -324,6 +323,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
+    left: 0;
     display: flex;
     align-items: center;
 }

@@ -22,7 +22,7 @@ h6 {
 
 .subtitle {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 400
 }
 
 body {
@@ -48,19 +48,8 @@ body {
 #seccion_mis_trabajos,
 #seccion_contacto,
 #seccion_escaneame{
-    margin-top: 10vh;
+    padding-top: 10vh;
 }
-
-#banner_mi_persona{
-    margin-top: 0;
-}
-
-#seccion_mis_trabajos,
-#seccion_contacto,
-#seccion_escaneame{
-    margin-top: 10vh;
-}
-
 
 #header {
     padding: 25px 0;
@@ -70,7 +59,7 @@ body {
     left: 0;
     width: 100vw;
     background-color: var(--background_with_transparency);
-    z-index: 5;
+    z-index: 99;
 }
 
 #logo {
@@ -101,11 +90,11 @@ body {
     pointer-events: none;
 }
 
-/*
 .spacer-1, .spacer-2, .spacer-3, .spacer-4{
-    height: 100%;
+    height: 50px;
 }
-*/
+
+
 .spacer-1 {
     flex-grow: 1 !important;
 }
@@ -208,14 +197,21 @@ body {
 #porfolio_bloque_interior {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#porfolio_bloque_interior .subtitle {
+    height: 10%
 }
 
 #bloque_trabajos {
     position: absolute;
     top: 0;
     left: 0;
+    padding-top: 20vh;
     width: 100%;
-    height: 100%;
+    height: 80vh;
     overflow-y: scroll;
 }
 
@@ -227,7 +223,6 @@ body {
 #bloque_trabajos_container {
     width: 100%;
     height: 100%;
-    /*padding-top: 20%;*/
     display: flex;
     flex-direction: column;
 }
@@ -399,7 +394,7 @@ body {
 
 
 #contacto_extra, #form_contacto_container{
-    flex: 1;
+    flex: 10;
 }
 
 
@@ -409,7 +404,7 @@ body {
     align-items: center ;
 }
 
-#form_contacto_container div, #contacto_extra div{
+#form_contacto_container #div_form_contacto_container, #contacto_extra div{
     height: 100%;
     box-sizing: border-box;
     text-align: left;
@@ -421,8 +416,11 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    flex-grow: 1;
     background-color: var(--containers_color);
     border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+
 }
 
 #form_contacto_container div h3{
@@ -458,6 +456,15 @@ body {
     padding-top: 0.5em;
     padding-left: 15px;
     color: var(--dimmed_text_color);
+}
+
+#form_captcha, #form_captcha div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    width: 100%;
+    text-align: center;
 }
 
 #contacto_extra img{
@@ -497,4 +504,10 @@ body {
 
 #footer a {
     text-decoration: none;
+}
+
+.tooltip{
+    position: relative;
+    top: -1.5em;
+    height: 1em;
 }

@@ -1,5 +1,6 @@
 import {
     buildContactForm,
+    createSpacer,
 } from '../functions.mjs';
 
 export function createContacto(DATA, body) {
@@ -34,10 +35,13 @@ export function createContacto(DATA, body) {
     contacto_extra.appendChild(contacto_extra_container);
     bloque_contacto.appendChild(contacto_extra);
 
+    bloque_contacto.appendChild(createSpacer());
+
     const bloque_form = document.createElement('article');
     bloque_form.id = 'form_contacto_container';
 
     const form_contacto_container = document.createElement('div');
+    form_contacto_container.id = 'div_form_contacto_container';
     
 
     const form_contacto_title = document.createElement('h3');

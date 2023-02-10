@@ -64,10 +64,11 @@ export function getNextPrevCat(category = DATA.CATEGORIAS_PORFOLIO.DISENO) {
 export function buildPorfolio(sectionElement_id, category) {
     //Builds porfolio section with porfolio jobs from DATA
     //deletes everything first
+    console.log(sectionElement_id);
     let sectionElement = document.getElementById(sectionElement_id);
     sectionElement.innerHTML = '';
 
-    
+
     const subtitle = document.createElement('h3');
     subtitle.classList.add('subtitle');
     subtitle.innerHTML = category;
@@ -128,7 +129,7 @@ export function buildPorfolio(sectionElement_id, category) {
 
     const prev = document.createElement('a');
     prev.addEventListener('click', function () {
-        buildPorfolio(sectionElement, next_prev_cat[0]);
+        buildPorfolio(sectionElement.id, next_prev_cat[0]);
     });
     prev.classList.add('porfolio_prev_button');
     const icon_prev = document.createElement('i');
@@ -138,7 +139,7 @@ export function buildPorfolio(sectionElement_id, category) {
 
     const next = document.createElement('a');
     next.addEventListener('click', function () {
-        buildPorfolio(sectionElement, next_prev_cat[1]);
+        buildPorfolio(sectionElement.id, next_prev_cat[1]);
     });
     next.classList.add('porfolio_next_button');
     const icon_next = document.createElement('i');
@@ -233,6 +234,12 @@ export function buildContactForm(page_section, array_inputs = ['nombre', 'email'
         page_section.appendChild(input);
     });
 
+    const captcha = document.createElement('div');
+    captcha.id = 'form_captcha'
+    captcha.classList.add('g-recaptcha');
+    captcha.dataset.sitekey = '6Le3U24kAAAAAMJMqRjOyf2kTBXkUaVo9QYWk_UO';
+    page_section.appendChild(captcha);
+
     const submit_button = document.createElement('button');
     submit_button.type = 'submit';
     submit_button.id = 'submit_button';
@@ -258,7 +265,7 @@ export function sendEmail(e) {
         `${document.getElementById('contact_form_nombre').value}`,
         "Contacto a través de la página web de " + `${document.getElementById('contact_form_nombre').value}`,
         `${document.getElementById('contact_form_mensaje').value}`
-        );
+    );
 
     console.log(result);
 }

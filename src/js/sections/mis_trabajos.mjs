@@ -50,6 +50,4 @@ export function createMisTrabajos(DATA, body) {
 
     body.appendChild(seccion_mis_trabajos);
     buildPorfolio('porfolio_bloque_interior', DATA.CATEGORIAS_PORFOLIO.DISENO);
-
-
 }

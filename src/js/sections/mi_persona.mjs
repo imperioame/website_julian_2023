@@ -44,7 +44,12 @@ export function createMiPersona(DATA, body) {
 
 
     banner_mi_persona.appendChild(container_banner_mi_persona);
-    banner_mi_persona.appendChild(createSpacer(4));
+    if(IS_MOBILE){
+        banner_mi_persona.appendChild(createSpacer(1));
+    }else{
+        banner_mi_persona.appendChild(createSpacer(4));
+    }
+    
 
 
     body.appendChild(banner_mi_persona);

@@ -23,7 +23,7 @@ export function sendMail(from, name, subject, text) {
     emailjs.send('dreamhost_smtp', 'CF_Webpage_julian', templateParams)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
-            callTooltip('submit_button', 'Mensaje enviado correctamente', 'green');
+            callTooltip('div_form_contacto_container', 'Mensaje enviado correctamente', 'green');
             return response;
         }, function (err) {
             console.log('FAILED...', err);

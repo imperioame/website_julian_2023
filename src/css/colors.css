@@ -9,6 +9,8 @@ html {
     --containers_color_hovered: #4e4e4e;
     --accent_color: #bd34fe;
     --accent_color_hover: #9f18dd;
+    --red: #990b0b;
+    --green: #0b9917;
 
     --porfolio_gradient: linear-gradient(-45deg, #bd34fe 50%, #ff3670 50%);
     --porfolio_overlay_gradient: linear-gradient(0deg, rgba(20, 20, 20, 1) -10%, rgba(20, 20, 20, 0) 25%);

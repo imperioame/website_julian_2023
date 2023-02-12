@@ -100,6 +100,11 @@
         background-color: var(--accent_color_hover);
     }
 
+    .tooltip{
+        width: auto !important;
+        padding: 1em !important;
+    }
+
     #footer {
         width: 100%;
         padding: 2em 0;

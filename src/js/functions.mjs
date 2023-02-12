@@ -64,7 +64,6 @@ export function getNextPrevCat(category = DATA.CATEGORIAS_PORFOLIO.DISENO) {
 export function buildPorfolio(sectionElement_id, category) {
     //Builds porfolio section with porfolio jobs from DATA
     //deletes everything first
-    console.log(sectionElement_id);
     let sectionElement = document.getElementById(sectionElement_id);
     sectionElement.innerHTML = '';
 

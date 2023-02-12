@@ -236,7 +236,7 @@ export function buildContactForm(page_section, array_inputs = ['nombre', 'email'
     const captcha = document.createElement('div');
     captcha.id = 'form_captcha'
     captcha.classList.add('g-recaptcha');
-    captcha.dataset.sitekey = '6Le3U24kAAAAAMJMqRjOyf2kTBXkUaVo9QYWk_UO';
+    captcha.dataset.sitekey = process.env.CAPTCHA_SITE_KEY;
     page_section.appendChild(captcha);
 
     const submit_button = document.createElement('button');
@@ -265,6 +265,7 @@ export function sendEmail(e) {
         "Contacto a través de la página web de " + `${document.getElementById('contact_form_nombre').value}`,
         `${document.getElementById('contact_form_mensaje').value}`,  grecaptcha.getResponse()
     );
+        console.log(grecaptcha.getResponse());
 
     console.log(result);
 }

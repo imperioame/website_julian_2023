@@ -6,14 +6,10 @@ export const LANGUAGES = {
 let userLanguages = navigator.languages && navigator.languages[0] || navigator.language || navigator.userLanguage;
 
 export var currentLanguage;
-if (userLanguages.indexOf(LANGUAGES.ESPANOL) > -1){
+if (userLanguages.indexOf(LANGUAGES.ESPANOL) > -1) {
     currentLanguage = LANGUAGES.ESPANOL;
-}else{
+} else {
     currentLanguage = LANGUAGES.INGLES;
 }
 
 document.documentElement.lang = currentLanguage;
-
-export const IS_MOBILE = window.innerWidth < 768;
-//Also defined in css/mobile.css
-

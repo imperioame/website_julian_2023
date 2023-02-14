@@ -1,8 +1,11 @@
 //Levanto imagenes externas al compilar
+/*
 export const logo_img = new URL('../imgs/Logo_ImperioAme.svg',
     import.meta.url);
 export const url_img_contacto_extra = new URL('../imgs/avion-de-papel.svg',
 import.meta.url);
+*/
+
 
 export const URLS_CV = {
     ESPANOL: new URL('../pdfs/CV_Ame-2022_04-ESP.pdf',
@@ -38,13 +41,6 @@ export const CATEGORIAS_PORFOLIO = {
     D3: '3D',
     FOTOGRAFIA: 'Fotografía',
     JUEGOS: 'Juegos'
-}
-
-export const FORM_TYPES = {
-    NOMBRE: 'text',
-    MAIL: 'email',
-    MENSAJE: 'textarea',
-
 }
 
 

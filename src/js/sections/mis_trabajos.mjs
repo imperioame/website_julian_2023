@@ -1,7 +1,8 @@
 import {
     createSpacer,
     createRow,
-    openModal
+    openModal,
+    findInObject
 } from '../functions.mjs';
 
 import * as DATA from '../data.mjs';
@@ -37,7 +38,7 @@ export function populatePorfolio() {
         botones_mas_trabajos.appendChild(boton_mas_trabajos);
     });
     botones_mas_trabajos.appendChild(createSpacer());
-    porfolio_bloque_interior.appendchild(botones_mas_trabajos);
+    porfolio_bloque_interior.appendChild(botones_mas_trabajos);
 
     buildPorfolio(DATA.CATEGORIAS_PORFOLIO.DISENO);
 }

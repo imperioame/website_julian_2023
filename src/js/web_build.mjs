@@ -1,8 +1,3 @@
-const body = document.body;
-import * as DATA from './data.mjs';
-import {
-    IS_MOBILE
-} from '../configs/configs.mjs';
 import {
     addMobileElements,
     removeMobileElements
@@ -11,28 +6,28 @@ import {
 import {
     populatePorfolio
 } from './sections/mis_trabajos.mjs'
-
-
 import {
-    createContacto
+    addSendMailFunctionalityToForm
 } from './sections/contacto.mjs'
-import {
-    createFooter
-} from './sections/footer.mjs'
 
 
 //Sección mis trabajos
 populatePorfolio();
 
-
-
-
 //Sección contacto
-createContacto(DATA, body);
+addSendMailFunctionalityToForm();
 
-//footer
-createFooter(body);
 
+export let IS_MOBILE;
+window.onresize = function () {
+    //Also defined in css/mobile.css
+    IS_MOBILE = window.innerWidth < 768;
+     if (IS_MOBILE){
+        addMobileElements();
+     }else{
+        removeMobileElements();
+     }
+}
 
 if (IS_MOBILE){
     addMobileElements();

@@ -1,39 +1,43 @@
 const body = document.body;
 import * as DATA from './data.mjs';
+import {
+    IS_MOBILE
+} from '../configs/configs.mjs';
+import {
+    addMobileElements,
+    removeMobileElements
+} from './mobile_adaptation.mjs';
 
-import {createHeader} from './sections/header.mjs'
-import {createHeroSection} from './sections/hero.mjs'
-import {createMiPersona} from './sections/mi_persona.mjs'
-import {createMisTrabajos} from './sections/mis_trabajos.mjs'
-//import {createEscaneame} from './sections/escaneame.mjs'
-import {createContacto} from './sections/contacto.mjs'
-import {createFooter} from './sections/footer.mjs'
+import {
+    populatePorfolio
+} from './sections/mis_trabajos.mjs'
 
 
-//Creo un header simple
-createHeader(DATA, body);
+import {
+    createContacto
+} from './sections/contacto.mjs'
+import {
+    createFooter
+} from './sections/footer.mjs'
 
-//Creo el espacio para el canvas de threejs
-const three_canvas = document.createElement('section');
-three_canvas.id = 'three_canvas';
-body.appendChild(three_canvas);
-
-//Creo la sección principal, sobre el canvas
-createHeroSection(DATA, body)
-
-//Sección mi persona
-createMiPersona(DATA, body);
 
 //Sección mis trabajos
-createMisTrabajos(DATA, body);
+populatePorfolio();
 
-/*
-//Sección escaneame
-createEscaneame(body);
-*/
+
+
 
 //Sección contacto
 createContacto(DATA, body);
 
 //footer
 createFooter(body);
+
+
+if (IS_MOBILE){
+    addMobileElements();
+}
+
+
+const boton_descarga_cv = document.getElementById('container_banner_mi_persona').getElementsByClassName('boton_gris')[0];
+console.log(boton_descarga_cv);

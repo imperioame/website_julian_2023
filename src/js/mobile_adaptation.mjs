@@ -1,6 +1,9 @@
+import {
+    populatePorfolio
+} from './sections/mis_trabajos.mjs';
+
 export function addMobileElements() {
     if (!document.getElementById('overlay_gradiente_mi_persona')) {
-        console.log('no hay overlay gradiente');
         const banner_mi_persona = document.getElementById('banner_mi_persona');
         const overlay_gradiente = document.createElement('div');
         overlay_gradiente.id = 'overlay_gradiente_mi_persona';
@@ -12,6 +15,8 @@ export function addMobileElements() {
         spacer_banner_mi_persona.classList.remove('spacer-4');
         spacer_banner_mi_persona.classList.add('spacer-1');
     }
+
+    populatePorfolio();
 }
 
 
@@ -27,4 +32,6 @@ export function removeMobileElements() {
         spacer_banner_mi_persona.classList.remove('spacer-1');
         spacer_banner_mi_persona.classList.add('spacer-4');
     }
+    
+    populatePorfolio();
 }

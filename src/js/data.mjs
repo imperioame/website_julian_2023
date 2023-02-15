@@ -1,19 +1,3 @@
-//Levanto imagenes externas al compilar
-/*
-export const logo_img = new URL('../imgs/Logo_ImperioAme.svg',
-    import.meta.url);
-export const url_img_contacto_extra = new URL('../imgs/avion-de-papel.svg',
-import.meta.url);
-*/
-
-
-export const URLS_CV = {
-    ESPANOL: new URL('../pdfs/CV_Ame-2022_04-ESP.pdf',
-    import.meta.url),
-    INGLES: new URL('../pdfs/CV_Ame-2022_04-ING.pdf',
-    import.meta.url)
-};
-
 export const URLS_PORFOLIO = [];
 URLS_PORFOLIO.push({
         title: 'Behance',

@@ -10,36 +10,36 @@ import * as DATA from '../data.mjs';
 import {
     IS_MOBILE
 } from '../web_build.mjs';
-console.warn(IS_MOBILE)
 
-
-const porfolio_bloque_interior = document.getElementById('porfolio_bloque_interior');
-console.log(porfolio_bloque_interior);
-const bloque_trabajos = document.getElementById('bloque_trabajos');
 
 export function populatePorfolio() {
-    const botones_mas_trabajos = document.createElement('footer');
-    botones_mas_trabajos.id = 'botones_mas_trabajos';
+    const porfolio_bloque_interior = document.getElementById('porfolio_bloque_interior');
 
-    //Porfolio footer with links
-    DATA.URLS_PORFOLIO.forEach(porfolio_element => {
-        let boton_mas_trabajos = document.createElement('a');
-        boton_mas_trabajos.href = porfolio_element.url;
-        boton_mas_trabajos.target = '_blank';
-        boton_mas_trabajos.title = porfolio_element.title;
-        boton_mas_trabajos.classList.add('boton_gris');
-        boton_mas_trabajos.classList.add('fa-2xl');
-
-        let icon = document.createElement('i');
-        icon.classList += ' ' + porfolio_element.icon;
-        boton_mas_trabajos.appendChild(icon);
-
-
+    if(!document.getElementById('botones_mas_trabajos')){
+        const botones_mas_trabajos = document.createElement('footer');
+        botones_mas_trabajos.id = 'botones_mas_trabajos';
+    
+        //Porfolio footer with links
+        DATA.URLS_PORFOLIO.forEach(porfolio_element => {
+            let boton_mas_trabajos = document.createElement('a');
+            boton_mas_trabajos.href = porfolio_element.url;
+            boton_mas_trabajos.target = '_blank';
+            boton_mas_trabajos.title = porfolio_element.title;
+            boton_mas_trabajos.classList.add('boton_gris');
+            boton_mas_trabajos.classList.add('fa-2xl');
+    
+            let icon = document.createElement('i');
+            icon.classList += ' ' + porfolio_element.icon;
+            boton_mas_trabajos.appendChild(icon);
+    
+    
+            botones_mas_trabajos.appendChild(createSpacer());
+            botones_mas_trabajos.appendChild(boton_mas_trabajos);
+        });
         botones_mas_trabajos.appendChild(createSpacer());
-        botones_mas_trabajos.appendChild(boton_mas_trabajos);
-    });
-    botones_mas_trabajos.appendChild(createSpacer());
-    porfolio_bloque_interior.appendChild(botones_mas_trabajos);
+        porfolio_bloque_interior.appendChild(botones_mas_trabajos);
+    }
+
 
     buildPorfolio(DATA.CATEGORIAS_PORFOLIO.DISENO);
 }
@@ -48,6 +48,8 @@ export function populatePorfolio() {
 function buildPorfolio(category) {
     //Builds porfolio section with porfolio jobs from DATA
     //deletes everything first
+    const porfolio_bloque_interior = document.getElementById('porfolio_bloque_interior');
+    const bloque_trabajos = document.getElementById('bloque_trabajos');
     bloque_trabajos.innerHTML = '';
 
     const subtitle = document.getElementById('porfolio_bloque_interior_subtitle');
@@ -97,9 +99,16 @@ function buildPorfolio(category) {
 
     const next_prev_cat = getNextPrevCat(category);
 
-    const prev = document.createElement('a');
+    if (document.querySelector('#porfolio_bloque_interior .porfolio_prev_button')) {
+        document.querySelector('#porfolio_bloque_interior .porfolio_prev_button').remove();
+    }
+    if (document.querySelector('#porfolio_bloque_interior .porfolio_next_button')) {
+        document.querySelector('#porfolio_bloque_interior .porfolio_next_button').remove();
+    }
+
+    let prev = document.createElement('a');
     prev.addEventListener('click', function () {
-        buildPorfolio(porfolio_bloque_interior.id, next_prev_cat[0]);
+        buildPorfolio(next_prev_cat[0]);
     });
     prev.classList.add('porfolio_prev_button');
     const icon_prev = document.createElement('i');
@@ -109,7 +118,7 @@ function buildPorfolio(category) {
 
     const next = document.createElement('a');
     next.addEventListener('click', function () {
-        buildPorfolio(porfolio_bloque_interior.id, next_prev_cat[1]);
+        buildPorfolio(next_prev_cat[1]);
     });
     next.classList.add('porfolio_next_button');
     const icon_next = document.createElement('i');

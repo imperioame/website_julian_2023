@@ -5,20 +5,9 @@ import {
 
 import {
     populatePorfolio
-} from './sections/mis_trabajos.mjs'
-import {
-    addSendMailFunctionalityToForm
-} from './sections/contacto.mjs'
+} from './sections/mis_trabajos.mjs';
 
-
-//Sección mis trabajos
-populatePorfolio();
-
-//Sección contacto
-addSendMailFunctionalityToForm();
-
-
-export let IS_MOBILE;
+export var IS_MOBILE = window.innerWidth < 768;
 window.onresize = function () {
     //Also defined in css/mobile.css
     IS_MOBILE = window.innerWidth < 768;
@@ -29,9 +18,13 @@ window.onresize = function () {
      }
 }
 
+//Sección mis trabajos
+populatePorfolio();
+
 if (IS_MOBILE){
     addMobileElements();
 }
+
 
 
 const boton_descarga_cv = document.getElementById('container_banner_mi_persona').getElementsByClassName('boton_gris')[0];

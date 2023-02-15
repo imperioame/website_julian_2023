@@ -1,9 +1,5 @@
 import * as DATA from './data.mjs';
 
-import {
-    IS_MOBILE
-} from '../configs/configs.mjs';
-
 
 export function createSpacer(size = 1) {
     //Creates a Flebox spacer with the asigned grow value (check styles.css)

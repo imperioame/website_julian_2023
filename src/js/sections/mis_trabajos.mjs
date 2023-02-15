@@ -9,7 +9,8 @@ import * as DATA from '../data.mjs';
 
 import {
     IS_MOBILE
-} from '../../configs/configs.mjs';
+} from '../web_build.mjs';
+console.warn(IS_MOBILE)
 
 
 const porfolio_bloque_interior = document.getElementById('porfolio_bloque_interior');

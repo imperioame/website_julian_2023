@@ -24,13 +24,18 @@ export function sendMail(from, name, subject, text, recaptcha_token) {
 
   emailjs.send('dreamhost_smtp', 'CF_Webpage_julian', templateParams)
     .then(function (response) {
-      console.log('SUCCESS!', response.status, response.text);
-      callTooltip('div_form_contacto_container', 'Mensaje enviado correctamente.', 'green');
-      return response;
+      callTooltip('submit_button', 'Mensaje enviado correctamente.', 'green');
+
+      setTimeout(function () {
+        document.getElementById('contact_form_email').value = '';
+        document.getElementById('contact_form_nombre').value = '';
+        document.getElementById('contact_form_nombre').value = '';
+        document.getElementById('contact_form_mensaje').value = '';
+      }, 10000);
+      return;
     }, function (err) {
-      console.log('FAILED...', err);
       callTooltip('submit_button', 'El mensaje no se ha podido enviar.', 'red');
-      return err;
+      return;
     });
 
 }

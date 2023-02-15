@@ -4,7 +4,7 @@ import {
 } from 'three/examples/jsm/controls/OrbitControls';
 import {
     IS_MOBILE
-} from '../configs/configs.mjs';
+} from './web_build.mjs';
 
 
 /*

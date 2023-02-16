@@ -27,7 +27,7 @@ export function removeMobileElements() {
         overlay_gradiente.remove();
     }
 
-    const spacer_banner_mi_persona = document.querySelector('#banner_mi_persona .spacer-1');
+    const spacer_banner_mi_persona = document.querySelector('#banner_mi_persona .spacer-1:last-child');
     if (spacer_banner_mi_persona) {
         spacer_banner_mi_persona.classList.remove('spacer-1');
         spacer_banner_mi_persona.classList.add('spacer-4');

@@ -42,6 +42,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Raleway:wght@100;400;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
 
     <script src="https://kit.fontawesome.com/596df2045c.js" crossorigin="anonymous"></script>
@@ -63,12 +64,14 @@
         <section id="hero_section">
             <h1 id="title">Julián Amé</h1>
             <p id="subtitle" class="animated_text">
-                Diseñador Multimedial | Lic. En Comunicación | Director de proyectos digitales | Quality Assurance Lead
+                Diseñador Multimedial | Lic. En Comunicación
+                <br>
+                Director de proyectos digitales | Quality Assurance Lead
             </p>
         </section>
     </div>
 
-    <section id="banner_mi_persona">
+    <section id="banner_mi_persona" class="parallax">
         <div class="spacer-1"> </div>
         <div id="container_banner_mi_persona">
             <p id="extracto_banner">
@@ -136,9 +139,22 @@
     <script type="module">
         import{
             sendMail
-        }from "./services/mail.mjs"
+        }from "./services/mail.mjs";
+        import {
+            parallax
+        } from "./js/functions.mjs";
 
+        //Saves a module function to be accesible by non-module scripts
         window.sendMail = sendMail;
+
+
+        // Get all the elements to be parallaxed
+        const parallaxElements = document.querySelectorAll('.parallax');
+
+        //Call the function on scroll
+        window.onscroll = () => {
+            parallax(parallaxElements)
+        }
     </script>
     <script type="text/javascript">
         var onloadCallback = function () {

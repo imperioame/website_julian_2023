@@ -51,3 +51,21 @@ export function openModal(e) {
     modal_overlay.appendChild(modal);
     document.body.appendChild(modal_overlay);
 }
+
+
+export function parallax(parallaxElements) {
+    // The parallax function
+    const parallax = elements => {
+        if ('undefined' !== elements && elements.length > 0) {
+            elements.forEach(element => {
+                let y = window.innerHeight - element.getBoundingClientRect().top;
+                if (y > 0) {
+                    element.style.backgroundPositionY = 'translate3d(0, -' + (0.15 * y) + 'px ,0)'
+                }
+            })
+        }
+    }
+
+    //If element is in viewport, set its position
+    parallax(parallaxElements)
+}

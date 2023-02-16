@@ -131,9 +131,17 @@ body {
     margin: 0;
     font-size: 6em;
     font-style: 700;
+    background: -webkit-linear-gradient(300deg, #93f5ec 10%, #a77bf3 40%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
-
+#subtitle{
+    font-family: 'Space Mono', monospace;
+    
+}
 
 #banner_mi_persona {
     background-image: url('../imgs/foto_perfil_julian.png');
@@ -178,7 +186,7 @@ body {
     border-radius: 50%;
     -webkit-animation-name: gradient-Anim;
     -webkit-animation-duration: 10s;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-play-state: running;
     -webkit-animation-direction: alternate;
@@ -186,17 +194,20 @@ body {
 
 @-webkit-keyframes gradient-Anim {
     0% {
-        top: calc(50% - 25vh);
-        left: calc(50% - 25vh);
+        top: calc(50% - 25vh - 100px);
+        left: calc(50% - 25vh - 100px);
         background-position: 0% 50%;
         transform: rotate(0deg);
     }
+
 
     50% {
         background-position: 100% 50%;
     }
 
     100% {
+        top: calc(50% - 25vh + 100px);
+        left: calc(50% - 25vh + 100px);
         background-position: 0% 50%;
         transform: rotate(90deg);
     }

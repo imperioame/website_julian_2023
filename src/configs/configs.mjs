@@ -1,7 +1,10 @@
-export const LANGUAGES = {
-    ESPANOL: 'es',
-    INGLES: 'en'
-}
+import {
+    LANGUAGES
+} from '../js/data.mjs';
+import {
+    changeLanguage
+} from '../js/functions.mjs';
+
 
 let userLanguages = navigator.languages && navigator.languages[0] || navigator.language || navigator.userLanguage;
 
@@ -12,4 +15,4 @@ if (userLanguages.indexOf(LANGUAGES.ESPANOL) > -1) {
     currentLanguage = LANGUAGES.INGLES;
 }
 
-document.documentElement.lang = currentLanguage;
+changeLanguage(currentLanguage);

@@ -14,6 +14,8 @@ import {
 
 export function populatePorfolio() {
     const porfolio_bloque_interior = document.getElementById('porfolio_bloque_interior');
+    
+    buildPorfolio(DATA.CATEGORIAS_PORFOLIO.DISENO);
 
     if(!document.getElementById('botones_mas_trabajos')){
         const botones_mas_trabajos = document.createElement('footer');
@@ -40,8 +42,6 @@ export function populatePorfolio() {
         porfolio_bloque_interior.appendChild(botones_mas_trabajos);
     }
 
-
-    buildPorfolio(DATA.CATEGORIAS_PORFOLIO.DISENO);
 }
 
 

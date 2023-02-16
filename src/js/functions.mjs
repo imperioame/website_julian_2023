@@ -1,5 +1,8 @@
 import * as DATA from './data.mjs';
-
+import {
+    TEXTOS,
+    LANGUAGES,
+} from './data.mjs';
 
 export function createSpacer(size = 1) {
     //Creates a Flebox spacer with the asigned grow value (check styles.css)
@@ -41,7 +44,6 @@ export function openModal(e) {
     modal.id = 'modal';
 
     const iframe = document.createElement('iframe');
-    console.log(e.target.parentElement.dataset.trabajo_id);
 
     let trabajo = DATA.TRABAJOS_PORFOLIO.find(trabajo => trabajo.id == e.target.parentElement.dataset.trabajo_id);
     iframe.src = trabajo.link;
@@ -52,20 +54,56 @@ export function openModal(e) {
     document.body.appendChild(modal_overlay);
 }
 
+export function changeLanguage(new_language){
+    let textos_a_usar;
+    const boton_idioma_ingles = document.getElementById('cambiar_lenguaje_a_ingles').parentNode;
+    const boton_idioma_espanol = document.getElementById('cambiar_lenguaje_a_español').parentNode;
 
-export function parallax(parallaxElements) {
-    // The parallax function
-    const parallax = elements => {
-        if ('undefined' !== elements && elements.length > 0) {
-            elements.forEach(element => {
-                let y = window.innerHeight - element.getBoundingClientRect().top;
-                if (y > 0) {
-                    element.style.backgroundPositionY = 'translate3d(0, -' + (0.15 * y) + 'px ,0)'
-                }
-            })
-        }
+    if (new_language == LANGUAGES.ESPANOL){
+        textos_a_usar = TEXTOS.es;
+
+        boton_idioma_ingles.addEventListener('click', function (){
+            changeLanguage(LANGUAGES.INGLES);
+        });
+
+        boton_idioma_ingles.classList.remove('idioma_seleccionado');
+        boton_idioma_espanol.classList.toggle('idioma_seleccionado');
+
+        boton_idioma_espanol.replaceWith(boton_idioma_espanol.cloneNode(true));
+    }else{
+        textos_a_usar = TEXTOS.en;
+
+        boton_idioma_espanol.addEventListener('click', function (){
+            changeLanguage(LANGUAGES.ESPANOL);
+        });
+
+        boton_idioma_espanol.classList.remove('idioma_seleccionado');
+        boton_idioma_ingles.classList.toggle('idioma_seleccionado');
+        boton_idioma_ingles.replaceWith(boton_idioma_ingles.cloneNode(true));
     }
 
-    //If element is in viewport, set its position
-    parallax(parallaxElements)
+    document.documentElement.lang = new_language;
+    document.title = textos_a_usar.TITULO_PAGINA;
+    document.getElementById('subtitle').innerHTML = textos_a_usar.SUBTITLE_HERO;
+    document.getElementById('extracto_banner').innerHTML = textos_a_usar.EXTRACTO_BANNER_MI_PERSONA;
+    document.getElementById('boton_cv').innerHTML = textos_a_usar.BOTON_CV_BANNER_MI_PERSONA;
+    document.getElementById('porfolio_bloque_interior_subtitle').innerHTML = textos_a_usar.CATEGORIAS_PORFOLIO.DISENO;
+    document.getElementById('seccion_contacto_titulo').innerHTML = textos_a_usar.TITULO_CONTACTO;
+    document.getElementById('contacto_extra_parrafo').innerHTML = textos_a_usar.BLOQUE_CONTACTO_PARRAFO;
+    document.getElementById('div_form_contacto_container_titulo').innerHTML = textos_a_usar.BLOQUE_CONTACTO_TITULO;
+    document.getElementById('campo_form_nombre').innerHTML = textos_a_usar.CAMPOS_FORMULARIO.NOMBRE;
+    document.getElementById('campo_form_email').innerHTML = textos_a_usar.CAMPOS_FORMULARIO.EMAIL;
+    document.getElementById('campo_form_mensaje').innerHTML = textos_a_usar.CAMPOS_FORMULARIO.MENSAJE;
+    document.getElementById('submit_button').innerHTML = textos_a_usar.CAMPOS_FORMULARIO.BOTON_ENVIAR;
+    document.getElementById('contact_form_nombre').placeholder = textos_a_usar.CAMPOS_FORMULARIO.NOMBRE_PLACEHOLDER;
+    document.getElementById('contact_form_email').placeholder = textos_a_usar.CAMPOS_FORMULARIO.EMAIL_PLACEHOLDER;
+    document.getElementById('contact_form_mensaje').placeholder = textos_a_usar.CAMPOS_FORMULARIO.MENSAJE_PLACEHOLDER;
+    document.getElementById('footer').innerHTML = textos_a_usar.FOOTER;
+
+    const a = document.createElement('a');
+    a.href = 'https://linktr.ee/imperioame';
+    a.target = '_blank';
+    a.innerHTML = 'Julián Amé';
+    document.getElementById('footer').appendChild(a);
+
 }

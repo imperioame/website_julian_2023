@@ -7,6 +7,14 @@ import {
     populatePorfolio
 } from './sections/mis_trabajos.mjs';
 
+import {
+    changeLanguage
+} from './functions.mjs';
+import {
+    LANGUAGES
+} from './data.mjs';
+
+
 export var IS_MOBILE = window.innerWidth < 768;
 window.onresize = function () {
     //Also defined in css/mobile.css
@@ -30,3 +38,11 @@ populatePorfolio();
 if (IS_MOBILE) {
     addMobileElements();
 }
+/*
+document.getElementById('cambiar_lenguaje_a_español').addEventListener('click', function (){
+    changeLanguage(LANGUAGES.ESPANOL);
+});
+document.getElementById('cambiar_lenguaje_a_ingles').addEventListener('click', function (){
+    changeLanguage(LANGUAGES.INGLES);
+});
+*/

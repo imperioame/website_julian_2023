@@ -3,6 +3,7 @@
     color: var(--text_color);
     margin: 0;
     padding: 0;
+    transition: 0.3s ease;
 }
 
 *:hover {
@@ -53,14 +54,62 @@ body {
 
 #header {
     padding: 25px 0;
-    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
+    max-height: 5vh;
     background-color: var(--background_with_transparency);
     z-index: 99;
 }
+
+#header ul {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+#header ul li {
+    list-style: none;
+}
+
+#idiomas_disponibles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*
+#idiomas_disponibles, #idiomas_disponibles * {
+    max-width: 5vw;
+}
+*/
+
+#idiomas_disponibles li{
+    margin: 0 0.5em;
+    padding: 0.5em;
+    border-radius: 50%;
+    background-color: var(--language_unselected);
+    box-shadow: 0 0 8px var(--language_unselected);
+    cursor: pointer;
+}
+
+#idiomas_disponibles li:hover{
+    background-color: var(--language_selected);
+    box-shadow: 0 0 10px var(--language_selected);
+}
+
+#idiomas_disponibles .idioma_seleccionado {
+    cursor: not-allowed;
+    background-color: var(--language_selected);
+    box-shadow: 0 0 10px var(--language_selected);
+}
+
+
+#idiomas_disponibles li a, #idiomas_disponibles li a img{
+    width: 100%;
+    border-radius: 50%;
+}
+
 
 #logo {
     /*
@@ -132,10 +181,26 @@ body {
     font-size: 6em;
     font-style: 700;
     background: -webkit-linear-gradient(300deg, #93f5ec 10%, #a77bf3 40%);
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: title_gradient_anim 3s ease-in-out infinite alternate;
+}
 
+
+@-webkit-keyframes title_gradient_anim {
+    0% {
+        background-position-x: 50%;
+        background-position-y: -10%;
+    }
+
+    100% {
+        background-position-x: 0%;
+        background-position-y: 10%;
+    }
 }
 
 #subtitle{
@@ -149,10 +214,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: content-box;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     padding-top: 0;
 }
+
 
 #container_banner_mi_persona {
     z-index: 1;
@@ -260,7 +327,13 @@ body {
     flex-shrink: 0;
     position: relative;
     text-align: center;
+    transition: 1s;
+    transform: scale(1);
+}
 
+.card_trabajo:hover{
+    transition: 1s;
+    transform: scale(1.1);
 }
 
 .img_trabajo {
@@ -308,6 +381,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 }
 
 .porfolio_prev_button i,

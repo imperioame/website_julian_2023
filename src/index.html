@@ -47,13 +47,27 @@
 
     <script src="https://kit.fontawesome.com/596df2045c.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Íconos de paises por Flaticon:
+        https://www.flaticon.es/iconos-gratis/argentina 
+        https://www.flaticon.es/iconos-gratis/estados-unidos
+    -->
 </head>
 
 <body>
 
     <header id="header">
-        <object id="logo" data="./imgs/Logo_ImperioAme.svg" type=""
-            alt="Logo del ImperioAme, marca personal de Julián Amé" title="Isologo ImperioAme"></object>
+        <ul>
+            <li> </li>
+            <li> <object id="logo" data="./imgs/Logo_ImperioAme.svg" type=""
+                    alt="Logo del ImperioAme, marca personal de Julián Amé" title="Isologo ImperioAme"></object></li>
+            <li>
+                <ul id="idiomas_disponibles">
+                    <li><a id="cambiar_lenguaje_a_español" title="Español"><img src="imgs/argentina.png" alt="Icono de Argentina para idioma Español"></a></li>
+                    <li><a id="cambiar_lenguaje_a_ingles" title="English"><img src="imgs/estados-unidos.png" alt="Icono de Estados Unidos para idioma Ingles"></a></li>
+                </ul>
+            </li>
+        </ul>
     </header>
 
     <section id="three_canvas">
@@ -80,7 +94,7 @@
                 Técnico por naturaleza.
             </p>
             <div class="spacer-1"> </div>
-            <a href="./cvweb.html" title="Ver Curriculum Vitae" class="boton_gris mt-1">Ver CV</a>
+            <a id="boton_cv" href="./cvweb.html" title="Ver Curriculum Vitae" class="boton_gris mt-1">Ver CV</a>
         </div>
         <div class="spacer-4"> </div>
     </section>
@@ -96,34 +110,31 @@
         </div>
     </section>
     <section id="seccion_contacto">
-        <h2>Contacto</h2>
+        <h2 id="seccion_contacto_titulo">Contacto</h2>
         <div id="bloque_contacto">
             <article id="contacto_extra">
                 <div>
                     <img src="./imgs/avion-de-papel.svg" alt="Imagen representativa del formulario de contacto">
-                    <p>
+                    <p id="contacto_extra_parrafo">
                         Si buscás ponerte en contacto conmigo para llevar a cabo un proyecto puedes utilizar el
                         siguiente formulario, suelo responder en una hora aproximadamente dependiendo del día y hora en
-                        el que se envíe el mensaje. En caso de que no responda, dejo mi mail para que me escribas
-                        directamente por dicho medio.
+                        el que se envíe el mensaje.
                     </p>
                 </div>
             </article>
             <div class="spacer-1"> </div>
             <article id="form_contacto_container">
                 <div id="div_form_contacto_container">
-
-
-                    <h3>Escribime aquí 👇</h3>
+                    <h3 id="div_form_contacto_container_titulo">Escribime aquí 👇</h3>
                     <form>
-                        <label for="Nombre">Nombre</label>
+                        <label for="Nombre" id="campo_form_nombre">Nombre</label>
                         <input type="text" name="Nombre" placeholder="Juan" id="contact_form_nombre" required>
-                        <label for="email">Email</label>
+                        <label for="email" id="campo_form_email">Email</label>
                         <input type="email" name="email" id="contact_form_email" placeholder="juan@correo.com.ar"
                             required>
-                        <label for="Mensaje">Mensaje</label>
-                        <textarea name="Mensaje" id="contact_form_mensaje"
-                            placeholder="Vi tu perfil y tengo una idea para..." required></textarea>
+                        <label for="Mensaje" id="campo_form_mensaje">Mensaje</label>
+                        <textarea name="Mensaje" id="contact_form_mensaje" placeholder="Me gustó mucho tu página web..."
+                            required></textarea>
                         <div id="form_captcha" class="g-recaptcha"
                             data-sitekey="6Le3U24kAAAAAMJMqRjOyf2kTBXkUaVo9QYWk_UO"></div>
                         <button type="submit" id="submit_button">Enviar</button>
@@ -140,21 +151,9 @@
         import{
             sendMail
         }from "./services/mail.mjs";
-        import {
-            parallax
-        } from "./js/functions.mjs";
 
         //Saves a module function to be accesible by non-module scripts
         window.sendMail = sendMail;
-
-
-        // Get all the elements to be parallaxed
-        const parallaxElements = document.querySelectorAll('.parallax');
-
-        //Call the function on scroll
-        window.onscroll = () => {
-            parallax(parallaxElements)
-        }
     </script>
     <script type="text/javascript">
         var onloadCallback = function () {
@@ -183,9 +182,9 @@
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
-    <script src="./configs/configs.mjs" type="module"></script>
     <script src="./js/data.mjs" type="module"></script>
     <script src="./js/functions.mjs" type="module"></script>
+    <script src="./configs/configs.mjs" type="module"></script>
     <script src="./js/web_build.mjs" type="module"></script>
     <script src="./js/three-script.mjs" type="module"></script>
 </body>

@@ -1,3 +1,8 @@
+export const LANGUAGES = {
+    ESPANOL: 'es',
+    INGLES: 'en'
+}
+
 export const URLS_PORFOLIO = [];
 URLS_PORFOLIO.push({
         title: 'Behance',
@@ -101,8 +106,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.D3
-    },
-    {
+    }, {
         id: 10,
         title: 'Sentimientos Encontrados',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/112162147953565.Y3JvcCw4MDgsNjMyLDAsMzQ.png',
@@ -110,8 +114,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 1,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
-    },
-    {
+    }, {
         id: 11,
         title: 'Volvo - Photography Session by Volvo Arg.',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/a1ca53163258029.Y3JvcCwzNTE3LDI3NTAsMCwzNA.jpg',
@@ -119,8 +122,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
-    },
-    {
+    }, {
         id: 12,
         title: 'Costa y Roca - Wine Imagery',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/517326153975233.Y3JvcCwyNzI3LDIxMzMsMCwyNw.jpg',
@@ -128,8 +130,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 1,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
-    },
-    {
+    }, {
         id: 13,
         title: 'Casamiento - Colombres & Gomez Pizarro / Sesión Fotogr.',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/6e6697149847251.Y3JvcCw1MDAwLDM5MTAsMCw0OQ.jpg',
@@ -137,8 +138,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
-    },
-    {
+    }, {
         id: 14,
         title: 'Meteor 350 por Virginia Guidetti',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/efa3fd149649961.Y3JvcCwxNTAwLDExNzMsMCwxNA.jpg',
@@ -146,8 +146,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
-    },
-    {
+    }, {
         id: 15,
         title: 'World Sighting - 3d world building experimentation',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/04b042151586163.6314b9ddd768e.png',
@@ -155,8 +154,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.D3
-    },
-    {
+    }, {
         id: 16,
         title: 'ReFaced - 3D interventions over portraits',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/e7c85d150592763.Y3JvcCwxMjAwLDkzOCwwLDEzMA.jpg',
@@ -164,8 +162,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 1,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.D3
-    },
-    {
+    }, {
         id: 17,
         title: 'FRUITHEADS - 3D trip',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/519a9b159129571.Y3JvcCwxMjAwLDkzOCwwLDEx.jpg',
@@ -173,8 +170,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.D3
-    },
-    {
+    }, {
         id: 18,
         title: 'Potrero Digital - Campaña e Identidad de Marca',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/f37188140036363.Y3JvcCw4MDgsNjMyLDAsMA.png',
@@ -182,8 +178,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.PUBLICITARIO
-    },
-    {
+    }, {
         id: 19,
         title: 'Campaña Publicitaria Netflix - Temporada de Reciclaje',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/a7ce8b157219767.Y3JvcCw5OTksNzgyLDAsOQ.jpg',
@@ -191,8 +186,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.PUBLICITARIO
-    },
-    {
+    }, {
         id: 20,
         title: 'Costa y Roca - Wine Label Design',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/6cf484139617309.Y3JvcCwyNzI3LDIxMzMsMCwyNw.jpg',
@@ -200,8 +194,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.DISENO
-    },
-    {
+    }, {
         id: 21,
         title: 'Prime - El juego más seguro (Videojuego)',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/cb2203139619709.Y3JvcCwxMzgwLDEwODAsMjMyLDA.png',
@@ -209,8 +202,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.WEBJUEGOS
-    },
-    {
+    }, {
         id: 22,
         title: 'RelaxApp - Research y proceso iterativo UX/UI',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/60e1e6108371457.Y3JvcCw0MjEwLDMyOTIsMCww.png',
@@ -218,8 +210,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 1,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.WEBJUEGOS
-    },
-    {
+    }, {
         id: 23,
         title: 'MoroArte-GranKan',
         img: 'https://repository-images.githubusercontent.com/531989722/b0845be0-56d2-42e2-a264-a4ba2313c98e',
@@ -227,8 +218,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'github',
         category: CATEGORIAS_PORFOLIO.WEBJUEGOS
-    },
-    {
+    }, {
         id: 24,
         title: 'Screen Colour Engine',
         img: 'https://repository-images.githubusercontent.com/309862473/f320395e-9fb8-4792-a2a2-fcbe81e312c0',
@@ -236,8 +226,7 @@ TRABAJOS_PORFOLIO.push({
         priority: 1,
         source: 'github',
         category: CATEGORIAS_PORFOLIO.WEBJUEGOS
-    },
-    {
+    }, {
         id: 25,
         title: 'Vecindad',
         img: 'https://repository-images.githubusercontent.com/199515880/33610091-7df8-4402-b0b6-7ee46dff1a24',
@@ -249,11 +238,63 @@ TRABAJOS_PORFOLIO.push({
 
 );
 
-/*
+
 export const TEXTOS = {
-    SUBTITLE_HERO: 'Diseñador Multimedial | Lic. En Comunicación | Director de proyectos digitales | Quality Assurance Lead',
-    BANNER_MI_PERSONA: "Diseñador Multimedial y líder de proyectos digitales.<br> Emprendedor y apasionado en la organización y organizaciones.<br> Técnico por naturaleza.",
-    BLOQUE_CONTACTO_TITULO: 'Escribime aquí 👇',
-    BLOQUE_CONTACTO_PARRAFO: "Si buscás ponerte en contacto conmigo para llevar a cabo un proyecto puedes utilizar el siguiente formulario, suelo responder en una hora aproximadamente dependiendo del día y hora en el que se envíe el mensaje. En caso de que no responda, dejo mi mail para que me escribas directamente por dicho medio."
+    es: {},
+    en: {}
 }
-*/
+
+TEXTOS.es = {
+    TITULO_PAGINA: 'Julián Amé | Diseñador Multimedial',
+    SUBTITLE_HERO: 'Diseñador Multimedial | Lic. En Comunicación<br>Director de proyectos digitales | Quality Assurance Lead',
+    EXTRACTO_BANNER_MI_PERSONA: "Diseñador Multimedial y líder de proyectos digitales.<br> Emprendedor y apasionado en la organización y organizaciones.<br> Técnico por naturaleza.",
+    BOTON_CV_BANNER_MI_PERSONA: 'Ver CV',
+    CATEGORIAS_PORFOLIO: {
+        DISENO: 'Diseño',
+        PUBLICITARIO: 'Publicitario',
+        D3: '3D',
+        FOTOGRAFIA: 'Fotografía',
+        WEBJUEGOS: 'Web & Juegos'
+    },
+    TITULO_CONTACTO: 'Contacto',
+    BLOQUE_CONTACTO_TITULO: 'Escribime aquí 👇',
+    BLOQUE_CONTACTO_PARRAFO: "Si buscás ponerte en contacto conmigo para llevar a cabo un proyecto puedes utilizar el siguiente formulario, suelo responder en una hora aproximadamente dependiendo del día y hora en el que se envíe el mensaje.",
+    CAMPOS_FORMULARIO: {
+        NOMBRE: 'Nombre',
+        NOMBRE_PLACEHOLDER: 'Juan',
+        EMAIL: 'Email',
+        EMAIL_PLACEHOLDER: 'juan@correo.com.ar',
+        MENSAJE: 'Mensaje',
+        MENSAJE_PLACEHOLDER: 'Me gustó mucho tu página web...',
+        BOTON_ENVIAR: 'Enviar'
+    },
+    FOOTER: 'Desarrollado por '
+
+}
+
+TEXTOS.en = {
+    TITULO_PAGINA: 'Julián Amé | Multimedia Designer',
+    SUBTITLE_HERO: "Multimedia Designer | Degree in Communication<br>Digital Project Manager | Quality Assurance Lead",
+    EXTRACTO_BANNER_MI_PERSONA: "Multimedia Designer and leader of digital projects.<br>Entrepreneur and passionate about organization and organizations.<br>Technical by nature.",
+    BOTON_CV_BANNER_MI_PERSONA: 'See CV',
+    CATEGORIAS_PORFOLIO: {
+        DISENO: 'Design',
+        PUBLICITARIO: 'Advertising',
+        D3: '3D',
+        FOTOGRAFIA: 'Photography',
+        WEBJUEGOS: 'Web & Games'
+    },
+    TITULO_CONTACTO: 'Contact form',
+    BLOQUE_CONTACTO_TITULO: 'Contact me here 👇',
+    BLOQUE_CONTACTO_PARRAFO: "If you're looking to contact me to develop a project or to work together with me, you can use the following form, your message will be sent in a few hours depending on the day and time you send it.",
+    CAMPOS_FORMULARIO: {
+        NOMBRE: 'Name',
+        NOMBRE_PLACEHOLDER: 'Juan',
+        EMAIL: 'Email',
+        EMAIL_PLACEHOLDER: 'juan@mail.com',
+        MENSAJE: 'Mesage',
+        MENSAJE_PLACEHOLDER: 'I like your website a lot...',
+        BOTON_ENVIAR: 'Send'
+    },
+    FOOTER: 'Developed by '
+}

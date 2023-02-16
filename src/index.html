@@ -147,6 +147,12 @@
                 //This function uses emailjs to contact form email posting
                 e.preventDefault();
 
+                const loader = document.createElement('i');
+                loader.classList.add('fa-solid', 'fa-spinner');
+                const submit_button = document.querySelector('#div_form_contacto_container form button');
+                submit_button.innerHTML = '';
+                submit_button.appendChild(loader);
+
                 window.sendMail(
                     `${document.getElementById('contact_form_email').value}`,
                     `${document.getElementById('contact_form_nombre').value}`,

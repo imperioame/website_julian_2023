@@ -24,7 +24,7 @@ export const CATEGORIAS_PORFOLIO = {
     PUBLICITARIO: 'Publicitario',
     D3: '3D',
     FOTOGRAFIA: 'Fotografía',
-    JUEGOS: 'Juegos'
+    WEBJUEGOS: 'Web & Juegos'
 }
 
 
@@ -36,7 +36,7 @@ TRABAJOS_PORFOLIO.push({
         link: 'https://www.behance.net/gallery/160433619/VoRges-VR-app-of-a-JL-Borgess-short-tale',
         priority: 1,
         source: 'behance',
-        category: CATEGORIAS_PORFOLIO.JUEGOS
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS
     }, {
         id: 2,
         title: 'BitBang fest',
@@ -101,6 +101,150 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.D3
+    },
+    {
+        id: 10,
+        title: 'Sentimientos Encontrados',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/112162147953565.Y3JvcCw4MDgsNjMyLDAsMzQ.png',
+        link: 'https://www.behance.net/gallery/147953565/Sentimientos-encontrados-Serie-fotografica-en-5000km',
+        priority: 1,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },
+    {
+        id: 11,
+        title: 'Volvo - Photography Session by Volvo Arg.',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/a1ca53163258029.Y3JvcCwzNTE3LDI3NTAsMCwzNA.jpg',
+        link: 'https://www.behance.net/gallery/163258029/Volvo-Photography-Session-by-Volvo-Arg',
+        priority: 2,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },
+    {
+        id: 12,
+        title: 'Costa y Roca - Wine Imagery',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/517326153975233.Y3JvcCwyNzI3LDIxMzMsMCwyNw.jpg',
+        link: 'https://www.behance.net/gallery/153975233/Costa-y-Roca-Wine-Imagery',
+        priority: 1,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },
+    {
+        id: 13,
+        title: 'Casamiento - Colombres & Gomez Pizarro / Sesión Fotogr.',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/6e6697149847251.Y3JvcCw1MDAwLDM5MTAsMCw0OQ.jpg',
+        link: 'https://www.behance.net/gallery/149847251/Casamiento-Colombres-Gomez-Pizarro-Sesion-Fotogr',
+        priority: 2,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },
+    {
+        id: 14,
+        title: 'Meteor 350 por Virginia Guidetti',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/efa3fd149649961.Y3JvcCwxNTAwLDExNzMsMCwxNA.jpg',
+        link: 'https://www.behance.net/gallery/149649961/Meteor-350-por-Virginia-Guidetti',
+        priority: 2,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },
+    {
+        id: 15,
+        title: 'World Sighting - 3d world building experimentation',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/04b042151586163.6314b9ddd768e.png',
+        link: 'https://www.behance.net/gallery/151586163/World-Sighting-3d-world-building-experimentation',
+        priority: 2,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.D3
+    },
+    {
+        id: 16,
+        title: 'ReFaced - 3D interventions over portraits',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/e7c85d150592763.Y3JvcCwxMjAwLDkzOCwwLDEzMA.jpg',
+        link: 'https://www.behance.net/gallery/150592763/ReFaced-3D-interventions-over-portraits',
+        priority: 1,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.D3
+    },
+    {
+        id: 17,
+        title: 'FRUITHEADS - 3D trip',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/519a9b159129571.Y3JvcCwxMjAwLDkzOCwwLDEx.jpg',
+        link: 'https://www.behance.net/gallery/159129571/FRUITHEADS-3D-trip',
+        priority: 2,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.D3
+    },
+    {
+        id: 18,
+        title: 'Potrero Digital - Campaña e Identidad de Marca',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/f37188140036363.Y3JvcCw4MDgsNjMyLDAsMA.png',
+        link: 'https://www.behance.net/gallery/140036363/Potrero-Digital-Campana-e-Identidad-de-Marca',
+        priority: 2,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.PUBLICITARIO
+    },
+    {
+        id: 19,
+        title: 'Campaña Publicitaria Netflix - Temporada de Reciclaje',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/a7ce8b157219767.Y3JvcCw5OTksNzgyLDAsOQ.jpg',
+        link: 'https://www.behance.net/gallery/157219767/Campana-Publicitaria-Netflix-Temporada-de-Reciclaje',
+        priority: 2,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.PUBLICITARIO
+    },
+    {
+        id: 20,
+        title: 'Costa y Roca - Wine Label Design',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/6cf484139617309.Y3JvcCwyNzI3LDIxMzMsMCwyNw.jpg',
+        link: 'https://www.behance.net/gallery/139617309/Costa-y-Roca-Wine-Label-Design',
+        priority: 2,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.DISENO
+    },
+    {
+        id: 21,
+        title: 'Prime - El juego más seguro (Videojuego)',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/cb2203139619709.Y3JvcCwxMzgwLDEwODAsMjMyLDA.png',
+        link: 'https://www.behance.net/gallery/139619709/Prime-El-juego-mas-seguro-%28Videojuego%29',
+        priority: 2,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS
+    },
+    {
+        id: 22,
+        title: 'RelaxApp - Research y proceso iterativo UX/UI',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/60e1e6108371457.Y3JvcCw0MjEwLDMyOTIsMCww.png',
+        link: 'https://www.behance.net/gallery/108371457/RelaxApp-Research-y-proceso-iterativo-UXUI',
+        priority: 1,
+        source: 'behance',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS
+    },
+    {
+        id: 23,
+        title: 'MoroArte-GranKan',
+        img: 'https://repository-images.githubusercontent.com/531989722/b0845be0-56d2-42e2-a264-a4ba2313c98e',
+        link: 'https://imperioame.github.io/MoroArte-GranKan/',
+        priority: 2,
+        source: 'github',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS
+    },
+    {
+        id: 24,
+        title: 'Screen Colour Engine',
+        img: 'https://repository-images.githubusercontent.com/309862473/f320395e-9fb8-4792-a2a2-fcbe81e312c0',
+        link: 'https://imperioame.github.io/ScreenColourEngine/',
+        priority: 1,
+        source: 'github',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS
+    },
+    {
+        id: 25,
+        title: 'Vecindad',
+        img: 'https://repository-images.githubusercontent.com/199515880/33610091-7df8-4402-b0b6-7ee46dff1a24',
+        link: 'https://imperioame.github.io/vecindad/',
+        priority: 2,
+        source: 'github',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS
     },
 
 );

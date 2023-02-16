@@ -139,13 +139,7 @@ function createPorfolioCard(page_section, porfolio_job) {
     card_trabajo.target = '_blank';
     card_trabajo.title = porfolio_job.title;
     card_trabajo.dataset.trabajo_id = porfolio_job.id;
-    if (porfolio_job.source == 'behance') {
-        card_trabajo.href = porfolio_job.link;
-
-    } else {
-        card_trabajo.href = `#seccion_mis_trabajos?porfolio_id=${porfolio_job.id}`;
-        card_trabajo.addEventListener('click', openModal);
-    }
+    card_trabajo.href = porfolio_job.link;
 
     const img_trabajo = document.createElement('img');
     img_trabajo.src = porfolio_job.img;

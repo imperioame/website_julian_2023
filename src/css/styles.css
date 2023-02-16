@@ -504,6 +504,20 @@ body {
     cursor: pointer;
 }
 
+#submit_button .fa-spinner{
+    animation: constant_rotation 3s linear infinite;
+}
+
+@keyframes constant_rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 #submit_button:hover {
     background-color: var(--accent_color_hover);
 }
@@ -557,5 +571,5 @@ body {
 
 .tooltip i,
 .tooltip p {
-    display: inline-block;
+    display: inline;
 }

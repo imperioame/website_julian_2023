@@ -7,9 +7,13 @@ export function sendMail(from, name, subject, text, recaptcha_token) {
     emailjs.init("bw-B3soQ2MARRdfFx");
   })();
 
+  const tooltip_present = document.querySelector('#div_form_contacto_container form .tooltip');
 
   if (!from || !name || !subject || !text || !recaptcha_token) {
-    callTooltip('submit_button', 'Hay campos incompletos/inválidos en el formulario.', 'red');
+    if(!tooltip_present){
+      callTooltip('submit_button', 'Hay campos incompletos/inválidos en el formulario.', 'red');
+    }
+    document.querySelector('#div_form_contacto_container form button').innerHTML = 'Enviar';
     return 'error en los campos provistos';
   }
 
@@ -24,7 +28,10 @@ export function sendMail(from, name, subject, text, recaptcha_token) {
 
   emailjs.send('dreamhost_smtp', 'CF_Webpage_julian', templateParams)
     .then(function (response) {
-      callTooltip('submit_button', 'Mensaje enviado correctamente.', 'green');
+      if(!tooltip_present){
+        callTooltip('submit_button', 'Mensaje enviado correctamente.', 'green');
+      }
+      document.querySelector('#div_form_contacto_container form button').innerHTML = 'Enviar';
 
       setTimeout(function () {
         document.getElementById('contact_form_email').value = '';
@@ -34,7 +41,10 @@ export function sendMail(from, name, subject, text, recaptcha_token) {
       }, 10000);
       return;
     }, function (err) {
-      callTooltip('submit_button', 'El mensaje no se ha podido enviar.', 'red');
+      if(!tooltip_present){
+        callTooltip('submit_button', 'El mensaje no se ha podido enviar.', 'red');
+      }
+      document.querySelector('#div_form_contacto_container form button').innerHTML = 'Enviar';
       return;
     });
 

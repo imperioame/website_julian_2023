@@ -27,8 +27,7 @@ export function populatePorfolio() {
             boton_mas_trabajos.href = porfolio_element.url;
             boton_mas_trabajos.target = '_blank';
             boton_mas_trabajos.title = porfolio_element.title;
-            boton_mas_trabajos.classList.add('boton_gris');
-            boton_mas_trabajos.classList.add('fa-2xl');
+            boton_mas_trabajos.classList.add('boton_gris', 'shadow_standard', 'fa-2xl');
     
             let icon = document.createElement('i');
             icon.classList += ' ' + porfolio_element.icon;
@@ -145,7 +144,7 @@ function createPorfolioCard(page_section, porfolio_job) {
     img_trabajo.src = porfolio_job.img;
     img_trabajo.title = porfolio_job.title;
     img_trabajo.alt = porfolio_job.title;
-    img_trabajo.classList.add('img_trabajo');
+    img_trabajo.classList.add('img_trabajo', 'shadow_elevated');
     card_trabajo.appendChild(img_trabajo);
 
 

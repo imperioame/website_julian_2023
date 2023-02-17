@@ -65,35 +65,39 @@ body {
 
 #header ul {
     width: 100%;
-    height: 100%;
+    height: 5vh;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
 }
+
 #header ul li {
     list-style: none;
 }
 
-#idiomas_disponibles{
+#idiomas_disponibles {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 10px;
 }
+
 /*
 #idiomas_disponibles, #idiomas_disponibles * {
     max-width: 5vw;
 }
 */
 
-#idiomas_disponibles li{
-    margin: 0 0.5em;
+#idiomas_disponibles li {
+    overflow: hidden;
     padding: 0.5em;
     border-radius: 50%;
     background-color: var(--language_unselected);
     box-shadow: 0 0 8px var(--language_unselected);
     cursor: pointer;
+    height: 100%;
 }
 
-#idiomas_disponibles li:hover{
+#idiomas_disponibles li:hover {
     background-color: var(--language_selected);
     box-shadow: 0 0 10px var(--language_selected);
 }
@@ -105,7 +109,8 @@ body {
 }
 
 
-#idiomas_disponibles li a, #idiomas_disponibles li a img{
+#idiomas_disponibles li a,
+#idiomas_disponibles li a img {
     width: 100%;
     border-radius: 50%;
 }
@@ -203,9 +208,9 @@ body {
     }
 }
 
-#subtitle{
+#subtitle {
     font-family: 'Space Mono', monospace;
-    
+
 }
 
 #banner_mi_persona {
@@ -321,6 +326,7 @@ body {
     width: 100%;
     height: 50%;
 }
+
 .card_trabajo {
     height: 100%;
     flex: 3;
@@ -331,17 +337,16 @@ body {
     transform: scale(1);
 }
 
-.card_trabajo:hover{
-    transition: 1s;
-    transform: scale(1.1);
-}
-
 .img_trabajo {
     width: 100%;
     position: relative;
     top: 0;
     left: 0;
     border-radius: 8px;
+}
+
+.img_trabajo:hover {
+    transition: 1s;
 }
 
 #overlay_gradiente_trabajos,
@@ -431,8 +436,17 @@ body {
     align-items: center;
 }
 
-#botones_mas_trabajos a {
+.shadow_standard{
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.shadow_elevated{
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shadow_elevated:hover{
+    box-shadow: 0 25px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
 }
 
 .boton_gris {
@@ -515,8 +529,6 @@ body {
     flex-grow: 1;
     background-color: var(--containers_color);
     border-radius: 8px;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
-
 }
 
 #form_contacto_container div h3 {
@@ -583,13 +595,12 @@ body {
     width: 100%;
     border: none;
     border-radius: 8px;
-    background-color: var(--accent_color);
+    background-color: var(--accent_color_hover);
     padding: 1em 0;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
-#submit_button .fa-spinner{
+#submit_button .fa-spinner {
     animation: constant_rotation 3s linear infinite;
 }
 
@@ -604,7 +615,8 @@ body {
 }
 
 #submit_button:hover {
-    background-color: var(--accent_color_hover);
+    transition: 1s;
+    background-color: var(--accent_color);
 }
 
 #footer {
@@ -613,7 +625,6 @@ body {
     text-align: center;
     border-top: 1px solid var(--background_color);
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.623);
-
     color: var(--dimmed_text_color);
 }
 
@@ -621,7 +632,7 @@ body {
     text-decoration: none;
 }
 
-.tooltip{
+.tooltip {
     position: absolute;
     padding: 1em;
     border-radius: 8px;
@@ -631,7 +642,7 @@ body {
     animation: fade_in_out 10s ease-in-out;
 }
 
-.tooltip p{
+.tooltip p {
     margin-left: 1em;
 }
 

@@ -234,6 +234,14 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'github',
         category: CATEGORIAS_PORFOLIO.WEBJUEGOS
+    },{
+        id: 26,
+        title: 'Bar assetpack',
+        img: 'https://media.sketchfab.com/models/ca27711bd71946a49413e0b743e51572/thumbnails/5eea19ac82cc4636b0bd3ac31316ce39/e97afa4b4e6348e39d3ca6191147757d.jpeg',
+        link: 'https://sketchfab.com/3d-models/bar-pub-asset-pack-with-props-for-games-ca27711bd71946a49413e0b743e51572',
+        priority: 2,
+        source: 'Sketchfab',
+        category: CATEGORIAS_PORFOLIO.D3
     },
 
 );

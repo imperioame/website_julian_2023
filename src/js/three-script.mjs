@@ -48,16 +48,46 @@ window.addEventListener('resize', function () {
 });
 
 
-/*
-//Agrego una area light
-const light1 = new THREE.RectAreaLight(0xFFFFFF);
-scene.add(light1);
-light1.position.set(0, 0, 10);
-light1.castShadow = true;
-light1.angle = 0.2;
+//Agrego una luz RectArea
+import { RectAreaLightUniformsLib } from 'three/examples/jsm/lights/RectAreaLightUniformsLib.js';
+const rectAreaWidth = 1.0;
+const rectAreaHeight = 1.0;
 
-const light1Helper = new RectAreaLightHelper(light1);
-scene.add(light1Helper);
+RectAreaLightUniformsLib.init();
+
+const lightRectArea = new THREE.RectAreaLight(0xFFFFFF, 6.0, rectAreaWidth, rectAreaHeight);
+scene.add(lightRectArea);
+lightRectArea.rotation.set(180, 180, 0);
+lightRectArea.position.set(0, 1.2, 1);
+lightRectArea.castShadow = true;
+
+//agrego una rimlight
+const keylight = new THREE.RectAreaLight(0xb436ce, 40.0, rectAreaWidth, rectAreaHeight);
+scene.add(keylight);
+keylight.rotation.set(0, 200, 135);
+keylight.position.set(0, 1.5, -1);
+keylight.castShadow = true;
+
+//agrego una fill
+const filllight = new THREE.RectAreaLight(0x576ce4, 40.0, rectAreaWidth, rectAreaHeight);
+scene.add(filllight);
+filllight.rotation.set(0, 0, 180);
+filllight.position.set(3, 1.5, 1);
+filllight.castShadow = true;
+
+/*
+//Helpers
+import {
+    RectAreaLightHelper
+} from 'three/examples/jsm/helpers/RectAreaLightHelper.js';
+const rectLightHelper = new RectAreaLightHelper( lightRectArea );
+lightRectArea.add( rectLightHelper );
+
+const rectLightHelper2 = new RectAreaLightHelper( keylight );
+keylight.add( rectLightHelper2 );
+
+const rectLightHelper3 = new RectAreaLightHelper( filllight );
+filllight.add( rectLightHelper3 );
 */
 
 //Agrego una ambient light
@@ -67,6 +97,7 @@ light2.position.set(0, 0, 10);
 light2.castShadow = true;
 light2.angle = 0.2;
 
+/*
 //Agrego una luz direccional
 
 const directionaLight = new THREE.DirectionalLight(0xFFFFFF, 1);
@@ -74,24 +105,7 @@ scene.add(directionaLight);
 directionaLight.position.set(0, 0, 10);
 directionaLight.castShadow = true;
 directionaLight.shadow.camera.left = 0;
-
-/*
-const dLightHelper = new THREE.DirectionalLightHelper(directionaLight, 50);
-scene.add(dLightHelper);
 */
-/*
-const cubeGhost1Geometry = new THREE.BoxGeometry();
-const cubeGhost1Material = new THREE.MeshStandardMaterial({
-    color: 0xffffff
-});
-
-const cubeGhost1 = new THREE.Mesh(cubeGhost1Geometry, cubeGhost1Material);
-scene.add(cubeGhost1);
-
-cubeGhost1.position.set(1.5, 0.2, 0);
-*/
-
-
 
 
 
@@ -101,6 +115,7 @@ Importador
 import {
     GLTFLoader
 } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
 
 //Esto es para que levante el archivo 3d al compilar
 const personajeURL = new URL('../3dModels/character_standing.glb',

@@ -7,6 +7,16 @@
         margin-top: 70px;
     }
 */
+
+    #idiomas_disponibles li {
+        margin: 5px 0;
+    }
+
+    #idiomas_disponibles .idioma_seleccionado{
+        display: none;
+    }
+
+
     #three_overlay,
     #seccion_mis_trabajos,
     #seccion_contacto,
@@ -21,12 +31,12 @@
     #hero_section {
         width: 100%;
     }
-  
-    #banner_mi_persona{
+
+    #banner_mi_persona {
         align-items: flex-end;
     }
-    
-    #bloque_trabajos{
+
+    #bloque_trabajos {
         height: 70vh;
     }
 
@@ -67,7 +77,8 @@
         align-items: center;
     }
 
-    #form_contacto_container #div_form_contacto_container, #contacto_extra div{
+    #form_contacto_container #div_form_contacto_container,
+    #contacto_extra div {
         width: 100%;
     }
 
@@ -78,7 +89,7 @@
         padding: 10%;
     }
 
-    #form_contacto_container div h3{
+    #form_contacto_container div h3 {
         margin-top: 0;
     }
 
@@ -106,7 +117,7 @@
         background-color: var(--accent_color_hover);
     }
 
-    .tooltip{
+    .tooltip {
         width: auto !important;
         padding: 1em !important;
     }

@@ -179,7 +179,7 @@ orbit.update();
 
 const clock = new THREE.Clock();
 //Función principal para animación. Reemplazar contenidos con lo que se quiera animar
-function animate(time) {
+function animate() {
     /*
     directionaLight.position.set(option.directionaLight_position_x, option.directionaLight_position_y, option.directionaLight_position_z);
     dLightHelper.update();

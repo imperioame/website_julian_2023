@@ -4,6 +4,15 @@ import {
     LANGUAGES,
 } from './data.mjs';
 
+export function getLanguageFromURL(e){
+    let idioma_en_url = e.target.URL.split('#')[1];
+    if (idioma_en_url){
+        return idioma_en_url;
+    }else{
+        return 'es';
+    }
+}
+
 export function createSpacer(size = 1) {
     //Creates a Flebox spacer with the asigned grow value (check styles.css)
     let spacer = document.createElement('div');
@@ -81,12 +90,13 @@ export function changeLanguage(new_language){
         boton_idioma_ingles.classList.toggle('idioma_seleccionado');
         boton_idioma_ingles.replaceWith(boton_idioma_ingles.cloneNode(true));
     }
-
     document.documentElement.lang = new_language;
     document.title = textos_a_usar.TITULO_PAGINA;
     document.getElementById('subtitle').innerHTML = textos_a_usar.SUBTITLE_HERO;
     document.getElementById('extracto_banner').innerHTML = textos_a_usar.EXTRACTO_BANNER_MI_PERSONA;
     document.getElementById('boton_cv').innerHTML = textos_a_usar.BOTON_CV_BANNER_MI_PERSONA;
+    document.getElementById('boton_cv').href = `./cvweb.html#${new_language}`;
+    
     document.getElementById('porfolio_bloque_interior_subtitle').innerHTML = textos_a_usar.CATEGORIAS_PORFOLIO.DISENO;
     document.getElementById('seccion_contacto_titulo').innerHTML = textos_a_usar.TITULO_CONTACTO;
     document.getElementById('contacto_extra_parrafo').innerHTML = textos_a_usar.BLOQUE_CONTACTO_PARRAFO;

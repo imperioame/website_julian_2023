@@ -54,7 +54,7 @@ body {
 
 
 #header {
-    box-sizing:border-box;
+    box-sizing: border-box;
     padding: 25px;
     position: fixed;
     top: 0;
@@ -261,6 +261,7 @@ body {
     -webkit-animation-play-state: running;
     -webkit-animation-direction: alternate;
 }
+
 
 @-webkit-keyframes gradient-Anim {
     0% {

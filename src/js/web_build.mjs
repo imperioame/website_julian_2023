@@ -7,13 +7,6 @@ import {
     populatePorfolio
 } from './sections/mis_trabajos.mjs';
 
-import {
-    changeLanguage
-} from './functions.mjs';
-import {
-    LANGUAGES
-} from './data.mjs';
-
 
 export var IS_MOBILE = window.innerWidth < 768;
 window.onresize = function () {

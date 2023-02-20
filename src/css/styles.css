@@ -290,6 +290,7 @@ body {
     flex-direction: column;
 }
 
+
 #porfolio_bloque_interior .subtitle {
     height: 10%
 }
@@ -432,6 +433,10 @@ body {
     left: 0;
     display: flex;
     align-items: center;
+}
+
+.text_shadow_standard {
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
 }
 
 .shadow_standard {

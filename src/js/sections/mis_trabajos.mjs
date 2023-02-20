@@ -53,6 +53,7 @@ function buildPorfolio(category) {
 
     const subtitle = document.getElementById('porfolio_bloque_interior_subtitle');
     subtitle.innerHTML = category;
+    subtitle.classList.add('text_shadow_standard');
 
     const bloque_trabajos_container = document.createElement('div');
     bloque_trabajos_container.id = 'bloque_trabajos_container';

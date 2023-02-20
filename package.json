@@ -1,16 +1,28 @@
 {
   "name": "websitejulianame",
   "version": "1.0.0",
-  "description": "Personal website",
-  "scripts": {
-    "build": "parcel build src/index.html"
+  "description": "Personal website for Julián Amé",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/imperioame/website_julian_2023.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "build": "parcel build ./*.html"
+  },
+  "keywords": [
+    "Julián",
+    "Julián Amé",
+    "Amé",
+    "ImperioAme"
+  ],
+  "author": "Julián Amé",
+  "license": "MIT",
   "dependencies": {
     "dat.gui": "^0.7.9",
-    "emailjs": "^4.0.1",
     "three": "^0.148.0"
+  },
+  "devDependencies": {
+    "buffer": "^5.7.1",
+    "eslint": "^8.33.0"
   }
 }

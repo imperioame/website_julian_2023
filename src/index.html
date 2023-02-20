@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=description
         content="Página web de Julián Amé, Diseñador multimedial y Licenciado en Comunicación, especializado gestión de proyectos digitales y audiovisuales, realización audiovisual y desarrollo web.">
@@ -34,23 +35,161 @@
     <!-- <link rel="manifest" href="/manifest.json"> -->
 
     <title>Julián Amé | Diseñador Multimedial</title>
+    <link rel="stylesheet" href="./css/colors.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Raleway:wght@100;400;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
 
     <script src="https://kit.fontawesome.com/596df2045c.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+    <!-- Íconos de paises por Flaticon:
+        https://www.flaticon.es/iconos-gratis/argentina 
+        https://www.flaticon.es/iconos-gratis/estados-unidos
+    -->
 </head>
 
 <body>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./js/configs.mjs" type="module"></script>
+
+    <header id="header">
+        <ul>
+            <li> </li>
+            <li> <object id="logo" data="./imgs/Logo_ImperioAme.svg" type=""
+                    alt="Logo del ImperioAme, marca personal de Julián Amé" title="Isologo ImperioAme"></object></li>
+            <li>
+                <ul id="idiomas_disponibles">
+                    <li id="grid_idioma_esp"><a id="cambiar_lenguaje_a_español" title="Español"><img
+                                src="imgs/argentina.png" alt="Icono de Argentina para idioma Español"></a></li>
+                    <li id="grid_idioma_ing"><a id="cambiar_lenguaje_a_ingles" title="English"><img
+                                src="imgs/estados-unidos.png" alt="Icono de Estados Unidos para idioma Ingles"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <section id="three_canvas">
+
+    </section>
+    <div id="three_overlay">
+        <div class="spacer-1"> </div>
+        <section id="hero_section">
+            <h1 id="title">Julián Amé</h1>
+            <p id="subtitle" class="animated_text">
+                Diseñador Multimedial | Lic. En Comunicación
+                <br>
+                Director de proyectos digitales | Quality Assurance Lead
+            </p>
+        </section>
+    </div>
+
+    <section id="banner_mi_persona" class="parallax">
+        <div class="spacer-1"> </div>
+        <div id="container_banner_mi_persona">
+            <p id="extracto_banner">
+                Diseñador Multimedial y líder de proyectos digitales.<br>
+                Emprendedor y apasionado en la organización y organizaciones.<br>
+                Técnico por naturaleza.
+            </p>
+            <div class="spacer-1"> </div>
+            <a id="boton_cv" href="./cvweb.html" title="Ver Curriculum Vitae"
+                class="boton_gris shadow_standard mt-1">Ver CV</a>
+        </div>
+        <div class="spacer-4"> </div>
+    </section>
+    <section id="seccion_mis_trabajos">
+        <div id="mis_trabajos_background">
+        </div>
+        <h2 class="text_shadow_standard">Porfolio</h2>
+        <div id="porfolio_bloque_interior">
+            <h3 class="subtitle" id="porfolio_bloque_interior_subtitle">Diseño</h3>
+            <article id="bloque_trabajos">
+
+            </article>
+            <div id="overlay_gradiente_trabajos"></div>
+        </div>
+    </section>
+    <section id="seccion_contacto">
+        <h2 id="seccion_contacto_titulo">Contacto</h2>
+        <div id="bloque_contacto">
+            <article id="contacto_extra">
+                <div class="shadow_standard">
+                    <img src="./imgs/avion-de-papel.svg" alt="Imagen representativa del formulario de contacto">
+                    <p id="contacto_extra_parrafo">
+                        Si buscás ponerte en contacto conmigo para llevar a cabo un proyecto puedes utilizar el
+                        siguiente formulario, suelo responder en una hora aproximadamente dependiendo del día y hora en
+                        el que se envíe el mensaje.
+                    </p>
+                </div>
+            </article>
+            <div class="spacer-1"> </div>
+            <article id="form_contacto_container">
+                <div id="div_form_contacto_container" class="shadow_standard">
+                    <h3 id="div_form_contacto_container_titulo">Escribime aquí 👇</h3>
+                    <form>
+                        <label for="Nombre" id="campo_form_nombre">Nombre</label>
+                        <input type="text" name="Nombre" placeholder="Juan" id="contact_form_nombre" required>
+                        <label for="email" id="campo_form_email">Email</label>
+                        <input type="email" name="email" id="contact_form_email" placeholder="juan@correo.com.ar"
+                            required>
+                        <label for="Mensaje" id="campo_form_mensaje">Mensaje</label>
+                        <textarea name="Mensaje" id="contact_form_mensaje" placeholder="Me gustó mucho tu página web..."
+                            required></textarea>
+                        <div id="form_captcha" class="g-recaptcha"
+                            data-sitekey="6Le3U24kAAAAAMJMqRjOyf2kTBXkUaVo9QYWk_UO"></div>
+                        <button type="submit" id="submit_button" class="shadow_elevated">Enviar</button>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer id="footer">
+        Desarrollado por <a href="https://linktr.ee/imperioame" target="_blank">Julián Amé</a>
+    </footer>
+
+    <script type="module">
+        import{
+            sendMail
+        }from "./services/mail.mjs";
+
+        //Saves a module function to be accesible by non-module scripts
+        window.sendMail = sendMail;
+    </script>
+    <script type="text/javascript">
+        var onloadCallback = function () {
+            const form_contacto = document.querySelector('#div_form_contacto_container form');
+            form_contacto.addEventListener('submit', function (e) {
+                //This function uses emailjs to contact form email posting
+                e.preventDefault();
+
+                const loader = document.createElement('i');
+                loader.classList.add('fa-solid', 'fa-spinner');
+                const submit_button = document.querySelector('#div_form_contacto_container form button');
+                submit_button.innerHTML = '';
+                submit_button.appendChild(loader);
+
+                window.sendMail(
+                    `${document.getElementById('contact_form_email').value}`,
+                    `${document.getElementById('contact_form_nombre').value}`,
+                    "Contacto a través de la página web de " +
+                    `${document.getElementById('contact_form_nombre').value}`,
+                    `${document.getElementById('contact_form_mensaje').value}`, grecaptcha.getResponse()
+                );
+            });
+        };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
     <script src="./js/data.mjs" type="module"></script>
     <script src="./js/functions.mjs" type="module"></script>
+    <script src="./configs/configs.mjs" type="module"></script>
     <script src="./js/web_build.mjs" type="module"></script>
     <script src="./js/three-script.mjs" type="module"></script>
 </body>

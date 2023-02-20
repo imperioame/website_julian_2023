@@ -1,39 +1,41 @@
-const body = document.body;
-import * as DATA from './data.mjs';
+import {
+    addMobileElements,
+    removeMobileElements
+} from './mobile_adaptation.mjs';
 
-import {createHeader} from './sections/header.mjs'
-import {createHeroSection} from './sections/hero.mjs'
-import {createMiPersona} from './sections/mi_persona.mjs'
-import {createMisTrabajos} from './sections/mis_trabajos.mjs'
-import {createEscaneame} from './sections/escaneame.mjs'
-import {createContacto} from './sections/contacto.mjs'
-import {createFooter} from './sections/footer.mjs'
+import {
+    populatePorfolio
+} from './sections/mis_trabajos.mjs';
 
 
-//Creo un header simple
-createHeader(DATA, body);
+export var IS_MOBILE = window.innerWidth < 768;
+window.onresize = function () {
+    //Also defined in css/mobile.css
+    let new_state = window.innerWidth < 768;
+    if (IS_MOBILE != new_state) {
+        //Changed from mobile to desktop
+        IS_MOBILE = window.innerWidth < 768;
 
-//Creo el espacio para el canvas de threejs
-const three_canvas = document.createElement('section');
-three_canvas.id = 'three_canvas';
-body.appendChild(three_canvas);
+        if (IS_MOBILE) {
+            addMobileElements();
+        } else {
+            removeMobileElements();
+        }
 
-//Creo la sección principal, sobre el canvas
-createHeroSection(DATA, body)
-
-//Sección mi persona
-createMiPersona(DATA, body);
+    }
+}
 
 //Sección mis trabajos
-createMisTrabajos(DATA, body);
+populatePorfolio();
 
+if (IS_MOBILE) {
+    addMobileElements();
+}
 /*
-//Sección escaneame
-createEscaneame(body);
+document.getElementById('cambiar_lenguaje_a_español').addEventListener('click', function (){
+    changeLanguage(LANGUAGES.ESPANOL);
+});
+document.getElementById('cambiar_lenguaje_a_ingles').addEventListener('click', function (){
+    changeLanguage(LANGUAGES.INGLES);
+});
 */
-
-//Sección contacto
-createContacto(DATA, body);
-
-//footer
-createFooter(body);

@@ -28,6 +28,10 @@
         background-clip: border-box;
     }
 
+    #loading_container{
+        transform: translate(-50%, 100%);
+    }
+
     #hero_section {
         width: 100%;
     }

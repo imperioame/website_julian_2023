@@ -128,6 +128,37 @@ body {
     padding: 0;
 }
 
+#loading_container{
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -50%);
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding: 50px;
+}
+
+.fade-out{
+    animation: fade-out 2s ease-in-out;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#loading_container label, #loading_container progress{
+    width: 100%;
+    display: block;
+}
+
 #three_overlay {
     width: 100vw;
     height: 100vh;

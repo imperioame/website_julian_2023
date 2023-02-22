@@ -7,7 +7,7 @@
     "url": "git://github.com/imperioame/website_julian_2023.git"
   },
   "scripts": {
-    "build": "parcel build ./*.html"
+    "build": "parcel build ./src/index.html"
   },
   "keywords": [
     "Julián",

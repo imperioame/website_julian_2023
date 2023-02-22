@@ -6,6 +6,42 @@ import {
     IS_MOBILE
 } from './web_build.mjs';
 
+//Agrego un loader para poder darle un indicio al usuario que espere
+const loadingManager = new THREE.LoadingManager();
+loadingManager.onStart = function (url, item, total) {
+    // Creo un elemento html para mostrar el progreso
+    console.log('agrego un loader');
+    const loading_container = document.createElement('div');
+    loading_container.id = 'loading_container';
+    const loading_label = document.createElement('label');
+    loading_label.for = 'progress-bar';
+    loading_label.innerHTML = 'Loading 3D...';
+    loading_container.appendChild(loading_label);
+
+    const loading_progress_bar = document.createElement('progress');
+    loading_progress_bar.id = 'progress-bar';
+    loading_progress_bar.max = 100;
+    loading_progress_bar.value = 0;
+    loading_container.appendChild(loading_progress_bar);
+
+    document.getElementById('three_canvas').appendChild(loading_container);
+}
+loadingManager.onProgress = function (url, loaded, total) {
+    const loading_progress_bar = document.getElementById('progress-bar');
+    loading_progress_bar.value = (loaded / total) * 100;
+}
+
+loadingManager.onLoad = function () {
+    console.log('elimino el loader');
+    const loading_container = document.getElementById('loading_container');
+    loading_container.classList.add('fade-out');
+    setTimeout(function () {
+        loading_container.remove();
+    }, 2000);
+}
+
+
+
 
 /*
 import * as dat from 'dat.gui';
@@ -49,7 +85,9 @@ window.addEventListener('resize', function () {
 
 
 //Agrego una luz RectArea
-import { RectAreaLightUniformsLib } from 'three/examples/jsm/lights/RectAreaLightUniformsLib.js';
+import {
+    RectAreaLightUniformsLib
+} from 'three/examples/jsm/lights/RectAreaLightUniformsLib.js';
 const rectAreaWidth = 1.0;
 const rectAreaHeight = 1.0;
 
@@ -122,7 +160,7 @@ const personajeURL = new URL('../3dModels/character_standing.glb',
     import.meta.url);
 
 //Cargo el importador gltf.
-const assetLoader = new GLTFLoader();
+const assetLoader = new GLTFLoader(loadingManager);
 
 let mixer;
 const model_position = {

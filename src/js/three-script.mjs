@@ -10,7 +10,6 @@ import {
 const loadingManager = new THREE.LoadingManager();
 loadingManager.onStart = function (url, item, total) {
     // Creo un elemento html para mostrar el progreso
-    console.log('agrego un loader');
     const loading_container = document.createElement('div');
     loading_container.id = 'loading_container';
     const loading_label = document.createElement('label');
@@ -32,7 +31,6 @@ loadingManager.onProgress = function (url, loaded, total) {
 }
 
 loadingManager.onLoad = function () {
-    console.log('elimino el loader');
     const loading_container = document.getElementById('loading_container');
     loading_container.classList.add('fade-out');
     setTimeout(function () {

@@ -242,6 +242,30 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'Sketchfab',
         category: CATEGORIAS_PORFOLIO.D3
+    },{
+        id: 27,
+        title: 'Seba Gallardo - Photo Session',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/7725ba164262227.Y3JvcCwzOTM4LDMwODAsMCwzOA.jpg',
+        link: 'https://www.behance.net/gallery/164262227/Fiverr-content-Photo-Session-for-a-Freelancer',
+        priority: 2,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },{
+        id: 28,
+        title: 'Sitio Web Agencia Álterego',
+        img: 'https://repository-images.githubusercontent.com/320118591/54173200-3d01-11eb-9e3f-c283bb81ad89',
+        link: 'https://agenciaalterego.com.ar/',
+        priority: 2,
+        source: 'Web',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS
+    },{
+        id: 29,
+        title: 'Staley Martial Arts',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/c85b13139617007.Y3JvcCw4MDgsNjMyLDAsMA.png',
+        link: 'https://www.staleymartialarts.com/',
+        priority: 3,
+        source: 'Web',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS
     },
 
 );

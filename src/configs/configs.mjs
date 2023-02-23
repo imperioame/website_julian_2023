@@ -11,7 +11,6 @@ export var currentLanguage;
 
 if(userLanguages.length > 2){
     userLanguages = userLanguages.slice(0,2);
-    console.log(userLanguages);
 }
 
 if (userLanguages.indexOf(LANGUAGES.ESPANOL) > -1) {

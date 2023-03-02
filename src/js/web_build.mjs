@@ -4,6 +4,10 @@ import {
 } from './mobile_adaptation.mjs';
 
 import {
+    call_api_hf_gpt2
+} from '../services/text_generation.mjs';
+
+import {
     populatePorfolio
 } from './sections/mis_trabajos.mjs';
 
@@ -39,3 +43,8 @@ document.getElementById('cambiar_lenguaje_a_ingles').addEventListener('click', f
     changeLanguage(LANGUAGES.INGLES);
 });
 */
+
+
+//Llamo a una api para generar el texto de contacto
+call_api_hf_gpt2();
+

@@ -278,7 +278,7 @@ export const TEXTOS = {
 
 TEXTOS.es = {
     TITULO_PAGINA: 'Julián Amé | Diseñador Multimedial',
-    SUBTITLE_HERO: 'Diseñador Multimedial | Lic. En Comunicación<br>Director de proyectos digitales | Quality Assurance Lead',
+    SUBTITLE_HERO: 'Diseñador Multimedial | Lic. En Comunicación Digital e Interactiva<br>Director de proyectos digitales | Quality Assurance Lead',
     EXTRACTO_BANNER_MI_PERSONA: "Diseñador Multimedial y líder de proyectos digitales.<br> Emprendedor y apasionado en la organización y organizaciones.<br> Técnico por naturaleza.",
     BOTON_CV_BANNER_MI_PERSONA: 'Ver CV',
     CATEGORIAS_PORFOLIO: {
@@ -306,7 +306,7 @@ TEXTOS.es = {
 
 TEXTOS.en = {
     TITULO_PAGINA: 'Julián Amé | Multimedia Designer',
-    SUBTITLE_HERO: "Multimedia Designer | Degree in Communication<br>Digital Project Manager | Quality Assurance Lead",
+    SUBTITLE_HERO: "Multimedia Designer | Degree in Digital and Interactive Communication<br>Digital Project Manager | Quality Assurance Lead",
     EXTRACTO_BANNER_MI_PERSONA: "Multimedia Designer and leader of digital projects.<br>Entrepreneur and passionate about organization and organizations.<br>Technical by nature.",
     BOTON_CV_BANNER_MI_PERSONA: 'See CV',
     CATEGORIAS_PORFOLIO: {

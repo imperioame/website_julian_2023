@@ -53,13 +53,13 @@
     </header>
 
     <main>
-        <iframe id="embed_cv" src="./CVWeb/index.html" frameborder="0"></iframe>
+        <iframe id="embed_cv" src="./CVWeb/index.php" frameborder="0"></iframe>
     </main>
 
     <script>
         document.addEventListener('readystatechange', (event) => {
             let idioma_en_url = event.srcElement.URL.split('#')[1] ?? 'es';
-            document.getElementById('embed_cv').src = `./CVWeb/index.html#${idioma_en_url}`;
+            document.getElementById('embed_cv').src = `./CVWeb/index.php#${idioma_en_url}`;
             
             //Does not seems to be needed
             //document.getElementById('embed_cv').contentDocument.location.reload(true);

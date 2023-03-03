@@ -32,8 +32,27 @@ body {
     margin-top: 70px;
     background: var(--background_gradient);
     overflow-x: hidden;
-
 }
+
+html::-webkit-scrollbar {
+    min-width: 10px;
+    width: 1vw;
+    max-width: 15px;
+    position: absolute;
+    padding: 10vh;
+    right: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--background_color);
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: var(--accent_color_hover);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
 
 #seccion_mis_trabajos,
 #seccion_contacto,
@@ -126,9 +145,10 @@ body {
 #three_canvas {
     width: 100vw;
     min-height: 100vh;
+    height: fit-content;
 }
 
-#loading_container{
+#loading_container {
     position: absolute;
     box-sizing: border-box;
     top: 50%;
@@ -140,7 +160,7 @@ body {
     padding: 50px;
 }
 
-.fade-out{
+.fade-out {
     animation: fade-out 2s ease-in-out;
 }
 
@@ -154,7 +174,8 @@ body {
     }
 }
 
-#loading_container label, #loading_container progress{
+#loading_container label,
+#loading_container progress {
     width: 100%;
     display: block;
 }
@@ -381,18 +402,25 @@ body {
 }
 
 #overlay_gradiente_trabajos,
-#overlay_gradiente_mi_persona {
+#overlay_gradiente_mi_persona,
+#overlay_gradiente_hero {
     position: absolute;
     bottom: -2px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--porfolio_overlay_gradient);
+    /*background: var(--porfolio_overlay_gradient);*/
+    background: var(--about_overlay_gradient);
     pointer-events: none;
 }
 
-#overlay_gradiente_mi_persona {
-    background: var(--about_overlay_gradient);
+#overlay_gradiente_mi_persona,
+#overlay_gradiente_hero {
+    bottom: 0;
+}
+
+#overlay_gradiente_hero{
+    bottom: -10vh;
 }
 
 .title_trabajo {
@@ -583,7 +611,7 @@ body {
 
 #form_contacto_container form input,
 #form_contacto_container form textarea,
-#contacto_extra #contacto_extra_input{
+#contacto_extra #contacto_extra_input {
     height: 2em;
     border-radius: 8px;
     border: none;
@@ -594,11 +622,11 @@ body {
     background-color: var(--containers_color_hovered);
 }
 
-#contacto_extra #contacto_extra_input{
+#contacto_extra #contacto_extra_input {
     min-height: 20vh;
 }
 
-#contacto_extra #contacto_extra_input::placeholder{
+#contacto_extra #contacto_extra_input::placeholder {
     text-align: left;
 }
 
@@ -609,18 +637,17 @@ body {
 
 #form_contacto_container form input::placeholder,
 #form_contacto_container form textarea::placeholder,
-#contacto_extra #contacto_extra_input::placeholder
- {
+#contacto_extra #contacto_extra_input::placeholder {
     color: var(--dimmed_text_color);
 }
 
 #form_contacto_container form input,
 #form_contacto_container form textarea,
-#contacto_extra #contacto_extra_input{
+#contacto_extra #contacto_extra_input {
     padding-top: 0.5em;
 }
 
-#contacto_extra #contacto_extra_input::placeholder{
+#contacto_extra #contacto_extra_input::placeholder {
     color: var(--text_color);
 }
 
@@ -646,13 +673,14 @@ body {
     color: var(--dimmed_text_color);
 }
 
-#error_msj{
+#error_msj {
     margin: .5em 0 1em 0 !important;
     display: none;
-    color: var(--red_bright_desaturated)!important;
+    color: var(--red_bright_desaturated) !important;
 }
 
-#submit_button, #contacto_extra button {
+#submit_button,
+#contacto_extra button {
     font-weight: 800;
     width: 100%;
     border: none;
@@ -662,7 +690,7 @@ body {
     cursor: pointer;
 }
 
-#contacto_extra button{
+#contacto_extra button {
     background-color: var(--language_unselected);
 }
 
@@ -680,7 +708,8 @@ body {
     }
 }
 
-#submit_button:hover, #contacto_extra button:hover {
+#submit_button:hover,
+#contacto_extra button:hover {
     transition: 1s;
     background-color: var(--accent_color);
 }

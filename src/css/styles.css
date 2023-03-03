@@ -582,7 +582,8 @@ body {
 }
 
 #form_contacto_container form input,
-#form_contacto_container form textarea {
+#form_contacto_container form textarea,
+#contacto_extra #contacto_extra_input{
     height: 2em;
     border-radius: 8px;
     border: none;
@@ -593,15 +594,34 @@ body {
     background-color: var(--containers_color_hovered);
 }
 
+#contacto_extra #contacto_extra_input{
+    min-height: 20vh;
+}
+
+#contacto_extra #contacto_extra_input::placeholder{
+    text-align: left;
+}
+
 #form_contacto_container form textarea {
     max-width: 100%;
     height: 6em;
 }
 
 #form_contacto_container form input::placeholder,
-#form_contacto_container form textarea::placeholder {
-    padding-top: 0.5em;
+#form_contacto_container form textarea::placeholder,
+#contacto_extra #contacto_extra_input::placeholder
+ {
     color: var(--dimmed_text_color);
+}
+
+#form_contacto_container form input,
+#form_contacto_container form textarea,
+#contacto_extra #contacto_extra_input{
+    padding-top: 0.5em;
+}
+
+#contacto_extra #contacto_extra_input::placeholder{
+    color: var(--text_color);
 }
 
 #form_captcha,
@@ -621,11 +641,18 @@ body {
     filter: drop-shadow(0 0 25px #e3a8ff);
 }
 
-#contacto_extra p {
-    max-width: 100%;
+#contacto_extra small {
+    margin: 1em 0;
+    color: var(--dimmed_text_color);
 }
 
-#submit_button {
+#error_msj{
+    margin: .5em 0 1em 0 !important;
+    display: none;
+    color: var(--red_bright_desaturated)!important;
+}
+
+#submit_button, #contacto_extra button {
     font-weight: 800;
     width: 100%;
     border: none;
@@ -633,6 +660,10 @@ body {
     background-color: var(--accent_color_hover);
     padding: 1em 0;
     cursor: pointer;
+}
+
+#contacto_extra button{
+    background-color: var(--language_unselected);
 }
 
 #submit_button .fa-spinner {
@@ -649,7 +680,7 @@ body {
     }
 }
 
-#submit_button:hover {
+#submit_button:hover, #contacto_extra button:hover {
     transition: 1s;
     background-color: var(--accent_color);
 }

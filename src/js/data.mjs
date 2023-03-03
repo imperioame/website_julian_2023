@@ -290,7 +290,12 @@ TEXTOS.es = {
     },
     TITULO_CONTACTO: 'Contacto',
     BLOQUE_CONTACTO_TITULO: 'Escribime aquí 👇',
-    BLOQUE_CONTACTO_PARRAFO: "Si buscás ponerte en contacto conmigo para llevar a cabo un proyecto puedes utilizar el siguiente formulario, suelo responder en una hora aproximadamente dependiendo del día y hora en el que se envíe el mensaje.",
+    BLOQUE_CONTACTO_EXTRA: {
+        PLACEHOLDER_INPUT: "Si llegaste hasta acá, te propongo dos cosas:\n1: Contactarme en el próximo formulario\n2: Jugar con este campo, vinculado con GPT2. Escribí acá y tocá el botón 'Generar texto'",
+        BOTON_GENERAR_TEXTO: "Generar texto",
+        SMALL_INFO: "Aquí una pequeña integración con GPT2 de Hugging Face. Podes divertirte probando diferentes combinaciones. Intentá no romperla 😣",
+        SMALL_PD: "PD: Solo entiende español. Podes cambiar el lenguaje desde el ícono arriba a la derecha de la pantalla ☝"
+    },
     CAMPOS_FORMULARIO: {
         NOMBRE: 'Nombre',
         NOMBRE_PLACEHOLDER: 'Juan',
@@ -318,7 +323,12 @@ TEXTOS.en = {
     },
     TITULO_CONTACTO: 'Contact form',
     BLOQUE_CONTACTO_TITULO: 'Contact me here 👇',
-    BLOQUE_CONTACTO_PARRAFO: "If you're looking to contact me to develop a project or to work together with me, you can use the following form, your message will be sent in a few hours depending on the day and time you send it.",
+    BLOQUE_CONTACTO_EXTRA: {
+        PLACEHOLDER_INPUT: "If you've arrived here, I propose two things:\n1: Write me through the next form.\n2: Play with this field, linked to GPT2. Write here and click the button 'Generate text'",
+        BOTON_GENERAR_TEXTO: "Generate text",
+        SMALL_INFO: "Here is a small integration with GPT2 from Hugging Face. You can have fun trying different combinations. Try not to break it 😣",
+        SMALL_PD: "PS: It only speaks English. You can change the language from the icon on the top right to the right of the screen ☝"
+    },
     CAMPOS_FORMULARIO: {
         NOMBRE: 'Name',
         NOMBRE_PLACEHOLDER: 'Juan',

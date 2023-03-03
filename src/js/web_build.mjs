@@ -12,6 +12,7 @@ import {
 } from './sections/mis_trabajos.mjs';
 
 
+
 export var IS_MOBILE = window.innerWidth < 768;
 window.onresize = function () {
     //Also defined in css/mobile.css
@@ -45,6 +46,7 @@ document.getElementById('cambiar_lenguaje_a_ingles').addEventListener('click', f
 */
 
 
-//Llamo a una api para generar el texto de contacto
-call_api_hf_gpt2();
+//agrego la llamada a la api de gpt2
+document.querySelector('#contacto_extra button').addEventListener('click', call_api_hf_gpt2);
+//call_api_hf_gpt2();
 

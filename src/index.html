@@ -120,11 +120,12 @@
             <article id="contacto_extra">
                 <div class="shadow_standard">
                     <img src="./imgs/avion-de-papel.svg" alt="Imagen representativa del formulario de contacto">
-                    <p id="contacto_extra_parrafo">
-                        Si buscás ponerte en contacto conmigo para llevar a cabo un proyecto puedes utilizar el
-                        siguiente formulario, suelo responder en una hora aproximadamente dependiendo del día y hora en
-                        el que se envíe el mensaje.
-                    </p>
+                    <textarea id="contacto_extra_input" placeholder="Si llegaste hasta acá, te propongo dos cosas:&#10;&#10;1: Contactarme en el próximo formulario&#10;2: Jugar con este campo, vinculado con GPT2. Escribí acá y tocá el botón 'Generar texto'"></textarea>
+                    <button id="contacto_extra_button" class="shadow_elevated">Generar texto</button>
+                    <small id="error_msj"></small>
+                    <small id="small_info">Aquí una pequeña integración con GPT2 de Hugging Face. Podes divertirte probando diferentes
+                        combinaciones. Intentá no romperla 😣</small>
+                    <small id="small_pd">PD: Solo entiende español. Podes cambiar el lenguaje desde el ícono arriba a la derecha de la pantalla ☝</small>
                 </div>
             </article>
             <div class="spacer-1"> </div>

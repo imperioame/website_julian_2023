@@ -1,12 +1,9 @@
-import {
-    currentLanguage
-} from '../configs/configs.mjs'
 
 export function call_api_hf_gpt2() {
 
     async function query(data) {
-        console.log(currentLanguage[0]);
-        const api_language = currentLanguage[0] == 'es' ? 'https://api-inference.huggingface.co/models/flax-community/gpt-2-spanish' : 'https://api-inference.huggingface.co/models/gpt2';
+        console.log(window.currentLanguage[0]);
+        const api_language = window.currentLanguage[0] == 'es' ? 'https://api-inference.huggingface.co/models/flax-community/gpt-2-spanish' : 'https://api-inference.huggingface.co/models/gpt2';
 
         const response = await fetch(api_language, {
                 headers: {
@@ -32,7 +29,7 @@ export function call_api_hf_gpt2() {
         es: 'El servicio de GPT2 no se encuentra disponible en este momento. Probar dentro de la próxima hora. (Demasiadas consultas)',
         en: 'GPT2 service is not available in this moment. Try again in the next hour.  (Too many requests)'
     }
-    let error_content = currentLanguage[0] == 'es' ? error.es : error.en;
+    let error_content = window.currentLanguage[0] == 'es' ? error.es : error.en;
 
     let params = {
         "inputs": query_content,

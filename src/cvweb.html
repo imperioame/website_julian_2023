@@ -35,6 +35,7 @@
 
     <title>Julián Amé | CV WEB</title>
     <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/cvweb.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,11 +46,18 @@
 </head>
 
 <body>
-
     <header id="header">
-        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <object id="logo" data="./imgs/Logo_ImperioAme.svg" type=""
-            alt="Logo del ImperioAme, marca personal de Julián Amé" title="Isologo ImperioAme"></object>
+        <ul>
+            <li>
+                <ul id="container_boton_header_volver_atras">
+                    <li><a href="./index.html" title="Volver atrás"><i class="fa-solid fa-arrow-left"></i></a></li>
+                </ul>
+            </li>
+            <li> <object id="logo" data="./imgs/Logo_ImperioAme.svg" type=""
+                    alt="Logo del ImperioAme, marca personal de Julián Amé" title="Isologo ImperioAme"></object></li>
+            <li> </li>
+
+        </ul>
     </header>
 
     <main>
@@ -60,7 +68,7 @@
         document.addEventListener('readystatechange', (event) => {
             let idioma_en_url = event.srcElement.URL.split('#')[1] ?? 'es';
             document.getElementById('embed_cv').src = `./CVWeb/index.php#${idioma_en_url}`;
-            
+
             //Does not seems to be needed
             //document.getElementById('embed_cv').contentDocument.location.reload(true);
         });

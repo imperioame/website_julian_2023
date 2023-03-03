@@ -57,7 +57,15 @@ gui.add(option, 'directionaLight_position_z', -10, 10, 0.5);
 
 */
 
+import * as POSTPROCESSING from 'postprocessing';
 
+const composer = new POSTPROCESSING.EffectComposer(renderer);
+composer.addPass(new POSTPROCESSING.RenderPass(scene, camera));
+
+const effectPass = new POSTPROCESSING.effectPass(
+    camera,
+    new POSTPROCESSING.BloomEffect()
+)
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);

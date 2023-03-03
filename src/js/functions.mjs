@@ -4,10 +4,6 @@ import {
     LANGUAGES,
 } from './data.mjs';
 
-import{
-    currentLanguage
-} from '../configs/configs.mjs';
-
 
 export function getLanguageFromURL(e){
     let idioma_en_url = e.target.URL.split('#')[1];
@@ -69,7 +65,7 @@ export function openModal(e) {
 }
 
 export function changeLanguage(new_language){
-    currentLanguage[0] = new_language;
+    window.currentLanguage.push(new_language);
     let textos_a_usar;
     const boton_idioma_ingles = document.getElementById('cambiar_lenguaje_a_ingles').parentNode;
     const boton_idioma_espanol = document.getElementById('cambiar_lenguaje_a_español').parentNode;
@@ -78,6 +74,7 @@ export function changeLanguage(new_language){
         textos_a_usar = TEXTOS.es;
 
         boton_idioma_ingles.addEventListener('click', function (){
+            window.currentLanguage.pop();
             changeLanguage(LANGUAGES.INGLES);
         });
 
@@ -89,6 +86,7 @@ export function changeLanguage(new_language){
         textos_a_usar = TEXTOS.en;
 
         boton_idioma_espanol.addEventListener('click', function (){
+            window.currentLanguage.pop();
             changeLanguage(LANGUAGES.ESPANOL);
         });
 

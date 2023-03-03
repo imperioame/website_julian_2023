@@ -96,12 +96,14 @@ html::-webkit-scrollbar-thumb {
     list-style: none;
 }
 
-#idiomas_disponibles {
+#idiomas_disponibles,
+#container_boton_header_volver_atras {
     display: inline-block !important;
     height: fit-content !important;
 }
 
-#idiomas_disponibles li {
+#idiomas_disponibles li,
+#container_boton_header_volver_atras li {
     margin: 0 5px;
     display: inline-block;
     width: 2rem;
@@ -113,7 +115,8 @@ html::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-#idiomas_disponibles li:hover {
+#idiomas_disponibles li:hover,
+#container_boton_header_volver_atras li:hover {
     background-color: var(--language_selected);
     box-shadow: 0 0 10px var(--language_selected);
 }
@@ -126,7 +129,9 @@ html::-webkit-scrollbar-thumb {
 
 
 #idiomas_disponibles li a,
-#idiomas_disponibles li a img {
+#idiomas_disponibles li a img,
+#container_boton_header_volver_atras li a,
+#container_boton_header_volver_atras li a i {
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -419,8 +424,9 @@ html::-webkit-scrollbar-thumb {
     bottom: 0;
 }
 
-#overlay_gradiente_hero{
+#overlay_gradiente_hero {
     bottom: -10vh;
+    background: var(--porfolio_overlay_gradient);
 }
 
 .title_trabajo {

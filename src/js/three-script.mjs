@@ -57,17 +57,12 @@ gui.add(option, 'directionaLight_position_z', -10, 10, 0.5);
 
 */
 
-import * as POSTPROCESSING from 'postprocessing';
-
-const composer = new POSTPROCESSING.EffectComposer(renderer);
-composer.addPass(new POSTPROCESSING.RenderPass(scene, camera));
-
-const effectPass = new POSTPROCESSING.effectPass(
-    camera,
-    new POSTPROCESSING.BloomEffect()
-)
 
 const renderer = new THREE.WebGLRenderer();
+//renderer.outputEncoding = THREE.sRGBEncoding;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.1;
+
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('three_canvas').appendChild(renderer.domElement);
 
@@ -82,12 +77,62 @@ const camera = new THREE.PerspectiveCamera(
 );
 renderer.render(scene, camera);
 
+
+//Agrego Efectos
+import {
+    EffectComposer
+} from 'three/examples/jsm/postprocessing/EffectComposer.js';
+import {
+    RenderPass
+} from 'three/examples/jsm/postprocessing/RenderPass.js';
+//import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass.js';
+import {
+    UnrealBloomPass
+} from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
+
+import { BokehPass } from 'three/examples/jsm/postprocessing/BokehPass.js';
+
+const composer = new EffectComposer(renderer);
+
+
+const renderPass = new RenderPass(scene, camera);
+composer.addPass(renderPass);
+
+//const glitchPass = new GlitchPass();
+//composer.addPass( glitchPass );
+
+const unrealBloomPass = new UnrealBloomPass(    new THREE.Vector2(window.innerWidth, window.innerHeight),    .3,    1,    .4);
+composer.addPass(unrealBloomPass);
+
+const bokehPass = new BokehPass( scene, camera, {
+    focus: 1,
+    aperture: 0.00000025,
+    maxblur: 0.01,
+    width: window.innerWidth,
+    height: window.innerHeight
+});
+composer.addPass(bokehPass);
+
+
+
+
+
+
+
+
+
+
+
+
 //Agrego un listener para que el canvas sea responsivo.
 window.addEventListener('resize', function () {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+    composer.setSize(window.innerWidth, window.innerHeight);
 });
+
+
 
 
 //Agrego una luz RectArea
@@ -99,7 +144,7 @@ const rectAreaHeight = 1.0;
 
 RectAreaLightUniformsLib.init();
 
-const lightRectArea = new THREE.RectAreaLight(0xFFFFFF, 6.0, rectAreaWidth, rectAreaHeight);
+const lightRectArea = new THREE.RectAreaLight(0xFFFFFF, 3.0, rectAreaWidth, rectAreaHeight);
 scene.add(lightRectArea);
 lightRectArea.rotation.set(180, 180, 0);
 lightRectArea.position.set(0, 1.2, 1);
@@ -235,7 +280,8 @@ function animate() {
         mixer.update(clock.getDelta());
     }
 
-    renderer.render(scene, camera);
+    //renderer.render(scene, camera);
+    composer.render();
 
     if (finished_import) {
 
@@ -250,4 +296,5 @@ function animate() {
         finished_import = null;
     }
 }
+
 renderer.setAnimationLoop(animate);

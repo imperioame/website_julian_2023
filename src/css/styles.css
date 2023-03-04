@@ -422,7 +422,7 @@ html::-webkit-scrollbar-thumb {
 
 #overlay_gradiente_mi_persona,
 #overlay_gradiente_hero {
-    bottom: 0;
+    height: calc(100% + 2px);
 }
 
 #overlay_gradiente_hero {

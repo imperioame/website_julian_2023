@@ -106,14 +106,16 @@ composer.addPass(unrealBloomPass);
 
 const bokehPass = new BokehPass( scene, camera, {
     focus: 1,
-    aperture: 0.00000025,
+    aperture: 0.00025,
     maxblur: 0.01,
     width: window.innerWidth,
     height: window.innerHeight
 });
 composer.addPass(bokehPass);
 
-
+//Genero un raycaster para enfocar el personaje.
+const raycaster = new THREE.Raycaster();
+const mouseCoords = new THREE.Vector2(0,0);
 
 
 
@@ -236,8 +238,8 @@ assetLoader.load(personajeURL.href,
         //Esto es para poder saber la altura del personaje importado
         const box = new THREE.Box3().setFromObject(model);
         imported_model_height = box.getSize(new THREE.Vector3());
-
         */
+
 
         //Esto es para la animación
         mixer = new THREE.AnimationMixer(model);
@@ -267,6 +269,9 @@ orbit.update();
 
 
 const clock = new THREE.Clock();
+let sin_adition = 1;
+var multiplier = 1;
+
 //Función principal para animación. Reemplazar contenidos con lo que se quiera animar
 function animate() {
     /*
@@ -280,11 +285,29 @@ function animate() {
         mixer.update(clock.getDelta());
     }
 
+    
+
+    raycaster.setFromCamera(mouseCoords, camera);
+    const collitions = raycaster.intersectObjects(scene.children);
+    for(let i = 0; i < collitions.length; i++){
+        const distance = collitions[0].distance;
+        bokehPass.uniforms.focus.value = distance;
+    }
+    if(sin_adition < -50 ){
+        multiplier = 1;
+    }else if (sin_adition > 50){
+        multiplier = -1;
+    }
+    sin_adition += .5 * multiplier;
+    bokehPass.uniforms.aperture.value += (sin_adition * 0.000001);
+    console.log(bokehPass.uniforms.aperture.value)
+
+
+
     //renderer.render(scene, camera);
     composer.render();
 
     if (finished_import) {
-
         if (IS_MOBILE) {
             camera.position.set(-0.6, 0.9, 2.0);
             orbit.target.set(model_position.x - 0, model_position.y + 1.3, model_position.z + 0);

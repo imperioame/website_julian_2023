@@ -4,6 +4,7 @@ import {
     LANGUAGES,
 } from './data.mjs';
 
+
 export function getLanguageFromURL(e){
     let idioma_en_url = e.target.URL.split('#')[1];
     if (idioma_en_url){
@@ -64,6 +65,7 @@ export function openModal(e) {
 }
 
 export function changeLanguage(new_language){
+    window.currentLanguage.push(new_language);
     let textos_a_usar;
     const boton_idioma_ingles = document.getElementById('cambiar_lenguaje_a_ingles').parentNode;
     const boton_idioma_espanol = document.getElementById('cambiar_lenguaje_a_español').parentNode;
@@ -72,6 +74,7 @@ export function changeLanguage(new_language){
         textos_a_usar = TEXTOS.es;
 
         boton_idioma_ingles.addEventListener('click', function (){
+            window.currentLanguage.pop();
             changeLanguage(LANGUAGES.INGLES);
         });
 
@@ -83,6 +86,7 @@ export function changeLanguage(new_language){
         textos_a_usar = TEXTOS.en;
 
         boton_idioma_espanol.addEventListener('click', function (){
+            window.currentLanguage.pop();
             changeLanguage(LANGUAGES.ESPANOL);
         });
 
@@ -99,7 +103,10 @@ export function changeLanguage(new_language){
     
     document.getElementById('porfolio_bloque_interior_subtitle').innerHTML = textos_a_usar.CATEGORIAS_PORFOLIO.DISENO;
     document.getElementById('seccion_contacto_titulo').innerHTML = textos_a_usar.TITULO_CONTACTO;
-    document.getElementById('contacto_extra_parrafo').innerHTML = textos_a_usar.BLOQUE_CONTACTO_PARRAFO;
+    document.getElementById('contacto_extra_input').placeholder = textos_a_usar.BLOQUE_CONTACTO_EXTRA.PLACEHOLDER_INPUT;
+    document.getElementById('contacto_extra_button').innerHTML = textos_a_usar.BLOQUE_CONTACTO_EXTRA.BOTON_GENERAR_TEXTO;
+    document.getElementById('small_info').innerHTML = textos_a_usar.BLOQUE_CONTACTO_EXTRA.SMALL_INFO;
+    document.getElementById('small_pd').innerHTML = textos_a_usar.BLOQUE_CONTACTO_EXTRA.SMALL_PD;
     document.getElementById('div_form_contacto_container_titulo').innerHTML = textos_a_usar.BLOQUE_CONTACTO_TITULO;
     document.getElementById('campo_form_nombre').innerHTML = textos_a_usar.CAMPOS_FORMULARIO.NOMBRE;
     document.getElementById('campo_form_email').innerHTML = textos_a_usar.CAMPOS_FORMULARIO.EMAIL;

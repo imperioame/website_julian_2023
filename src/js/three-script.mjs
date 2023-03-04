@@ -5,12 +5,12 @@ import {
 import {
     IS_MOBILE
 } from './web_build.mjs';
+import gsap from 'gsap';
 
 //Agrego un loader para poder darle un indicio al usuario que espere
 const loadingManager = new THREE.LoadingManager();
 loadingManager.onStart = function (url, item, total) {
     // Creo un elemento html para mostrar el progreso
-    console.log('agrego un loader');
     const loading_container = document.createElement('div');
     loading_container.id = 'loading_container';
     const loading_label = document.createElement('label');
@@ -32,7 +32,6 @@ loadingManager.onProgress = function (url, loaded, total) {
 }
 
 loadingManager.onLoad = function () {
-    console.log('elimino el loader');
     const loading_container = document.getElementById('loading_container');
     loading_container.classList.add('fade-out');
     setTimeout(function () {
@@ -60,8 +59,11 @@ gui.add(option, 'directionaLight_position_z', -10, 10, 0.5);
 */
 
 
-
 const renderer = new THREE.WebGLRenderer();
+//renderer.outputEncoding = THREE.sRGBEncoding;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1;
+
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('three_canvas').appendChild(renderer.domElement);
 
@@ -76,12 +78,72 @@ const camera = new THREE.PerspectiveCamera(
 );
 renderer.render(scene, camera);
 
+
+//Agrego Efectos
+import {
+    EffectComposer
+} from 'three/examples/jsm/postprocessing/EffectComposer.js';
+import {
+    RenderPass
+} from 'three/examples/jsm/postprocessing/RenderPass.js';
+//import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass.js';
+import {
+    UnrealBloomPass
+} from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
+
+
+const composer = new EffectComposer(renderer);
+
+
+const renderPass = new RenderPass(scene, camera);
+composer.addPass(renderPass);
+
+//const glitchPass = new GlitchPass();
+//composer.addPass( glitchPass );
+
+const unrealBloomPass = new UnrealBloomPass(
+    new THREE.Vector2(window.innerWidth, window.innerHeight),
+    .35,
+    1.2,
+    .3);
+composer.addPass(unrealBloomPass);
+
+/*
+import {
+    BokehPass
+} from 'three/examples/jsm/postprocessing/BokehPass.js';
+
+const bokehPass = new BokehPass(scene, camera, {
+    focus: 1,
+    aperture: 0.00025,
+    maxblur: 0.01,
+    width: window.innerWidth,
+    height: window.innerHeight
+});
+composer.addPass(bokehPass);
+
+//Genero un raycaster para enfocar el personaje.
+const raycaster = new THREE.Raycaster();
+const mouseCoords = new THREE.Vector2(0, 0);
+*/
+
+
+
+
+
+
+
+
+
 //Agrego un listener para que el canvas sea responsivo.
 window.addEventListener('resize', function () {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+    composer.setSize(window.innerWidth, window.innerHeight);
 });
+
+
 
 
 //Agrego una luz RectArea
@@ -93,7 +155,7 @@ const rectAreaHeight = 1.0;
 
 RectAreaLightUniformsLib.init();
 
-const lightRectArea = new THREE.RectAreaLight(0xFFFFFF, 6.0, rectAreaWidth, rectAreaHeight);
+const lightRectArea = new THREE.RectAreaLight(0xFFFFFF, 3.0, rectAreaWidth, rectAreaHeight);
 scene.add(lightRectArea);
 lightRectArea.rotation.set(180, 180, 0);
 lightRectArea.position.set(0, 1.2, 1);
@@ -180,13 +242,14 @@ assetLoader.load(personajeURL.href,
         scene.add(model);
         model.position.set(model_position.x, model_position.y, model_position.z);
         finished_import = true;
+        model.visible = false;
 
         /*
         //Esto es para poder saber la altura del personaje importado
         const box = new THREE.Box3().setFromObject(model);
         imported_model_height = box.getSize(new THREE.Vector3());
-
         */
+
 
         //Esto es para la animación
         mixer = new THREE.AnimationMixer(model);
@@ -210,12 +273,22 @@ assetLoader.load(personajeURL.href,
 //Agrega controles para rotación y movimiento de la cámara
 const orbit = new OrbitControls(camera, renderer.domElement);
 orbit.enableZoom = false;
-camera.position.set(-1, 2, 6);
+camera.position.set(-3, 2, 12);
 orbit.target.set(model_position.x - 1.3, model_position.y + 1.1, model_position.z);
 orbit.update();
 
 
+
+
+
+
+
 const clock = new THREE.Clock();
+/*
+let sin_adition = 1;
+var multiplier = 1;
+*/
+
 //Función principal para animación. Reemplazar contenidos con lo que se quiera animar
 function animate() {
     /*
@@ -229,19 +302,61 @@ function animate() {
         mixer.update(clock.getDelta());
     }
 
-    renderer.render(scene, camera);
+
+    /*
+    raycaster.setFromCamera(mouseCoords, camera);
+    const collitions = raycaster.intersectObjects(scene.children);
+    for (let i = 0; i < collitions.length; i++) {
+        const distance = collitions[0].distance;
+        bokehPass.uniforms.focus.value = distance;
+    }
+    if (sin_adition < -50) {
+        multiplier = 1;
+    } else if (sin_adition > 50) {
+        multiplier = -1;
+    }
+    sin_adition += .5 * multiplier;
+    bokehPass.uniforms.aperture.value += (sin_adition * 0.000001);
+    console.log(bokehPass.uniforms.aperture.value)
+    */
+
+
+    //renderer.render(scene, camera);
+    composer.render();
 
     if (finished_import) {
+        scene.children[4].visible = true;
 
-        if (IS_MOBILE) {
-            camera.position.set(-0.6, 0.9, 2.0);
-            orbit.target.set(model_position.x - 0, model_position.y + 1.3, model_position.z + 0);
-        } else {
-            camera.position.set(0, 0.9, 2.0);
-            orbit.target.set(model_position.x - 0.7, model_position.y + 1.045, model_position.z + 0.9);
+        let x_pos = 0;
+        let orbit_target = {
+            'x': model_position.x,
+            'y': model_position.y,
+            'z': model_position.z
         }
+        if (IS_MOBILE) {
+            x_pos = -0.6;
+            orbit_target.y += 1.3;
+        } else {
+            orbit_target.x -= 0.7;
+            orbit_target.y += 1.045;
+            orbit_target.z += 0.9;
+        }
+
+        //Agrego animación standard de cámara
+        gsap.to(camera.position, {
+            x: x_pos,
+            y: 0.9,
+            z: 2.0,
+            duration: 1.5,
+            onUpdate: function () {
+                camera.lookAt(orbit_target.x, orbit_target.y, orbit_target.z);
+                orbit.target.set(orbit_target.x, orbit_target.y, orbit_target.z);
+            }
+        });
+
         orbit.update();
         finished_import = null;
     }
 }
+
 renderer.setAnimationLoop(animate);

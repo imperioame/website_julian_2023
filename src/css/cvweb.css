@@ -27,6 +27,7 @@ body {
     min-height: 100vh;
     margin: 0;
     margin-top: 70px;
+    background: var(--text_color);
 }
 
 
@@ -40,7 +41,7 @@ body {
     background-color: var(--background_with_transparency);
     z-index: 99;
 }
-
+/*
 #header a{
     position: absolute;
     left: 5vw;
@@ -54,16 +55,27 @@ body {
     text-decoration: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
+*/
 
+#header a{
+    text-decoration: none;
+}
 #header a i{
-    color: var(--containers_color);
     display: block;
     font-size: 1.5em;
 }
-
+#header a i::before{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+}
+/*
 #header a:hover{
     background-color: var(--text_color);
-}
+}*/
 
 #logo {
     /*

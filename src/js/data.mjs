@@ -242,6 +242,30 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'Sketchfab',
         category: CATEGORIAS_PORFOLIO.D3
+    },{
+        id: 27,
+        title: 'Seba Gallardo - Photo Session',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/7725ba164262227.Y3JvcCwzOTM4LDMwODAsMCwzOA.jpg',
+        link: 'https://www.behance.net/gallery/164262227/Fiverr-content-Photo-Session-for-a-Freelancer',
+        priority: 2,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },{
+        id: 28,
+        title: 'Sitio Web Agencia Álterego',
+        img: 'https://repository-images.githubusercontent.com/320118591/54173200-3d01-11eb-9e3f-c283bb81ad89',
+        link: 'https://agenciaalterego.com.ar/',
+        priority: 2,
+        source: 'Web',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS
+    },{
+        id: 29,
+        title: 'Staley Martial Arts',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/c85b13139617007.Y3JvcCw4MDgsNjMyLDAsMA.png',
+        link: 'https://www.staleymartialarts.com/',
+        priority: 3,
+        source: 'Web',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS
     },
 
 );
@@ -254,7 +278,7 @@ export const TEXTOS = {
 
 TEXTOS.es = {
     TITULO_PAGINA: 'Julián Amé | Diseñador Multimedial',
-    SUBTITLE_HERO: 'Diseñador Multimedial | Lic. En Comunicación<br>Director de proyectos digitales | Quality Assurance Lead',
+    SUBTITLE_HERO: 'Diseñador Multimedial | Lic. En Comunicación Digital e Interactiva<br>Director de proyectos digitales | Quality Assurance Lead',
     EXTRACTO_BANNER_MI_PERSONA: "Diseñador Multimedial y líder de proyectos digitales.<br> Emprendedor y apasionado en la organización y organizaciones.<br> Técnico por naturaleza.",
     BOTON_CV_BANNER_MI_PERSONA: 'Ver CV',
     CATEGORIAS_PORFOLIO: {
@@ -266,7 +290,12 @@ TEXTOS.es = {
     },
     TITULO_CONTACTO: 'Contacto',
     BLOQUE_CONTACTO_TITULO: 'Escribime aquí 👇',
-    BLOQUE_CONTACTO_PARRAFO: "Si buscás ponerte en contacto conmigo para llevar a cabo un proyecto puedes utilizar el siguiente formulario, suelo responder en una hora aproximadamente dependiendo del día y hora en el que se envíe el mensaje.",
+    BLOQUE_CONTACTO_EXTRA: {
+        PLACEHOLDER_INPUT: "Si llegaste hasta acá, te propongo dos cosas:\n1: Contactarme en el próximo formulario\n2: Jugar con este campo, vinculado con GPT2. Escribí acá y tocá el botón 'Generar texto'",
+        BOTON_GENERAR_TEXTO: "Generar texto",
+        SMALL_INFO: "Aquí una pequeña integración con GPT2 de Hugging Face. Podes divertirte probando diferentes combinaciones. Intentá no romperla 😣",
+        SMALL_PD: "PD: Está entrenado en Español. Para mejores resultados en inglés podes cambiar el lenguaje desde el ícono arriba a la derecha de la pantalla ☝"
+    },
     CAMPOS_FORMULARIO: {
         NOMBRE: 'Nombre',
         NOMBRE_PLACEHOLDER: 'Juan',
@@ -282,7 +311,7 @@ TEXTOS.es = {
 
 TEXTOS.en = {
     TITULO_PAGINA: 'Julián Amé | Multimedia Designer',
-    SUBTITLE_HERO: "Multimedia Designer | Degree in Communication<br>Digital Project Manager | Quality Assurance Lead",
+    SUBTITLE_HERO: "Multimedia Designer | Degree in Digital and Interactive Communication<br>Digital Project Manager | Quality Assurance Lead",
     EXTRACTO_BANNER_MI_PERSONA: "Multimedia Designer and leader of digital projects.<br>Entrepreneur and passionate about organization and organizations.<br>Technical by nature.",
     BOTON_CV_BANNER_MI_PERSONA: 'See CV',
     CATEGORIAS_PORFOLIO: {
@@ -294,7 +323,12 @@ TEXTOS.en = {
     },
     TITULO_CONTACTO: 'Contact form',
     BLOQUE_CONTACTO_TITULO: 'Contact me here 👇',
-    BLOQUE_CONTACTO_PARRAFO: "If you're looking to contact me to develop a project or to work together with me, you can use the following form, your message will be sent in a few hours depending on the day and time you send it.",
+    BLOQUE_CONTACTO_EXTRA: {
+        PLACEHOLDER_INPUT: "If you've arrived here, I propose two things:\n1: Write me through the next form.\n2: Play with this field, linked to GPT2. Write here and click the button 'Generate text'",
+        BOTON_GENERAR_TEXTO: "Generate text",
+        SMALL_INFO: "Here is a small integration with GPT2 from Hugging Face. You can have fun trying different combinations. Try not to break it 😣",
+        SMALL_PD: "PS: It only speaks English. You can change the language from the icon on the top right to the right of the screen ☝"
+    },
     CAMPOS_FORMULARIO: {
         NOMBRE: 'Name',
         NOMBRE_PLACEHOLDER: 'Juan',

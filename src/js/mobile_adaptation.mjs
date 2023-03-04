@@ -22,11 +22,12 @@ export function addMobileElements() {
 
 
 export function removeMobileElements() {
+    /*
     const overlay_gradiente = document.getElementById('overlay_gradiente_mi_persona');
     if (overlay_gradiente) {
         overlay_gradiente.remove();
     }
-
+*/
     const spacer_banner_mi_persona = document.querySelector('#banner_mi_persona .spacer-1:last-child');
     if (spacer_banner_mi_persona) {
         spacer_banner_mi_persona.classList.remove('spacer-1');

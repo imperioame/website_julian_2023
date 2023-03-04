@@ -4,8 +4,13 @@ import {
 } from './mobile_adaptation.mjs';
 
 import {
+    call_api_hf_gpt2
+} from '../services/text_generation.mjs';
+
+import {
     populatePorfolio
 } from './sections/mis_trabajos.mjs';
+
 
 
 export var IS_MOBILE = window.innerWidth < 768;
@@ -39,3 +44,9 @@ document.getElementById('cambiar_lenguaje_a_ingles').addEventListener('click', f
     changeLanguage(LANGUAGES.INGLES);
 });
 */
+
+
+//agrego la llamada a la api de gpt2
+document.querySelector('#contacto_extra button').addEventListener('click', call_api_hf_gpt2);
+//call_api_hf_gpt2();
+

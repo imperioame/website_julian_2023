@@ -40,6 +40,10 @@
         align-items: flex-end;
     }
 
+    #extracto_banner, #boton_cv{
+        z-index: 1;
+    }
+
     #bloque_trabajos {
         height: 70vh;
     }

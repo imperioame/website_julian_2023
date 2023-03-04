@@ -1,5 +1,4 @@
 import {
-    currentLanguage,
     LANGUAGES
 } from '../../configs/configs.mjs';
 import * as DATA from './data.mjs';

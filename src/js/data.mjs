@@ -294,7 +294,7 @@ TEXTOS.es = {
         PLACEHOLDER_INPUT: "Si llegaste hasta acá, te propongo dos cosas:\n1: Contactarme en el próximo formulario\n2: Jugar con este campo, vinculado con GPT2. Escribí acá y tocá el botón 'Generar texto'",
         BOTON_GENERAR_TEXTO: "Generar texto",
         SMALL_INFO: "Aquí una pequeña integración con GPT2 de Hugging Face. Podes divertirte probando diferentes combinaciones. Intentá no romperla 😣",
-        SMALL_PD: "PD: Solo entiende español. Podes cambiar el lenguaje desde el ícono arriba a la derecha de la pantalla ☝"
+        SMALL_PD: "PD: Está entrenado en Español. Para mejores resultados en inglés podes cambiar el lenguaje desde el ícono arriba a la derecha de la pantalla ☝"
     },
     CAMPOS_FORMULARIO: {
         NOMBRE: 'Nombre',

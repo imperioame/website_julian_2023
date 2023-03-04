@@ -1,5 +1,8 @@
 
 export function call_api_hf_gpt2() {
+    document.getElementById("error_msj").innerHTML = '';
+    document.getElementById("error_msj").style.display = "none";
+
 
     async function query(data) {
         console.log(window.currentLanguage[0]);

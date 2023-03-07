@@ -122,5 +122,27 @@ export function changeLanguage(new_language){
     a.target = '_blank';
     a.innerHTML = 'Julián Amé';
     document.getElementById('footer').appendChild(a);
+}
+
+
+export function removeScrollButton(target_id){
+    //This removes the element that triggered the function
+    if(target_id == 'scroll_button_icon'){
+        document.getElementById(target_id).parentElement.remove();
+    }else{
+        document.getElementById(target_id).remove();
+    }
+}
+
+export function scroll_to_mi_persona(e){
+    e.preventDefault();
+    //This scrolls to the "banner_mi_persona" element
+    window.scrollTo({
+        top: document.getElementById('banner_mi_persona').offsetTop,
+        left : 0,
+        behavior: 'smooth'
+    });
+
+    removeScrollButton(e.target.id);
 
 }

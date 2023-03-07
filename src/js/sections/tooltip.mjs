@@ -2,7 +2,6 @@ export function callTooltip(where, mesaje, color) {
     //This function generates a small tooltip with the given text and color.
     const tooltip = document.createElement('div');
     tooltip.classList.add('tooltip');
-    console.log(document.getElementById(where).offsetHeight);
     tooltip.style.bottom = document.getElementById(where).offsetHeight * -1.5 + 'px';
     
     const icon = document.createElement('i');

@@ -25,11 +25,11 @@ URLS_PORFOLIO.push({
 );
 
 export const CATEGORIAS_PORFOLIO = {
-    DISENO: 'Diseño',
-    PUBLICITARIO: 'Publicitario',
-    D3: '3D',
-    FOTOGRAFIA: 'Fotografía',
-    WEBJUEGOS: 'Web & Juegos'
+    DISENO: 1,
+    PUBLICITARIO: 2,
+    D3: 3,
+    FOTOGRAFIA: 4,
+    WEBJUEGOS: 5
 }
 
 

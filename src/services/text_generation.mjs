@@ -5,7 +5,6 @@ export function call_api_hf_gpt2() {
 
 
     async function query(data) {
-        console.log(window.currentLanguage[0]);
         const api_language = window.currentLanguage[0] == 'es' ? 'https://api-inference.huggingface.co/models/flax-community/gpt-2-spanish' : 'https://api-inference.huggingface.co/models/gpt2';
 
         const response = await fetch(api_language, {
@@ -20,7 +19,6 @@ export function call_api_hf_gpt2() {
         return result;
     }
 
-    console.log(document.getElementById("contacto_extra_input").value);
     const query_content = document.getElementById("contacto_extra_input").value;
 
     let response_limit = 200;
@@ -29,8 +27,8 @@ export function call_api_hf_gpt2() {
     }
 
     const error = {
-        es: 'El servicio de GPT2 no se encuentra disponible en este momento. Probar dentro de la próxima hora. (Demasiadas consultas)',
-        en: 'GPT2 service is not available in this moment. Try again in the next hour.  (Too many requests)'
+        es: 'El servicio de GPT2 no se encuentra disponible en este momento. Probar dentro de la próxima hora.<br>(Puede deberse a demasiadas consultas)',
+        en: 'GPT2 service is not available in this moment. Try again in the next hour.<br>(May be due to too many requests)'
     }
     let error_content = window.currentLanguage[0] == 'es' ? error.es : error.en;
 
@@ -49,11 +47,9 @@ export function call_api_hf_gpt2() {
         query(params).then((response) => {
             if (!response.error) {
                 final_response = response[0].generated_text;
-                console.log(final_response);
 
 
 
-                console.log(final_response.length);
                 if (final_response.length < response_limit) {
                     params.inputs = final_response;
                     recursive_call(params)
@@ -61,7 +57,6 @@ export function call_api_hf_gpt2() {
 
                 document.getElementById("contacto_extra_input").value = final_response + '...';
             } else {
-                console.error(response.error);
                 document.getElementById("error_msj").innerHTML = error_content;
                 document.getElementById("error_msj").style.display = "block";
             }

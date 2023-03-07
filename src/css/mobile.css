@@ -36,6 +36,14 @@
         width: 100%;
     }
 
+
+    #hero_section #subtitle, #extracto_banner{
+        text-shadow: 0 0 6px var(--containers_color);
+    }
+    #hero_section #subtitle{
+        font-weight: 600;
+    }
+
     #banner_mi_persona {
         align-items: flex-end;
     }

@@ -23,11 +23,12 @@ h6 {
 
 body {
     width: 100vw;
-    height: 100vh;
-    min-height: 100vh;
+    height: 92vh;
+    /*min-height: 100vh;*/
     margin: 0;
-    margin-top: 70px;
+    margin-top: 8vh;
     background: var(--text_color);
+    overflow: hidden;
 }
 
 

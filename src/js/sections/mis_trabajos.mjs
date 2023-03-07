@@ -11,7 +11,6 @@ import {
     IS_MOBILE
 } from '../web_build.mjs';
 
-
 export function populatePorfolio() {
     const porfolio_bloque_interior = document.getElementById('porfolio_bloque_interior');
     
@@ -46,13 +45,18 @@ export function populatePorfolio() {
 
 function buildPorfolio(category) {
     //Builds porfolio section with porfolio jobs from DATA
-    //deletes everything first
+    //sets language
+    const current_language = window.currentLanguage[0];
+
+    let category_text = DATA.TEXTOS[current_language].CATEGORIAS_PORFOLIO[[Object.keys(DATA.CATEGORIAS_PORFOLIO)[category -1]]];
+
+    //deletes everything
     const porfolio_bloque_interior = document.getElementById('porfolio_bloque_interior');
     const bloque_trabajos = document.getElementById('bloque_trabajos');
     bloque_trabajos.innerHTML = '';
 
     const subtitle = document.getElementById('porfolio_bloque_interior_subtitle');
-    subtitle.innerHTML = category;
+    subtitle.innerHTML = category_text;
     subtitle.classList.add('text_shadow_standard');
 
     const bloque_trabajos_container = document.createElement('div');

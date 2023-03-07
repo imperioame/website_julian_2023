@@ -24,10 +24,14 @@ export function scroll_event_listener_function() {
     if (window.scrollY > document.getElementById('banner_mi_persona').offsetTop / 4) {
         if (scroll_button) {
             removeScrollButton('scroll_button');
+            console.log(document.querySelector('#three_canvas canvas'));
+           
         }
     } else {
         if (!scroll_button) {
             createScrollButton();
+            console.log(document.querySelector('#three_canvas canvas'));
+           
         }
     }
 }

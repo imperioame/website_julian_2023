@@ -152,6 +152,7 @@ html::-webkit-scrollbar-thumb {
     width: 100vw;
     min-height: 100vh;
     height: fit-content;
+    z-index: -10;
 }
 
 #loading_container {
@@ -413,7 +414,7 @@ html::-webkit-scrollbar-thumb {
     position: absolute;
     bottom: -2px;
     left: 0;
-    width: 100%;
+    width: 120%;
     height: 100%;
     /*background: var(--porfolio_overlay_gradient);*/
     background: var(--about_overlay_gradient);

@@ -1,6 +1,10 @@
 import {
     populatePorfolio
 } from './sections/mis_trabajos.mjs';
+import {
+    createScrollButton,
+    scroll_event_listener_function
+} from './sections/scroll_button.mjs';
 
 export function addMobileElements() {
     if (!document.getElementById('overlay_gradiente_mi_persona')) {
@@ -16,7 +20,14 @@ export function addMobileElements() {
         spacer_banner_mi_persona.classList.add('spacer-1');
     }
 
+    createScrollButton();
+
     populatePorfolio();
+
+
+
+
+    window.addEventListener('scroll', scroll_event_listener_function);
 }
 
 
@@ -33,6 +44,8 @@ export function removeMobileElements() {
         spacer_banner_mi_persona.classList.remove('spacer-1');
         spacer_banner_mi_persona.classList.add('spacer-4');
     }
-    
+
     populatePorfolio();
+
+    window.removeEventListener('scroll', scroll_event_listener_function);
 }

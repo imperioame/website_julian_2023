@@ -14,7 +14,7 @@ export function createScrollButton() {
     i.id = 'scroll_button_icon';
     scroll_button.appendChild(i);
 
-    document.getElementById('three_canvas').appendChild(scroll_button);
+    document.getElementById('three_container').appendChild(scroll_button);
 }
 
 

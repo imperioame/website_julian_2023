@@ -146,13 +146,33 @@ html::-webkit-scrollbar-thumb {
     max-width: 75px;
 }
 
-
+#three_container{
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
 #three_canvas {
     transition: 0s;
     width: 100vw;
     min-height: 100vh;
     height: fit-content;
     z-index: -10;
+    position: relative;
+}
+
+
+#three_overlay {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    pointer-events: none;
 }
 
 #loading_container {
@@ -170,6 +190,9 @@ html::-webkit-scrollbar-thumb {
 .fade-out {
     animation: fade-out 2s ease-in-out;
 }
+.short-fade-out {
+    animation: fade-out 1s ease-in-out;
+}
 
 @keyframes fade-out {
     0% {
@@ -185,20 +208,6 @@ html::-webkit-scrollbar-thumb {
 #loading_container progress {
     width: 100%;
     display: block;
-}
-
-#three_overlay {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    pointer-events: none;
 }
 
 .spacer-1,
@@ -414,7 +423,7 @@ html::-webkit-scrollbar-thumb {
     position: absolute;
     bottom: -2px;
     left: 0;
-    width: 120%;
+    width: 100%;
     height: 100%;
     /*background: var(--porfolio_overlay_gradient);*/
     background: var(--about_overlay_gradient);
@@ -427,7 +436,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 #overlay_gradiente_hero {
-    bottom: -10vh;
+    top: 0;
+    /*bottom: -10vh;*/
     background: var(--porfolio_overlay_gradient);
 }
 

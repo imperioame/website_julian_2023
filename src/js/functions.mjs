@@ -5,11 +5,11 @@ import {
 } from './data.mjs';
 
 
-export function getLanguageFromURL(e){
+export function getLanguageFromURL(e) {
     let idioma_en_url = e.target.URL.split('#')[1];
-    if (idioma_en_url){
+    if (idioma_en_url) {
         return idioma_en_url;
-    }else{
+    } else {
         return 'es';
     }
 }
@@ -64,16 +64,16 @@ export function openModal(e) {
     document.body.appendChild(modal_overlay);
 }
 
-export function changeLanguage(new_language){
+export function changeLanguage(new_language) {
     window.currentLanguage.push(new_language);
     let textos_a_usar;
     const boton_idioma_ingles = document.getElementById('cambiar_lenguaje_a_ingles').parentNode;
     const boton_idioma_espanol = document.getElementById('cambiar_lenguaje_a_español').parentNode;
 
-    if (new_language == LANGUAGES.ESPANOL){
+    if (new_language == LANGUAGES.ESPANOL) {
         textos_a_usar = TEXTOS.es;
 
-        boton_idioma_ingles.addEventListener('click', function (){
+        boton_idioma_ingles.addEventListener('click', function () {
             window.currentLanguage.pop();
             changeLanguage(LANGUAGES.INGLES);
         });
@@ -82,10 +82,10 @@ export function changeLanguage(new_language){
         boton_idioma_espanol.classList.toggle('idioma_seleccionado');
 
         boton_idioma_espanol.replaceWith(boton_idioma_espanol.cloneNode(true));
-    }else{
+    } else {
         textos_a_usar = TEXTOS.en;
 
-        boton_idioma_espanol.addEventListener('click', function (){
+        boton_idioma_espanol.addEventListener('click', function () {
             window.currentLanguage.pop();
             changeLanguage(LANGUAGES.ESPANOL);
         });
@@ -100,7 +100,7 @@ export function changeLanguage(new_language){
     document.getElementById('extracto_banner').innerHTML = textos_a_usar.EXTRACTO_BANNER_MI_PERSONA;
     document.getElementById('boton_cv').innerHTML = textos_a_usar.BOTON_CV_BANNER_MI_PERSONA;
     document.getElementById('boton_cv').href = `./cvweb.html#${new_language}`;
-    
+
     document.getElementById('porfolio_bloque_interior_subtitle').innerHTML = textos_a_usar.CATEGORIAS_PORFOLIO.DISENO;
     document.getElementById('seccion_contacto_titulo').innerHTML = textos_a_usar.TITULO_CONTACTO;
     document.getElementById('contacto_extra_input').placeholder = textos_a_usar.BLOQUE_CONTACTO_EXTRA.PLACEHOLDER_INPUT;
@@ -125,21 +125,28 @@ export function changeLanguage(new_language){
 }
 
 
-export function removeScrollButton(target_id){
+export function removeScrollButton(target_id) {
     //This removes the element that triggered the function
-    if(target_id == 'scroll_button_icon'){
-        document.getElementById(target_id).parentElement.remove();
-    }else{
-        document.getElementById(target_id).remove();
+    let element;
+    if (target_id == 'scroll_button_icon') {
+        element = document.getElementById(target_id).parentElement;
+    } else {
+        element = document.getElementById(target_id);
     }
+    element.classList.add("short-fade-out");
+    
+    setTimeout(function () {
+        element.remove();
+    }, 1000);
+
 }
 
-export function scroll_to_mi_persona(e){
+export function scroll_to_mi_persona(e) {
     e.preventDefault();
     //This scrolls to the "banner_mi_persona" element
     window.scrollTo({
         top: document.getElementById('banner_mi_persona').offsetTop,
-        left : 0,
+        left: 0,
         behavior: 'smooth'
     });
 

@@ -3,10 +3,6 @@ import {
     removeScrollButton
 } from '../functions.mjs';
 
-import {
-    threeRender
-} from '../three-script.mjs'
-
 export function createScrollButton() {
     const scroll_button = document.createElement('div');
     scroll_button.id = 'scroll_button';
@@ -18,7 +14,7 @@ export function createScrollButton() {
     i.id = 'scroll_button_icon';
     scroll_button.appendChild(i);
 
-    document.getElementById('three_canvas').appendChild(scroll_button);
+    document.getElementById('three_container').appendChild(scroll_button);
 }
 
 
@@ -28,12 +24,6 @@ export function scroll_event_listener_function() {
     if (window.scrollY > document.getElementById('banner_mi_persona').offsetTop / 4) {
         if (scroll_button) {
             removeScrollButton('scroll_button');
-        }
-
-        if (window.scrollY > document.getElementById('banner_mi_persona').offsetTop){
-            threeRender(false);
-        }else{
-            threeRender(true);
         }
     } else {
         if (!scroll_button) {

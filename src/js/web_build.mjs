@@ -13,13 +13,13 @@ import {
 
 
 
-export var IS_MOBILE = window.innerWidth < 768;
+export var IS_MOBILE = window.innerWidth < 900;
 window.onresize = function () {
     //Also defined in css/mobile.css
-    let new_state = window.innerWidth < 768;
+    let new_state = window.innerWidth < 900;
     if (IS_MOBILE != new_state) {
         //Changed from mobile to desktop
-        IS_MOBILE = window.innerWidth < 768;
+        IS_MOBILE = window.innerWidth < 900;
 
         if (IS_MOBILE) {
             addMobileElements();
@@ -36,14 +36,6 @@ populatePorfolio();
 if (IS_MOBILE) {
     addMobileElements();
 }
-/*
-document.getElementById('cambiar_lenguaje_a_español').addEventListener('click', function (){
-    changeLanguage(LANGUAGES.ESPANOL);
-});
-document.getElementById('cambiar_lenguaje_a_ingles').addEventListener('click', function (){
-    changeLanguage(LANGUAGES.INGLES);
-});
-*/
 
 
 //agrego la llamada a la api de gpt2

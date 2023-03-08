@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
     /*
     body {
@@ -35,8 +35,10 @@
     #scroll_button{
         width: 20vw;
         min-width: 60px;
+        max-width: 100px;
         height: 20vw;
         min-height: 60px;
+        max-height: 100px;
         position: fixed;
         bottom: 3vh;
         right: 3vh;

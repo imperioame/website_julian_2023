@@ -7,6 +7,11 @@ import {
 } from './web_build.mjs';
 import gsap from 'gsap';
 
+
+let window_width = window.outerWidth;
+let window_height = window.outerHeight;
+
+
 //Agrego un loader para poder darle un indicio al usuario que espere
 const loadingManager = new THREE.LoadingManager();
 loadingManager.onStart = function (url, item, total) {
@@ -64,7 +69,7 @@ const renderer = new THREE.WebGLRenderer();
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1;
 
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(window_width, window_height);
 document.getElementById('three_canvas').appendChild(renderer.domElement);
 
 
@@ -72,7 +77,7 @@ const scene = new THREE.Scene();
 renderer.setClearColor(0x141414);
 const camera = new THREE.PerspectiveCamera(
     15,
-    window.innerWidth / window.innerHeight,
+    window_width / window_height,
     0.1,
     10000
 );
@@ -102,7 +107,7 @@ composer.addPass(renderPass);
 //composer.addPass( glitchPass );
 
 const unrealBloomPass = new UnrealBloomPass(
-    new THREE.Vector2(window.innerWidth, window.innerHeight),
+    new THREE.Vector2(window_width, window_height),
     .35,
     1.2,
     .3);
@@ -117,8 +122,8 @@ const bokehPass = new BokehPass(scene, camera, {
     focus: 1,
     aperture: 0.00025,
     maxblur: 0.01,
-    width: window.innerWidth,
-    height: window.innerHeight
+    width: window_width,
+    height: window_height
 });
 composer.addPass(bokehPass);
 
@@ -137,10 +142,13 @@ const mouseCoords = new THREE.Vector2(0, 0);
 
 //Agrego un listener para que el canvas sea responsivo.
 window.addEventListener('resize', function () {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    window_width = window.outerWidth;
+    window_height = window.outerHeight;
+
+    camera.aspect = window_width / window_height;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    composer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window_width, window_height);
+    composer.setSize(window_width, window_height);
 });
 
 
@@ -271,7 +279,8 @@ assetLoader.load(personajeURL.href,
 
 
 //Agrega controles para rotación y movimiento de la cámara
-const orbit = new OrbitControls(camera, renderer.domElement);
+const orbit = new OrbitControls(camera, document.querySelector('#three_container'));
+//const orbit = new OrbitControls(camera, renderer.domElement);
 orbit.enableZoom = false;
 camera.position.set(-3, 2, 12);
 orbit.target.set(model_position.x - 1.3, model_position.y + 1.1, model_position.z);
@@ -359,12 +368,29 @@ function animate() {
     }
 }
 
-export function threeRender(animation_status){
-    if(animation_status){
+export function threeRender(animation_status) {
+    if (animation_status) {
         renderer.setAnimationLoop(animate);
-    }else{
+    } else {
         renderer.setAnimationLoop(null);
     }
 }
 
-threeRender(true);
+let rendering_status = true;
+threeRender(rendering_status);
+//For efficiency, stops the rendering if the canvas is out of view
+function playPauseThreeOnScroll() {
+    if (window.scrollY > document.getElementById('banner_mi_persona').offsetTop) {
+        if (rendering_status) {
+            rendering_status = false;
+            threeRender(rendering_status);
+        }
+    } else {
+        if (!rendering_status) {
+            rendering_status = true;
+            threeRender(rendering_status);
+        }
+    }
+}
+
+window.addEventListener('scroll', playPauseThreeOnScroll);

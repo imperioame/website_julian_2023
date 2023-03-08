@@ -359,4 +359,12 @@ function animate() {
     }
 }
 
-renderer.setAnimationLoop(animate);
+export function threeRender(animation_status){
+    if(animation_status){
+        renderer.setAnimationLoop(animate);
+    }else{
+        renderer.setAnimationLoop(null);
+    }
+}
+
+threeRender(true);

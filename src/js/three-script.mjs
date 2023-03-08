@@ -359,12 +359,29 @@ function animate() {
     }
 }
 
-export function threeRender(animation_status){
-    if(animation_status){
+export function threeRender(animation_status) {
+    if (animation_status) {
         renderer.setAnimationLoop(animate);
-    }else{
+    } else {
         renderer.setAnimationLoop(null);
     }
 }
 
-threeRender(true);
+let rendering_status = true;
+threeRender(rendering_status);
+//For efficiency, stops the rendering if the canvas is out of view
+function playPauseThreeOnScroll(){
+    if (window.scrollY > document.getElementById('banner_mi_persona').offsetTop) {
+        if (rendering_status){
+            rendering_status = false;
+            threeRender(rendering_status);
+        }
+    } else {
+        if (!rendering_status){
+            rendering_status = true;
+            threeRender(rendering_status);
+        }
+    }
+}
+
+window.addEventListener('scroll', playPauseThreeOnScroll);

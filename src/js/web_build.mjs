@@ -36,14 +36,6 @@ populatePorfolio();
 if (IS_MOBILE) {
     addMobileElements();
 }
-/*
-document.getElementById('cambiar_lenguaje_a_español').addEventListener('click', function (){
-    changeLanguage(LANGUAGES.ESPANOL);
-});
-document.getElementById('cambiar_lenguaje_a_ingles').addEventListener('click', function (){
-    changeLanguage(LANGUAGES.INGLES);
-});
-*/
 
 
 //agrego la llamada a la api de gpt2

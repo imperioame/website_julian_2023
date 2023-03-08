@@ -158,8 +158,8 @@ html::-webkit-scrollbar-thumb {
     height: fit-content;
     z-index: -10;
     position: relative;
+    pointer-events: none;
 }
-
 
 #three_overlay {
     width: 100vw;
@@ -436,9 +436,10 @@ html::-webkit-scrollbar-thumb {
 }
 
 #overlay_gradiente_hero {
-    top: 0;
+    bottom: 0;
+    z-index: 99;
     /*bottom: -10vh;*/
-    background: var(--porfolio_overlay_gradient);
+    background: var(--hero_overlay_gradient);
 }
 
 .title_trabajo {

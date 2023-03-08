@@ -279,7 +279,8 @@ assetLoader.load(personajeURL.href,
 
 
 //Agrega controles para rotación y movimiento de la cámara
-const orbit = new OrbitControls(camera, renderer.domElement);
+const orbit = new OrbitControls(camera, document.querySelector('#three_container'));
+//const orbit = new OrbitControls(camera, renderer.domElement);
 orbit.enableZoom = false;
 camera.position.set(-3, 2, 12);
 orbit.target.set(model_position.x - 1.3, model_position.y + 1.1, model_position.z);

@@ -22,6 +22,7 @@ html {
 
     --porfolio_gradient: linear-gradient(-45deg, #bd34fe 50%, #ff3670 50%);
     --porfolio_overlay_gradient: linear-gradient(0deg, rgba(20, 20, 20, 1) -10%, rgba(20, 20, 20, 0) 25%);
+    --hero_overlay_gradient: linear-gradient(0deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 25%);
     --about_overlay_gradient: linear-gradient(0deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 20%, rgba(20, 20, 20, 0) 80%, rgba(20, 20, 20, 1) 100%);
     --porfolio_overlay_gradient_horizontal_left: linear-gradient(-90deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 100%);
     --porfolio_overlay_gradient_horizontal_right: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 100%);

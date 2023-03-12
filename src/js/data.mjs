@@ -266,7 +266,15 @@ TRABAJOS_PORFOLIO.push({
         priority: 3,
         source: 'Web',
         category: CATEGORIAS_PORFOLIO.WEBJUEGOS
-    },
+    },{
+        id: 30,
+        title: 'Box Office - A mindful office full of productivity',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/532aee165767599.Y3JvcCwxMjAwLDkzOCwwLDEx.jpg',
+        link: 'https://www.behance.net/gallery/165767599/Box-Office-A-mindful-office-full-of-productivity?',
+        priority: 2,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.D3
+    }
 
 );
 

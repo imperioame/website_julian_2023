@@ -118,7 +118,7 @@ export function changeLanguage(new_language) {
     document.getElementById('footer').innerHTML = textos_a_usar.FOOTER;
 
     const a = document.createElement('a');
-    a.href = 'https://linktr.ee/imperioame';
+    a.href = 'https://media.julianmmame.com.ar';
     a.target = '_blank';
     a.innerHTML = 'Julián Amé';
     document.getElementById('footer').appendChild(a);

@@ -27,8 +27,8 @@ export function call_api_hf_gpt2() {
     }
 
     const error = {
-        es: 'El servicio de GPT2 no se encuentra disponible en este momento. Probar dentro de la próxima hora.<br>(Puede deberse a demasiadas consultas)',
-        en: 'GPT2 service is not available in this moment. Try again in the next hour.<br>(May be due to too many requests)'
+        es: 'El servicio de GPT2 no se encuentra disponible en este momento. Probar dentro de la próxima hora.<br>(Puede deberse a demasiadas consultas, también puede requerir un breve tiempo para inicializar)',
+        en: 'GPT2 service is not available in this moment. Try again in the next hour.<br>(May be due to too many requests, it also may need a little time to initialize)'
     }
     let error_content = window.currentLanguage[0] == 'es' ? error.es : error.en;
 

@@ -150,6 +150,9 @@ function createPorfolioCard(page_section, porfolio_job) {
     img_trabajo.title = porfolio_job.title;
     img_trabajo.alt = porfolio_job.title;
     img_trabajo.classList.add('img_trabajo', 'shadow_elevated');
+    if(porfolio_job.extra_css){
+        img_trabajo.style = porfolio_job.extra_css;
+    }
     card_trabajo.appendChild(img_trabajo);
 
 

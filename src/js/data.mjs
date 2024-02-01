@@ -119,13 +119,13 @@ TRABAJOS_PORFOLIO.push({
         title: 'Volvo - Photography Session by Volvo Arg.',
         img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/a1ca53163258029.Y3JvcCwzNTE3LDI3NTAsMCwzNA.jpg',
         link: 'https://www.behance.net/gallery/163258029/Volvo-Photography-Session-by-Volvo-Arg',
-        priority: 2,
+        priority: 3,
         source: 'behance',
         category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
     }, {
         id: 12,
         title: 'Costa y Roca - Wine Imagery',
-        img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/517326153975233.Y3JvcCwyNzI3LDIxMzMsMCwyNw.jpg',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/808/0d7da6153975233.Y3JvcCwxMjMxLDk2MywzNDQsNTc.png',
         link: 'https://www.behance.net/gallery/153975233/Costa-y-Roca-Wine-Imagery',
         priority: 1,
         source: 'behance',
@@ -274,8 +274,114 @@ TRABAJOS_PORFOLIO.push({
         priority: 2,
         source: 'Behance',
         category: CATEGORIAS_PORFOLIO.D3
+    },{
+        id: 31,
+        title: 'Early Works: Books covers & Flyers',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/808/55a8c5190355147.Y3JvcCw2MDAwLDQ2OTMsMCwyOTc.jpg',
+        link: 'https://www.behance.net/gallery/190355147/Early-Works-Books-covers-Flyers',
+        priority: 2,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.DISENO
+    },{
+        id: 32,
+        title: 'Early Works: Banners, signs and Clothing',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/808/fdd1a6190383341.Y3JvcCw5OTksNzgyLDAsMTQ.jpg',
+        link: 'https://www.behance.net/gallery/190383341/Early-Works-Banners-signs-and-Clothing',
+        priority: 2,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.DISENO
+    },{
+        id: 33,
+        title: 'Beer can design - Spika Beer Company',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/808/a14997175796205.Y3JvcCwxNTc1LDEyMzEsMCwyMw.jpg',
+        link: 'https://www.behance.net/gallery/175796205/Beer-can-design-Spika-Beer-Company',
+        priority: 2,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.DISENO
+    },{
+        id: 34,
+        title: 'Ruido - A design experience full of noise',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/404/89714a170483673.Y3JvcCw5OTksNzgyLDAsOQ.jpg',
+        link: 'https://www.behance.net/gallery/170483673/Ruido-A-design-experience-full-of-noise',
+        priority: 1,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.DISENO
+    },{
+        id: 35,
+        title: 'Julie - Photographic Sessión at night',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/808/850919171257147.Y3JvcCw0Nzc2LDM3MzUsMCw0Nw.jpg',
+        link: 'https://www.behance.net/gallery/171257147/Julie-Photographic-Session-at-night',
+        priority: 2,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },{
+        id: 36,
+        title: '2023 World Photography Day photo walk in Buenos Aires',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/808/850919171257147.Y3JvcCw0Nzc2LDM3MzUsMCw0Nw.jpg',
+        link: 'https://www.behance.net/gallery/179057151/2023-World-Photography-Day-photo-walk-in-Buenos-Aires',
+        priority: 1,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },{
+        id: 37,
+        title: 'Elal y Nosjteh - Tribal Axe Craft + Photo session',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/808/82d8e3179421987.Y3JvcCw1ODQwLDQ1NjcsMCw1Nw.jpg',
+        link: 'https://www.behance.net/gallery/179421987/Elal-y-Nosjteh-Tribal-Axe-Craft-Photo-session',
+        priority: 1,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },{
+        id: 38,
+        title: 'Anael - Photo Session by Nicolás Ochoa',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/808/1e3147181940685.Y3JvcCwzNDA4LDI2NjYsMCww.jpg',
+        link: 'https://www.behance.net/gallery/181940685/Anael-Photo-Session-by-Nicolas-Ochoa',
+        priority: 2,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },{
+        id: 39,
+        title: 'Little Sina in Auckland City - Photographic Session',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/808/03ec40185616447.Y3JvcCwzOTk5LDMxMjgsMCwxMDE5.jpg',
+        link: 'https://www.behance.net/gallery/185616447/Little-Sina-in-Auckland-City-Photographic-Session',
+        priority: 2,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
+    },{
+        id: 40,
+        title: '3D - Weekly cretive pieces in Blender',
+        img: 'https://mir-s3-cdn-cf.behance.net/projects/808/b74896178951577.Y3JvcCw4MTEsNjM1LDMyNyww.jpg',
+        link: 'https://www.behance.net/gallery/178951577/3D-Weekly-cretive-pieces-in-Blender',
+        priority: 1,
+        source: 'Behance',
+        category: CATEGORIAS_PORFOLIO.D3
+    },{
+        id: 41,
+        title: 'Antrieb Sudamericana Web',
+        img: 'https://i0.wp.com/antriebsa.com/wp-content/uploads/2018/10/cropped-logo-antrieb-01.png',
+        link: 'https://antriebsa.com/',
+        priority: 1,
+        source: 'Web',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
+        extra_css: 'background-color: white; padding: 2em 0'
+    },{
+        id: 42,
+        title: 'Imperio Usados Web',
+        img: 'https://http2.mlstatic.com/storage/mshops-appearance-api/images/70/66709070/logo-2019050418345411800.png',
+        link: 'https://www.imperio-usados.com.ar/',
+        priority: 2,
+        source: 'Web',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
+        extra_css: 'background-color: white; padding: 0 2em'
+    },{
+        id: 43,
+        title: 'Landrú.org Web design and Coordination',
+        img: 'https://www.landru.org/wp-content/uploads/2021/12/11_gato.svg',
+        link: 'https://www.landru.org/',
+        priority: 2,
+        source: 'Web',
+        category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
+        extra_css: 'background-color: white; padding: 4em 0'
     }
-
 );
 
 

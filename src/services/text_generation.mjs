@@ -1,4 +1,4 @@
-
+import 'dotenv/config';
 export function call_api_hf_gpt2() {
     document.getElementById("error_msj").innerHTML = '';
     document.getElementById("error_msj").style.display = "none";
@@ -6,10 +6,10 @@ export function call_api_hf_gpt2() {
 
     async function query(data) {
         const api_language = window.currentLanguage[0] == 'es' ? 'https://api-inference.huggingface.co/models/flax-community/gpt-2-spanish' : 'https://api-inference.huggingface.co/models/gpt2';
-
         const response = await fetch(api_language, {
                 headers: {
-                    Authorization: "Bearer " + process.env.HF_API_TOKEN
+                    Authorization: "Bearer " + process.env.HF_API_TOKEN,
+                    "Content-Type": "application/json",
                 },
                 method: "POST",
                 body: JSON.stringify(data),
@@ -56,7 +56,9 @@ export function call_api_hf_gpt2() {
                 }
 
                 document.getElementById("contacto_extra_input").value = final_response + '...';
-            } else {
+            } /*else if(response.error.wait_for_model){
+                // Here i should get the time to wait for the model to load, and display it as a count down timer
+            }*/else {
                 document.getElementById("error_msj").innerHTML = error_content;
                 document.getElementById("error_msj").style.display = "block";
             }

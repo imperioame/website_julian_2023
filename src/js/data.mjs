@@ -321,7 +321,7 @@ TRABAJOS_PORFOLIO.push({
     title: '2023 World Photography Day photo walk in Buenos Aires',
     img: 'https://mir-s3-cdn-cf.behance.net/projects/808/c535eb179057151.Y3JvcCw0OTg4LDM5MDEsMCw3NA.jpg',
     link: 'https://www.behance.net/gallery/179057151/2023-World-Photography-Day-photo-walk-in-Buenos-Aires',
-    priority: 1,
+    priority: 2,
     source: 'Behance',
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
@@ -345,7 +345,7 @@ TRABAJOS_PORFOLIO.push({
     title: 'Little Sina in Auckland City - Photographic Session',
     img: 'https://mir-s3-cdn-cf.behance.net/projects/808/03ec40185616447.Y3JvcCwzOTk5LDMxMjgsMCwxMDE5.jpg',
     link: 'https://www.behance.net/gallery/185616447/Little-Sina-in-Auckland-City-Photographic-Session',
-    priority: 2,
+    priority: 1,
     source: 'Behance',
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
@@ -383,6 +383,14 @@ TRABAJOS_PORFOLIO.push({
     source: 'Web',
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 2em 0'
+}, {
+    id: 44,
+    title: 'AI Adventure Text Game',
+    img: 'https://repository-images.githubusercontent.com/782311160/9a41e863-121d-4080-9017-caa079fd97d9',
+    link: 'https://ai-text-game.marioa.me/',
+    priority: 2,
+    source: 'github',
+    category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
 });
 
 

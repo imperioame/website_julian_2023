@@ -45,20 +45,70 @@ export function findInObject(object, element) {
     return [index, array, objectElement];
 }
 
+function closeModal(e){
+    if(e.target.id != 'modal_overlay' && e.target.id != 'close_modal' && e.target.id != 'modal_link') return;
+    document.getElementById('modal_overlay').remove();
+}
+
 export function openModal(e) {
     //This function manages an UI modal
     const modal_overlay = document.createElement('div');
     modal_overlay.id = 'modal_overlay';
+    modal_overlay.addEventListener('click', closeModal);
 
-    const modal = document.createElement('div');
+    const modal = document.createElement('section');
     modal.id = 'modal';
 
-    const iframe = document.createElement('iframe');
+    //Debería estar chequeando que el contenido sea de porfolio para este modal.
+    const trabajo = DATA.TRABAJOS_PORFOLIO.find(trabajo => trabajo.id == e.target.parentElement.dataset.trabajo_id);
 
-    let trabajo = DATA.TRABAJOS_PORFOLIO.find(trabajo => trabajo.id == e.target.parentElement.dataset.trabajo_id);
-    iframe.src = trabajo.link;
+    const title = trabajo.title;
+    const img = trabajo.img;
+    const description = trabajo.description;
+    const category = trabajo.category;
+    const link = trabajo.link;
 
-    modal.appendChild(iframe);
+    const html_title = document.createElement('h1');
+    html_title.innerHTML = title;
+    html_title.id = 'modal_title';
+
+    const html_category = document.createElement('p');
+    html_category.innerHTML = category;
+    html_category.id = 'modal_category';
+
+    const html_img = document.createElement('div');
+    html_img.style.backgroundImage = img;
+    html_img.id = 'modal_img';
+
+    const html_img_overlay = document.createElement('div');
+    html_img.id = 'modal_img_overlay';
+
+    const close_modal = document.createElement('div');
+    close_modal.id = 'close_modal';
+    const close_modal_icon = document.createElement('i');
+    close_modal_icon.classList.add('fa-solid', 'fa-xmark');
+    close_modal.appendChild(close_modal_icon);
+
+    close_modal.addEventListener('click', closeModal);
+
+    const html_description = document.createElement('p');
+    html_description.innerHTML = window.currentLanguage == LANGUAGES.ESPANOL ? description.es : description.en;
+    html_description.id = 'modal_description';
+
+    const html_link = document.createElement('a');
+    html_link.innerHTML = window.currentLanguage == LANGUAGES.ESPANOL ? TEXTOS.es.MODAL_LINK : TEXTOS.en.MODAL_LINK;
+    html_link.href = link;
+    html_link.id = 'modal_link';
+    html_link.target = '_blank';
+    html_link.addEventListener('click', closeModal);
+
+    modal.appendChild(html_img_overlay);
+    html_img_overlay.appendChild(html_img);
+    modal.appendChild(close_modal);
+    modal.appendChild(html_title);
+    modal.appendChild(html_category);
+    modal.appendChild(html_description);
+    modal.appendChild(html_link);
 
     modal_overlay.appendChild(modal);
     document.body.appendChild(modal_overlay);
@@ -102,6 +152,7 @@ export function changeLanguage(new_language) {
     document.getElementById('boton_cv').href = `./cvweb.html#${new_language}`;
 
     document.getElementById('porfolio_bloque_interior_subtitle').innerHTML = textos_a_usar.CATEGORIAS_PORFOLIO.DISENO;
+    document.getElementById('modal_category').innerHTML = textos_a_usar.CATEGORIAS_PORFOLIO.DISENO;
     document.getElementById('seccion_contacto_titulo').innerHTML = textos_a_usar.TITULO_CONTACTO;
     document.getElementById('contacto_extra_input').placeholder = textos_a_usar.BLOQUE_CONTACTO_EXTRA.PLACEHOLDER_INPUT;
     document.getElementById('contacto_extra_button').innerHTML = textos_a_usar.BLOQUE_CONTACTO_EXTRA.BOTON_GENERAR_TEXTO;
@@ -134,7 +185,7 @@ export function removeScrollButton(target_id) {
         element = document.getElementById(target_id);
     }
     element.classList.add("short-fade-out");
-    
+
     setTimeout(function () {
         element.remove();
     }, 1000);

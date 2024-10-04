@@ -45,6 +45,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 2,
@@ -57,6 +58,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.PUBLICITARIO
 }, {
     id: 3,
@@ -69,6 +71,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 4,
@@ -81,6 +84,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 5,
@@ -93,6 +97,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 6,
@@ -105,6 +110,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 3,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 7,
@@ -117,6 +123,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 8,
@@ -129,6 +136,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 9,
@@ -141,6 +149,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 10,
@@ -153,6 +162,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 11,
@@ -165,6 +175,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 3,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 12,
@@ -172,11 +183,12 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/808/0d7da6153975233.Y3JvcCwxMjMxLDk2MywzNDQsNTc.png',
     link: 'https://www.behance.net/gallery/153975233/Costa-y-Roca-Wine-Imagery',
     description: {
-        es: '',
-        en: "",
+        es: 'Este proyecto se centró en crear imágenes cautivadoras para Costa y Roca, una marca de vinos emergente. El objetivo era representar visualmente la elegancia y la artesanía de la marca a través de fotografías de productos naturales. La iluminación, la textura y la gradación de color fueron clave para resaltar los tonos intensos del vino y la etiqueta de nuevo diseño. El resultado es una serie de imágenes refinadas y de alta gama que reflejan la sofisticación y la calidad de la marca Costa y Roca, con un gaucho argentino como telón de fondo, un campesino típico y el público objetivo de la marca.',
+        en: "This project focused on creating captivating imagery for Costa y Roca, an emerging wine brand. The goal was to visually portray the brand's elegance and craftsmanship through natural product photography. Lighting, texture, and color grading were key in highlighting the wine’s rich tones and the newly designed label. The result is a series of high-end, refined images that reflect the sophistication and quality of the Costa y Roca brand, set against the backdrop of an Argentinian Gaucho — a typical countryman and the brand's target audience.",
     },
     priority: 1,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 13,
@@ -189,6 +201,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 14,
@@ -196,11 +209,12 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/efa3fd149649961.Y3JvcCwxNTAwLDExNzMsMCwxNA.jpg',
     link: 'https://www.behance.net/gallery/149649961/Meteor-350-por-Virginia-Guidetti',
     description: {
-        es: '',
-        en: "",
+        es: 'Para este proyecto, fui la segunda cámara en una sesión de fotos con Virginia Guidetti, modelo y corredora de motos, en la que aparecía la Meteor 350 de Royal Enfield. Las fotos y la edición que se muestran aquí son mías. El objetivo era destacar el diseño de inspiración vintage y el rendimiento robusto de la moto a través de imágenes dinámicas capturadas en las vibrantes calles de Buenos Aires. Se prestó especial atención a la gradación de color, el retoque y la textura para realzar tanto la motocicleta como la modelo, lo que dio como resultado una serie equilibrada y visualmente impactante que captura la esencia del motociclismo clásico y la aventura.',
+        en: "For this project, I served as the second camera for a photoshoot with Virginia Guidetti, model and bike racer, featuring the Meteor 350 by Royal Enfield. The photos and editing showcased here are my own. The focus was on highlighting the bike’s vintage-inspired design and rugged performance through dynamic imagery captured in the vibrant streets of Buenos Aires. Careful attention was given to color grading, retouching, and texturing to enhance both the motorcycle and the model, resulting in a balanced and visually striking series that captures the essence of classic motorcycling and adventure.",
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 15,
@@ -208,11 +222,12 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/04b042151586163.6314b9ddd768e.png',
     link: 'https://www.behance.net/gallery/151586163/World-Sighting-3d-world-building-experimentation',
     description: {
-        es: '',
-        en: "",
+        es: 'Este proyecto explora las posibilidades creativas de la creación de mundos en 3D a través de una serie de entornos experimentales. El objetivo era ampliar los límites de la narración visual mediante el diseño de planetas inmersivos, raros pero posibles, que invitan al espectador a interactuar con detalles intrincados y composiciones dinámicas. Se emplearon modelos simples con técnicas avanzadas de texturizado e iluminación para crear estos mundos ficticios, lo que dio como resultado una serie visualmente rica e imaginativa que muestra el potencial infinito del diseño en 3D en el arte digital.',
+        en: "This project explores the creative possibilities of 3D world-building through a series of experimental environments. The focus was on pushing the boundaries of visual storytelling by designing immersive, rare but possible planets that invite the viewer to engage with intricate details and dynamic compositions. Simple modeling with advanced texturing and lighting techniques were employed to craft these fictional worlds, resulting in a visually rich and imaginative series that showcases the endless potential of 3D design in digital art.",
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 16,
@@ -220,11 +235,12 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/e7c85d150592763.Y3JvcCwxMjAwLDkzOCwwLDEzMA.jpg',
     link: 'https://www.behance.net/gallery/150592763/ReFaced-3D-interventions-over-portraits',
     description: {
-        es: '',
-        en: "",
+        es: 'Este proyecto combina la fotografía de retratos tradicional con <strong>intervenciones 3D</strong>, creando una fusión entre la expresión humana y el realce digital. El enfoque estuvo en <em>reimaginar rostros humanos</em> mediante la aplicación de un personaje 3D absorbente, que añade una capa abstracta y conceptual a los retratos. Utilizando <strong>técnicas de iluminación</strong> y edición en Photoshop, los elementos 3D se integran de manera fluida con las fotografías, resultando en una serie que desafía el retrato convencional mientras explora temas de identidad y transformación.',
+        en: "This project blends traditional portrait photography with <strong>3D interventions</strong>, creating a fusion of human expression and digital enhancement. The focus was on <em>reimagining human faces</em> through the application of an absorbing 3D character, which adds an abstract and conceptual layer to the portraits. Using <strong>lighting techniques</strong> and post-production editing in Photoshop, the 3D elements seamlessly integrate with the photographs, resulting in a series that challenges conventional portraiture while exploring themes of identity and transformation.",
     },
     priority: 1,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 17,
@@ -237,6 +253,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 18,
@@ -249,6 +266,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.PUBLICITARIO
 }, {
     id: 19,
@@ -261,6 +279,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.PUBLICITARIO
 }, {
     id: 20,
@@ -273,6 +292,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 21,
@@ -285,6 +305,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 22,
@@ -297,6 +318,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 23,
@@ -309,6 +331,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'github',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 24,
@@ -321,6 +344,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'github',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: black; padding: 3em 0'
 }, {
@@ -334,6 +358,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'github',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 26,
@@ -346,6 +371,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Sketchfab',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 27,
@@ -358,6 +384,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 28,
@@ -370,6 +397,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Web',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 3em 0'
 }, {
@@ -383,6 +411,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 3,
     source: 'Web',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 30,
@@ -395,6 +424,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 31,
@@ -407,6 +437,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 32,
@@ -419,6 +450,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 33,
@@ -431,6 +463,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 34,
@@ -443,6 +476,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 35,
@@ -455,6 +489,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 36,
@@ -467,6 +502,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 37,
@@ -479,6 +515,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 38,
@@ -491,6 +528,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 39,
@@ -503,6 +541,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 40,
@@ -515,6 +554,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'Behance',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 41,
@@ -527,6 +567,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'Web',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 10vh 0; box-sizing: border-box'
 }, {
@@ -540,6 +581,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Web',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 0 6em; box-sizing: border-box;'
 }, {
@@ -553,6 +595,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Web',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 2em 0'
 }, {
@@ -566,6 +609,7 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Web',
+    keywords: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
 });
 

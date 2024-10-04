@@ -73,14 +73,15 @@ export function openModal(e) {
     html_title.id = 'modal_title';
 
     const html_category = document.createElement('p');
-    html_category.innerHTML = category;
+    const category_text = DATA.TEXTOS[window.currentLanguage].CATEGORIAS_PORFOLIO[[Object.keys(DATA.CATEGORIAS_PORFOLIO)[category -1]]];
+    html_category.innerHTML = category_text;
     html_category.id = 'modal_category';
 
-    const html_img = document.createElement('div');
-    html_img.style.backgroundImage = img;
-    html_img.id = 'modal_img';
-
     const html_img_overlay = document.createElement('div');
+    html_img_overlay.style.backgroundImage = `url(${img})`;
+    html_img_overlay.id = 'modal_img';
+
+    const html_img = document.createElement('div');
     html_img.id = 'modal_img_overlay';
 
     const close_modal = document.createElement('div');
@@ -102,8 +103,8 @@ export function openModal(e) {
     html_link.target = '_blank';
     html_link.addEventListener('click', closeModal);
 
-    modal.appendChild(html_img_overlay);
     html_img_overlay.appendChild(html_img);
+    modal.appendChild(html_img_overlay);
     modal.appendChild(close_modal);
     modal.appendChild(html_title);
     modal.appendChild(html_category);

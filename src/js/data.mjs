@@ -40,12 +40,37 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/095573160433619.Y3JvcCwxMzUwLDEwNTUsMCwxMw.jpg',
     link: 'https://www.behance.net/gallery/160433619/VoRges-VR-app-of-a-JL-Borgess-short-tale',
     description: {
-        es: 'Para este proyecto, diseñé y desarrollé una aplicación de realidad virtual que sumerge a los usuarios en el mundo de un cuento de Jorge Luis Borges, combinando literatura con realidad virtual interactiva. El proyecto implicó la creación de un entorno 3D visualmente atractivo inspirado en el estilo narrativo único de Borges. Me encargué del desarrollo y de las interacciones de realidad virtual, en colaboración con un equipo de diseñadores y artistas que desarrollaron la conceptualización, el diseño de la interfaz de usuario y la experiencia de usuario y los recursos 3D, garantizando una experiencia de usuario fluida e inmersiva. Esta aplicación permite a los usuarios explorar el universo literario en un formato innovador e interactivo, añadiendo una nueva dimensión a la narración de historias a través de la tecnología de realidad virtual.',
-        en: "For this project, I designed and developed a VR app that immerses users into the world of a Jorge Luis Borges short story, blending literature with interactive virtual reality. The project involved crafting a visually engaging 3D environment inspired by Borges' unique narrative style. I handled the development and VR interactions, teaming up with a team of designers and artists that developed the conceptualization, UI/UX design, and 3D assets, ensuring a seamless and immersive user experience. This app allows users to explore the literary universe in an innovative, interactive format, adding a new dimension to storytelling through virtual reality technology.",
+        es: 'Diseñé y desarrollé una <strong>aplicación de realidad virtual (VR)</strong> que sumerge a los usuarios en el mundo de un <strong>cuento corto de Jorge Luis Borges</strong>, combinando <em>literatura</em> con <strong>realidad virtual interactiva</strong>. El proyecto implicó la creación de un <strong>entorno 3D</strong> visualmente atractivo, inspirado en el estilo narrativo único de Borges. Me encargué del desarrollo y de las <strong>interacciones en VR</strong>, colaborando con un equipo de <em>diseñadores</em> y <em>artistas</em> que desarrollaron la <strong>conceptualización</strong>, el <strong>diseño UI/UX</strong>, y los <strong>activos 3D</strong>, asegurando una experiencia de usuario fluida e inmersiva. Esta aplicación permite a los usuarios explorar el universo literario en un <strong>formato interactivo</strong> innovador, añadiendo una nueva dimensión a la narración de historias a través de la <em>tecnología de realidad virtual</em>.',
+        en: "I designed and developed a <strong>VR app</strong> that immerses users into the world of a <strong>Jorge Luis Borges short story</strong>, blending <em>literature</em> with <strong>interactive virtual reality</strong>. The project involved crafting a visually engaging <strong>3D environment</strong> inspired by Borges' unique narrative style. I handled the development and <strong>VR interactions</strong>, teaming up with a team of <em>designers</em> and <em>artists</em> that developed the <strong>conceptualization</strong>, <strong>UI/UX design</strong>, and <strong>3D assets</strong>, ensuring a seamless and immersive user experience. This app allows users to explore the literary universe in an innovative, <strong>interactive format</strong>, adding a new dimension to storytelling through <em>virtual reality technology</em>.",
     },
     priority: 1,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        en: [
+            "VR development",
+            "Interactive virtual reality",
+            "3D environment design",
+            "Virtual reality interactions",
+            "Literature adaptation",
+            "Narrative design",
+            "UI/UX design",
+            "Conceptualization",
+            "Immersive user experience",
+            "Interactive storytelling",
+            "Virtual reality technology",
+            "Team collaboration",
+            "Project management"
+        ],
+        es: []
+    },
+    tools: [
+        "Unity",
+        "Vuforia",
+        "C#",
+        "Blender",
+        "Illustrator",
+        "Photoshop"
+    ],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 2,
@@ -53,12 +78,31 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/3cd542150708753.Y3JvcCw0MTY4LDMyNjAsMCw0NTM.png',
     link: 'https://www.behance.net/gallery/150708753/BitBang-2020-Desarrollo-de-identidad-visual-y-Campana',
     description: {
-        es: 'Con el equipo de Agencia Álterego, desarrollamos una identidad visual completa y lideramos una campaña de marketing destinada a establecer la presencia de la marca en la industria tecnológica. El proceso de desarrollo de la marca incluyó el diseño de un logotipo moderno y llamativo, la creación de una combinación de colores vibrante y la elaboración de diversos materiales digitales e impresos para garantizar una comunicación visual coherente. También participé en la dirección creativa de la campaña, centrándome en la estrategia digital, la participación en las redes sociales y las promociones específicas para aumentar la visibilidad y el reconocimiento de la marca en un mercado competitivo.',
-        en: "With the team at Álterego Agency, we developed a complete visual identity and led a marketing campaign aimed at establishing the brand's presence in the tech industry. The branding process included designing a modern, bold logo, creating a vibrant color scheme, and crafting various digital and print materials to ensure cohesive visual communication. I also participated in the campaign’s creative direction, focusing on digital strategy, social media engagement, and targeted promotions to increase visibility and brand recognition in a competitive market.",
+        es: 'Con el equipo de <strong>Agencia Álterego</strong>, desarrollamos una <strong>identidad visual completa</strong> y lideramos una <strong>campaña de marketing</strong> destinada a establecer la presencia de la marca en la <em>industria tecnológica</em>. El proceso de desarrollo de la marca incluyó el diseño de un <strong>logotipo moderno y llamativo</strong>, la creación de una <em>combinación de colores vibrante</em> y la elaboración de diversos <strong>materiales digitales e impresos</strong> para garantizar una comunicación visual coherente. También participé en la <strong>dirección creativa</strong> de la campaña, centrándome en la <em>estrategia digital</em>, la <strong>participación en redes sociales</strong> y las promociones específicas para aumentar la visibilidad y el reconocimiento de la marca en un mercado competitivo.',
+        en: "With the team at <strong>Álterego Agency</strong>, we developed a <strong>complete visual identity</strong> and led a <strong>marketing campaign</strong> aimed at establishing the brand's presence in the <em>technology industry</em>. The brand development process included the design of a <strong>modern and eye-catching logo</strong>, the creation of a <em>vibrant color palette</em>, and the production of various <strong>digital and print materials</strong> to ensure consistent visual communication. I also participated in the <strong>creative direction</strong> of the campaign, focusing on <em>digital strategy</em>, <strong>social media engagement</strong>, and targeted promotions to increase brand visibility and recognition in a competitive market.",
     },
     priority: 1,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        en: [
+            "Audiovisual design",
+            "Graphic Design",
+            "Video Editing",
+            "Social media campaigns",
+            "Visual identity development",
+            "Marketing campaign leadership",
+            "Brand development",
+            "Logo design",
+            "Digital materials",
+            "Creative direction",
+            "Digital strategy",
+            "Social media engagement",
+            "Brand visibility",
+            "Brand recognition"
+        ],
+        es: []
+    },
+    tools: ['Photoshop', 'Illustrator', 'After Effects', 'Premiere Pro'],
     category: CATEGORIAS_PORFOLIO.PUBLICITARIO
 }, {
     id: 3,
@@ -66,12 +110,29 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d38c39152608337.Y3JvcCwyNzI3LDIxMzMsMCwyNw.jpg',
     link: 'https://www.behance.net/gallery/152608337/Godspeed-3D-Gods-creation',
     description: {
-        es: 'Este proyecto implicó la creación de una serie de imágenes en 3D que reinventan el concepto de la creación divina, combinando la narración artística con un modelado 3D intrincado. El objetivo era crear figuras celestiales complejas, dinámicas y creativas, utilizando técnicas avanzadas de texturizado e iluminación para evocar una sensación de asombro y misterio. El resultado final es una narrativa visual que explora las posibilidades de los cuerpos divinos a través de un diseño 3D audaz y de alta complejidad.',
-        en: "This project involved creating a series of 3D visuals that reimagine the concept of divine creation, blending artistic storytelling with intricate 3D modeling. The focus was on crafting complex, dynamic and creative celestial figures, using advanced texturing and lighting techniques to evoke a sense of awe and mystery. The end result is a visual narrative that explores the possibilities of devine bodies through bold, high-complexity 3D design.",
+        es: 'Este proyecto implicó la creación de una serie de <strong>imágenes en 3D</strong> que reinventan el concepto de la creación divina, combinando la <strong>narración artística</strong> con un <strong>modelado 3D</strong> intrincado. El objetivo era crear <strong>figuras celestiales</strong> complejas, dinámicas y creativas, utilizando técnicas avanzadas de <em>texturizado</em> e <em>iluminación</em> para evocar una sensación de asombro y misterio. El resultado final es una <strong>narrativa visual</strong> que explora las posibilidades de los cuerpos divinos a través de un audaz y complejo <strong>diseño 3D</strong>.',
+        en: "This project involved the creation of a series of <strong>3D images</strong> that reinvent the concept of divine creation, blending artistic storytelling with intricate <strong>3D modeling</strong>. The goal was to create complex, dynamic, and creative <strong>celestial figures</strong> using advanced <em>texturing</em> and <em>lighting techniques</em> to evoke a sense of awe and mystery. The final result is a <strong>visual narrative</strong> that explores the possibilities of divine bodies through bold and highly complex <strong>3D design</strong>.",
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        en: [
+            "3D Modeling",
+            "Artistic Storytelling",
+            "Advanced Texturing Techniques",
+            "Lighting Techniques",
+            "Character Design",
+            "3D Design",
+            "Visual Narrative",
+            "3D Modeling",
+            "Creative Visual Concepts",
+            "Dynamic 3D Art",
+            "Bold 3D Design",
+            "Creative Direction"
+        ],
+        es: []
+    },
+    tools: ['Blender', 'After Effects', 'Premiere Pro'],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 4,
@@ -79,12 +140,28 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/c9fc1d156358269.Y3JvcCwyMDMwLDE1ODcsMCwyMA.jpg',
     link: 'https://www.behance.net/gallery/156358269/Domingo-Granja-Branding-y-Web',
     description: {
-        es: 'Con el equipo de Agencia Álterego hemos desarrollado una identidad visual completa y un sitio web moderno y responsivo que refleja el espíritu innovador de la empresa dedicada a la venta de materiales desde corralón hasta artículos del hogar. El proceso de branding incluyó la creación de un logotipo limpio y dinámico, el establecimiento de una paleta de colores cohesiva, y el diseño de varios recursos digitales para garantizar una experiencia de marca consistente. El sitio web fue construido con Wordpress, con una estructura fácil de usar, enfocándose en la accesibilidad, navegación intuitiva y optimización para móviles, alineándose con los valores de crecimiento y sostenibilidad de la marca.',
-        en: "With the team at Álterego Agency, we developed a complete visual identity and a modern, responsive website that reflects the innovative spirit of the company dedicated to the sale of materials from corralón to household items. The branding process included the creation of a clean and dynamic logo, the establishment of a cohesive color palette, and the design of several digital assets to ensure a consistent brand experience. The website was built with Wordpress, with a user-friendly structure, focusing on accessibility, intuitive navigation, and mobile optimization, aligning with the brand's values ​​of growth and sustainability.",
+        es: 'Con el equipo de <strong>Agencia Álterego</strong>, desarrollamos una <strong>identidad visual</strong> completa y un <strong>sitio web moderno y responsive</strong> que refleja el espíritu innovador de la empresa dedicada a la venta de materiales de corralón hasta artículos para el hogar. El <strong>proceso de branding</strong> incluyó la creación de un <strong>logotipo</strong> limpio y dinámico, el establecimiento de una <em>paleta de colores</em> coherente, y el diseño de varios <strong>activos digitales</strong> para garantizar una experiencia de marca consistente. El sitio web fue desarrollado en <strong>Wordpress</strong>, con una estructura amigable para el usuario, enfocada en la <em>accesibilidad</em>, navegación intuitiva y <em>optimización móvil</em>, alineándose con los valores de crecimiento y sostenibilidad de la marca.',
+        en: "With the team at <strong>Álterego Agency</strong>, we developed a complete <strong>visual identity</strong> and a modern, responsive <strong>website</strong> that reflects the innovative spirit of the company dedicated to the sale of materials from corralón to household items. The <strong>branding process</strong> included the creation of a clean and dynamic <strong>logo</strong>, the establishment of a cohesive <em>color palette</em>, and the design of several <strong>digital assets</strong> to ensure a consistent <strong>brand experience</strong>. The website was built with <strong>Wordpress</strong>, with a user-friendly structure, focusing on <em>accessibility</em>, intuitive navigation, and <em>mobile optimization</em>, aligning with the brand's values ​​of growth and sustainability.",
     },
     priority: 1,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: [
+            "Visual Identity Development",
+            "Responsive Website Design",
+            "Branding Process",
+            "Logo Design",
+            "Digital Assets Design",
+            "WordPress Development",
+            "Accessibility",
+            "Mobile Optimization",
+            "Brand Consistency",
+            "Project Management",
+            "Account management"
+        ]
+    },
+    tools: ['Photoshop', 'Illustrator', 'Agile Methodologies', 'Wordpress'],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 5,
@@ -92,12 +169,28 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/cb9ab9155963781.Y3JvcCwxODE4LDE0MjIsMCwxOA.jpg',
     link: 'https://www.behance.net/gallery/155963781/Mikos-Story-An-AI-made-graphic-novel',
     description: {
-        es: 'Este proyecto de novela gráfica explora la fusión de la inteligencia artificial y la narración visual. Se utilizaron algoritmos de IA en etapa inicial para generar tanto el guion como un conjunto único de ilustraciones que dan vida a la historia de Miko. El elemento humano jugó un papel clave en el refinamiento de los resultados del aprendizaje automático con un sentido creativo de dirección. El proceso implicó seleccionar las obras de arte generadas por IA, pulirlas para que se alinearan con el tono narrativo y garantizar un estilo visual cohesivo a lo largo de la novela. Este enfoque innovador resalta el potencial de la IA para expandir los límites de la narración gráfica tradicional.',
-        en: "This graphic novel project explores the fusion of artificial intelligence and visual storytelling. Early-stage AI algorithms were used to generate both the script and a unique set of illustrations that bring the story of Miko to life. The human element played a key role in refining the machine learning outcomes with a creative sense of direction. The process involved curating AI-generated artwork, polishing it to align with the narrative tone, and ensuring a cohesive visual style throughout the novel. This innovative approach highlights the potential of AI in expanding the boundaries of traditional graphic storytelling.",
+        es: 'Este <strong>proyecto de novela gráfica</strong> explora la fusión de la <strong>inteligencia artificial</strong> y la <em>narrativa visual</em>. Se utilizaron algoritmos de IA en una etapa temprana para generar tanto el <strong>guion</strong> como un conjunto único de <strong>ilustraciones</strong> que dan vida a la historia de Miko. El <strong>elemento humano</strong> desempeñó un papel clave en refinar los resultados del aprendizaje automático con un sentido creativo de dirección. El proceso involucró la curaduría del <em>arte generado por IA</em>, puliéndolo para alinearlo con el tono narrativo y garantizando un estilo visual cohesivo en toda la novela. Este enfoque innovador resalta el potencial de la <strong>IA</strong> para expandir los límites de la narración gráfica tradicional.',
+        en: "This <strong>graphic novel project</strong> explores the fusion of <strong>artificial intelligence</strong> and <em>visual storytelling</em>. Early-stage AI algorithms were used to generate both the <strong>script</strong> and a unique set of <strong>illustrations</strong> that bring the story of Miko to life. The <strong>human element</strong> played a key role in refining the machine learning outcomes with a creative sense of direction. The process involved curating <em>AI-generated artwork</em>, polishing it to align with the narrative tone, and ensuring a cohesive visual style throughout the novel. This innovative approach highlights the potential of <strong>AI</strong> in expanding the boundaries of traditional graphic storytelling.",
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: [
+            "Graphic Novel Development",
+            "Artificial Intelligence Integration",
+            "Visual Storytelling",
+            "Script Generation",
+            "Illustration Curation",
+            "AI-Generated Artwork",
+            "Creative Direction",
+            "Narrative Alignment",
+            "Cohesive Visual Style",
+            "Machine Learning Refinement",
+            "Innovative Graphic Storytelling"
+        ]
+    },
+    tools: ['Midjourney', 'Photoshop', 'After Effects', 'Premiere Pro'],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 6,
@@ -105,12 +198,30 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/9fb975159547247.Y3JvcCwzODY4LDMwMjUsMCwzOA.jpg',
     link: 'https://www.behance.net/gallery/159547247/Uptown-Photography-Session-by-Angie-Perfumo',
     description: {
-        es: 'Este proyecto implicó la dirección creativa y la posproducción de una sesión de fotografía profesional con una modelo. El objetivo era mejorar la estética visual trabajando con condiciones de poca luz, ajustando la gradación de color y aplicando retoques y texturas para lograr un aspecto pulido, texturizado y cohesivo. El objetivo era resaltar la esencia de la sesión, resaltando la interacción dinámica de la iluminación, la composición y el tema para crear una serie visualmente atractiva.',
-        en: "This project involved the creative direction and post-production for a professional photography session with a model. The focus was on enhancing the visual aesthetics by working with low-light conditions, adjusting color grading, and applying retouching and texturing to achieve a polished, textured, and cohesive look. The goal was to bring out the essence of the session, highlighting the dynamic interplay of lighting, composition, and subject matter to create a visually compelling series.",
+        es: 'Este proyecto implicó la <strong>dirección creativa</strong> y la <em>postproducción</em> de una <strong>sesión fotográfica profesional</strong> con una modelo. El enfoque estuvo en mejorar la <strong>estética visual</strong> trabajando con <em>condiciones de poca luz</em>, ajustando la <strong>gradación de color</strong> y aplicando <strong>retoques</strong> y <em>texturización</em> para lograr un aspecto pulido, texturizado y cohesivo. El objetivo era resaltar la esencia de la sesión, destacando la interacción dinámica entre la <strong>iluminación</strong>, la <strong>composición</strong> y el <strong>tema</strong> para crear una serie visualmente impactante.',
+        en: "This project involved the <strong>creative direction</strong> and <em>post-production</em> for a professional <strong>photography session</strong> with a model. The focus was on enhancing the <strong>visual aesthetics</strong> by working with <em>low-light conditions</em>, adjusting <strong>color grading</strong>, and applying <strong>retouching</strong> and <em>texturing</em> to achieve a polished, textured, and cohesive look. The goal was to bring out the essence of the session, highlighting the dynamic interplay of <strong>lighting</strong>, <strong>composition</strong>, and <strong>subject matter</strong> to create a visually compelling series.",
     },
     priority: 3,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: [
+            "Creative Direction",
+            "Photography Session",
+            "Professional Photography",
+            "Post-Production",
+            "Editing",
+            "Low-Light Photography",
+            "Visual Aesthetics Enhancement",
+            "Color Grading",
+            "Retouching",
+            "Texturing",
+            "Lighting Composition",
+            "Dynamic Lighting",
+            "Visual Storytelling"
+        ]
+    },
+    tools: ['Photoshop', 'TopazLabs', 'Camera Raw'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 7,
@@ -118,12 +229,28 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/9cddcc149302767.Y3JvcCwxMjc4LDEwMDAsNTMsMA.jpg',
     link: 'https://www.behance.net/gallery/149302767/BMW-S1000-XR-por-Virginia-Guidetti',
     description: {
-        es: 'En este proyecto, participé en la sesión de fotos y luego me concentré en la posproducción y la mejora creativa de una sesión de fotos profesional de motocicletas, con la BMW S1000 XR y la modelo profesional y corredora de motocicletas, Virginia Guidetti. El proceso implicó gradación de color, retoque de imágenes y refinamiento de texturas para resaltar el diseño elegante y el rendimiento dinámico de la motocicleta. Se prestó especial atención a mejorar la iluminación y el contraste para enfatizar las líneas audaces del vehículo en contraste con la belleza orgánica del modelo, lo que dio como resultado una serie visualmente impactante y pulida que captura la esencia de las motocicletas de alta clase.',
-        en: "In this project, I participated in the photoshoot and then focused on the post-production and creative enhancement of a professional motorcycle photoshoot, featuring the BMW S1000 XR and professional model and bike racer, Virginia Guidetti. The process involved color grading, image retouching, and refining textures to highlight the bike’s sleek design and dynamic performance. Special attention was given to enhancing the lighting and contrast to emphasize the vehicle's bold lines in contrast with the model's organic beauty, resulting in a visually striking and polished series that captures the essence of high-class motorcycles.",
+        es: 'En este proyecto, participé en la <strong>sesión fotográfica</strong> y luego me centré en la <strong>postproducción</strong> y <em>mejora creativa</em> de una <strong>sesión profesional de motocicletas</strong>, con la BMW S1000 XR y la modelo profesional y piloto de motos, <strong>Virginia Guidetti</strong>. El proceso implicó la <strong>gradación de color</strong>, el <strong>retoque de imágenes</strong> y la refinación de <em>texturas</em> para resaltar el diseño elegante y el rendimiento dinámico de la moto. Se prestó especial atención a mejorar la <strong>iluminación</strong> y el contraste para destacar las líneas audaces del vehículo en contraste con la belleza orgánica de la modelo, resultando en una serie visualmente impactante y pulida que captura la esencia de las motocicletas de alta gama.',
+        en: "In this project, I participated in the <strong>photoshoot</strong> and then focused on the <strong>post-production</strong> and <em>creative enhancement</em> of a professional <strong>motorcycle photoshoot</strong>, featuring the BMW S1000 XR and professional model and bike racer, <strong>Virginia Guidetti</strong>. The process involved <strong>color grading</strong>, <strong>image retouching</strong>, and refining <em>textures</em> to highlight the bike’s sleek design and dynamic performance. Special attention was given to enhancing the <strong>lighting</strong> and contrast to emphasize the vehicle's bold lines in contrast with the model's organic beauty, resulting in a visually striking and polished series that captures the essence of high-class motorcycles.",
     },
     priority: 1,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: [
+            "Photoshoot Participation",
+            "Post-Production",
+            "Creative Enhancement",
+            "Motorcycle Photography",
+            "Color Grading",
+            "Image Retouching",
+            "Texture Refinement",
+            "Lighting Enhancement",
+            "Contrast Adjustment",
+            "Visual Composition",
+            "Dynamic Performance Highlighting"
+        ]
+    },
+    tools: ['Photoshop', 'Camera Raw'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 8,
@@ -131,12 +258,42 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/ebe072152780691.Y3JvcCw1NjgxLDQ0NDMsMCw1Ng.jpg',
     link: 'https://www.behance.net/gallery/152780691/Manual-de-Marca-Voluntarias-del-Hospital-Gutierrez',
     description: {
-        es: 'Este proyecto implicó la creación de un manual de marca integral para un servicio de salud voluntario. El manual fue diseñado para garantizar la coherencia en la identidad visual de la organización en todos sus canales de comunicación. El proceso implicó desarrollar pautas detalladas sobre el uso del logotipo, la tipografía, las paletas de colores y los elementos gráficos, estableciendo las mejores prácticas para los materiales impresos y digitales, así como ejemplos de uso y plantillas de contenido para las redes sociales. El objetivo era proporcionar una presencia de marca cohesiva y profesional que se alineara con los valores de la organización de atención y servicio comunitario, al mismo tiempo que ayudaba a los esfuerzos de marketing del equipo de comunicación.',
-        en: "This project entailed the creation of a comprehensive brand manual for a volunteer health service. The manual was designed to ensure consistency in the organization’s visual identity across their communications channels. The process involved developing detailed guidelines on logo usage, typography, color palettes, and graphic elements, establishing best practices for print and digital materials as well as examples of use and templates of social media content. The goal was to provide a cohesive and professional brand presence that aligns with the organization's values of care and community service, while aiding to the communication's team marketing efforts.",
+        es: 'Este proyecto implicó la creación de un <strong>manual de marca</strong> integral para un servicio de <em>salud voluntario</em>. El manual fue diseñado para asegurar la consistencia en la <strong>identidad visual</strong> de la organización a través de sus canales de comunicación. El proceso incluyó el desarrollo de directrices detalladas sobre el <strong>uso del logotipo</strong>, la <strong>tipografía</strong>, las <strong>paletas de colores</strong> y los <strong>elementos gráficos</strong>, estableciendo mejores prácticas para los materiales impresos y digitales, así como ejemplos de uso y plantillas para contenido en redes sociales. El objetivo era proporcionar una presencia de marca cohesiva y profesional que esté alineada con los valores de cuidado y servicio comunitario de la organización, al tiempo que apoyaba los <em>esfuerzos de marketing</em> del equipo de comunicaciones.',
+        en: "This project entailed the creation of a comprehensive <strong>brand manual</strong> for a volunteer <em>health service</em>. The manual was designed to ensure consistency in the organization’s <strong>visual identity</strong> across their communication channels. The process involved developing detailed guidelines on <strong>logo usage</strong>, <strong>typography</strong>, <strong>color palettes</strong>, and <strong>graphic elements</strong>, establishing best practices for print and digital materials as well as examples of use and templates of social media content. The goal was to provide a cohesive and professional brand presence that aligns with the organization's values of care and community service, while aiding the communications team’s <em>marketing efforts</em>.",
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [
+            "Desarrollo de Manual de Marca",
+            "Servicio de Salud Voluntario",
+            "Identidad Visual",
+            "Directrices de Uso de Logotipo",
+            "Directrices de Tipografía",
+            "Directrices de Paletas de Colores",
+            "Elementos Gráficos",
+            "Materiales Digitales",
+            "Plantillas para Redes Sociales",
+            "Presencia de Marca Cohesiva",
+            "Servicio Comunitario",
+            "Soporte de Marketing"
+        ],
+        en: [
+            "Brand Manual Development",
+            "Volunteer Health Service",
+            "Visual Identity",
+            "Logo Usage Guidelines",
+            "Typography Guidelines",
+            "Color Palette Guidelines",
+            "Graphic Elements",
+            "Digital Materials",
+            "Social Media Templates",
+            "Cohesive Brand Presence",
+            "Community Service",
+            "Marketing Support"
+        ]
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 9,
@@ -144,12 +301,40 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/b5e635156654979.Y3JvcCw5OTksNzgyLDAsOQ.jpg',
     link: 'https://www.behance.net/gallery/156654979/Impervious-3D-Intervention-over-photography',
     description: {
-        es: 'Este proyecto combinó mi fotografía con intervenciones en 3D, mezclando imágenes del mundo real con elementos digitales para crear una experiencia visual surrealista e inmersiva. El objetivo era integrar a la perfección modelos 3D en las fotografías, mejorando la profundidad y la complejidad narrativa. Se emplearon técnicas avanzadas de composición y normalización de la iluminación en blanco y negro para garantizar que los elementos 3D parecieran orgánicos dentro del entorno fotográfico. El resultado sigue una narrativa suave y flexible de una invasión extraterrestre, produciendo una serie de imágenes impactantes que desafían los límites entre la realidad y el arte digital, creando una fusión creativa de medios.',
-        en: "This project combined my photography with 3D interventions, blending real-world imagery with digital elements to create a surreal and immersive visual experience. The focus was on seamlessly integrating 3D models into the photographs, enhancing depth and narrative complexity. Black-and-white lighting normalization and advanced composition techniques were employed to ensure that the 3D elements felt organic within the photographic environment. The result follows a soft, flexible narrative of an alien invasion, producing a series of striking visuals that challenge the boundaries between reality and digital art, creating a creative fusion of mediums.",
+        es: 'Este proyecto combinó mi <strong>fotografía</strong> con <strong>intervenciones en 3D</strong>, fusionando imágenes del mundo real con elementos digitales para crear una <em>experiencia visual surrealista</em> e <em>inmersiva</em>. El enfoque estuvo en integrar de manera fluida <strong>modelos 3D</strong> en las fotografías, mejorando la <strong>profundidad</strong> y la <strong>complejidad narrativa</strong>. Se emplearon técnicas avanzadas de normalización de iluminación en blanco y negro y composición para garantizar que los <strong>elementos 3D</strong> se sintieran orgánicos dentro del entorno fotográfico. El resultado sigue una narrativa suave y flexible de una <em>invasión alienígena</em>, produciendo una serie de visuales impactantes que desafían los límites entre la realidad y el arte digital, creando una fusión creativa de medios.',
+        en: "This project combined my <strong>photography</strong> with <strong>3D interventions</strong>, blending real-world imagery with digital elements to create a <em>surreal</em> and <em>immersive visual experience</em>. The focus was on seamlessly integrating <strong>3D models</strong> into the photographs, enhancing <strong>depth</strong> and <strong>narrative complexity</strong>. Black-and-white lighting normalization and advanced composition techniques were employed to ensure that the <strong>3D elements</strong> felt organic within the photographic environment. The result follows a soft, flexible narrative of an <em>alien invasion</em>, producing a series of striking visuals that challenge the boundaries between reality and digital art, creating a creative fusion of mediums.",
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [
+            "Fotografía",
+            "Diseño 3D",
+            "Arte 3D",
+            "Experiencia Visual Surrealista",
+            "Experiencia Visual Inmersiva",
+            "Integración de Modelos 3D",
+            "Mejora de la Profundidad",
+            "Complejidad Narrativa",
+            "Normalización de Iluminación",
+            "Técnicas de Composición",
+            "Fusión de Realidad y Arte Digital"
+        ],
+        en: [
+            "Photography",
+            "3D design",
+            "3D Art",
+            "Surreal Visual Experience",
+            "Immersive Visual Experience",
+            "3D Models Integration",
+            "Depth Enhancement",
+            "Narrative Complexity",
+            "Lighting Normalization",
+            "Composition Techniques",
+            "Reality and Digital Art Fusion"
+        ]
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 10,
@@ -157,12 +342,41 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/112162147953565.Y3JvcCw4MDgsNjMyLDAsMzQ.png',
     link: 'https://www.behance.net/gallery/147953565/Sentimientos-encontrados-Serie-fotografica-en-5000km',
     description: {
-        es: 'Esta serie fotográfica captura mi viaje en solitario de 5000 kilómetros por el noroeste argentino. Retrata los contrastes emocionales experimentados a lo largo del camino. El proyecto se centra en la interacción entre los paisajes y la introspección personal, los sentimientos. A través de una combinación de momentos espontáneos y retratos compuestos de forma natural, la serie explora temas de anhelo, nostalgia y descubrimiento. La narrativa fotográfica utiliza iluminación natural y texturas crudas, normalizadas en blanco y negro, para evocar una profunda sensación de conexión con los entornos, creando un cuerpo de trabajo visualmente emocional e introspectivo.',
-        en: "This photography series captures my solo journey of 5000 kilometers across the Argentinian North West. Portraying the emotional contrasts experienced along the way. The project focuses on the interplay between landscapes and personal introspection, sentiments. Through a combination of candid moments and naturally composed portraits, the series explores themes of longing, nostalgia, and discovery. The photographic narrative uses natural lighting and raw textures, normalized in black & white, to evoke a deep sense of connection with the environments, creating a visually emotional and introspective body of work.",
+        es: 'Esta serie fotográfica captura mi viaje en solitario de <strong>5000 kilómetros</strong> por el <strong>Noroeste Argentino</strong>, retratando los <em>contrastes emocionales</em> experimentados a lo largo del camino. El proyecto se centra en la interacción entre <strong>paisajes</strong> y la <strong>introspección personal</strong>, y los sentimientos. A través de una combinación de <strong>momentos espontáneos</strong> y retratos naturalmente compuestos, la serie explora temas de <em>anhelo</em>, <em>nostalgia</em> y <em>descubrimiento</em>. La narrativa fotográfica utiliza <strong>iluminación natural</strong> y <strong>texturas crudas</strong>, normalizadas en <strong>blanco y negro</strong>, para evocar un profundo sentido de conexión con los entornos, creando un <strong>cuerpo de trabajo visualmente emocional</strong> e <strong>introspectivo</strong>.',
+        en: "This photography series captures my solo journey of <strong>5000 kilometers</strong> across the <strong>Argentinian North West</strong>, portraying the <em>emotional contrasts</em> experienced along the way. The project focuses on the interplay between <strong>landscapes</strong> and <strong>personal introspection</strong>, sentiments. Through a combination of <strong>candid moments</strong> and naturally composed portraits, the series explores themes of <em>longing</em>, <em>nostalgia</em>, and <em>discovery</em>. The photographic narrative uses <strong>natural lighting</strong> and <strong>raw textures</strong>, normalized in <strong>black & white</strong>, to evoke a deep sense of connection with the environments, creating a <strong>visually emotional</strong> and <strong>introspective body of work</strong>.",
     },
     priority: 1,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [
+            "Serie Fotográfica",
+            "Diseño Emocional",
+            "Contrastes Emocionales",
+            "Retratos",
+            "Momentos Espontáneos",
+            "Retratos Naturalmente Compuestos",
+            "Temas de Anhelo",
+            "Temas de Nostalgia",
+            "Temas de Descubrimiento",
+            "Iluminación Natural",
+            "Blanco y Negro",
+            "Visualmente Emocional",
+        ],
+        en: [
+            "Photography Series",
+            "Emotional design",
+            "Emotional Contrasts",
+            "Portraits",
+            "Naturally Composed Portraits",
+            "Themes of Longing",
+            "Themes of Nostalgia",
+            "Themes of Discovery",
+            "Natural Lighting",
+            "Black & White",
+            "Visually Emotional",
+        ]
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 11,
@@ -170,12 +384,39 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/a1ca53163258029.Y3JvcCwzNTE3LDI3NTAsMCwzNA.jpg',
     link: 'https://www.behance.net/gallery/163258029/Volvo-Photography-Session-by-Volvo-Arg',
     description: {
-        es: 'Este proyecto involucró tanto la sesión fotográfica como el posprocesamiento para Volvo Argentina. El objetivo era resaltar el elegante diseño y la excelencia de ingeniería del vehículo Volvo a través de una interacción humana apasionada, junto con el retoque y la mejora de los contrastes de iluminación. Se prestó especial atención a la interacción entre los vehículos Volvo antiguos y nuevos para enfatizar la longevidad de los productos de la marca y la lealtad de sus clientes. El resultado es una serie de imágenes visualmente pulidas que transmiten el compromiso de Volvo con el lujo, el rendimiento y la innovación.',
-        en: "This project involved both the photoshoot and post-processing for Volvo Argentina. The focus was on highlighting the sleek design and engineering excellence of the Volvo vehicle through human, passionate interaction, along with retouching and enhancing lighting contrasts. Special attention was given to the interplay between old and new Volvo cars to emphasize the longevity of the brand’s products and the loyalty of its customers. The result is a series of visually polished images that convey Volvo's commitment to luxury, performance, and innovation.",
+        es: 'Este proyecto involucró tanto el <strong>fotoshoot</strong> como el <strong>post-procesamiento</strong> para <strong>Volvo Argentina</strong>. El enfoque fue resaltar el <strong>diseño elegante</strong> y la <strong>excelencia en ingeniería</strong> del vehículo Volvo a través de <em>interacciones humanas</em> y <em>apasionadas</em>, junto con <strong>retocando</strong> y mejorando los <strong>contrastes de iluminación</strong>. Se prestó especial atención a la interacción entre los <strong>autos Volvo antiguos</strong> y <strong>nuevos</strong> para enfatizar la longevidad de los productos de la marca y la lealtad de sus clientes. El resultado es una serie de <strong>imágenes visualmente pulidas</strong> que transmiten el compromiso de Volvo con el <strong>lujo</strong>, el <strong>rendimiento</strong> y la <strong>innovación</strong>.',
+        en: "This project involved both the <strong>photoshoot</strong> and <strong>post-processing</strong> for <strong>Volvo Argentina</strong>. The focus was on highlighting the <strong>sleek design</strong> and <strong>engineering excellence</strong> of the Volvo vehicle through <em>human</em>, <em>passionate interaction</em>, along with <strong>retouching</strong> and enhancing <strong>lighting contrasts</strong>. Special attention was given to the interplay between <strong>old</strong> and <strong>new Volvo cars</strong> to emphasize the longevity of the brand’s products and the loyalty of its customers. The result is a series of <strong>visually polished images</strong> that convey Volvo's commitment to <strong>luxury</strong>, <strong>performance</strong>, and <strong>innovation</strong>.",
     },
     priority: 3,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [
+            "Fotoshoot",
+            "Post-Procesamiento",
+            "Diseño Elegante",
+            "Interacciones Humanas",
+            "Interacciones Apasionadas",
+            "Retocando",
+            "Autos Volvo Antiguos",
+            "Autos Volvo Nuevos",
+            "Valores de Marca",
+            "Lujo"
+        ],
+        en: [
+            "Photoshoot",
+            "Post-Processing",
+            "Sleek Design",
+            "Engineering Excellence",
+            "Human Interaction",
+            "Passionate Interaction",
+            "Retouching",
+            "Lighting Contrasts",
+            "Old and New Volvo Cars",
+            "Brand Values",
+            "Luxury"
+        ]
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 12,
@@ -183,12 +424,42 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/808/0d7da6153975233.Y3JvcCwxMjMxLDk2MywzNDQsNTc.png',
     link: 'https://www.behance.net/gallery/153975233/Costa-y-Roca-Wine-Imagery',
     description: {
-        es: 'Este proyecto se centró en crear imágenes cautivadoras para Costa y Roca, una marca de vinos emergente. El objetivo era representar visualmente la elegancia y la artesanía de la marca a través de fotografías de productos naturales. La iluminación, la textura y la gradación de color fueron clave para resaltar los tonos intensos del vino y la etiqueta de nuevo diseño. El resultado es una serie de imágenes refinadas y de alta gama que reflejan la sofisticación y la calidad de la marca Costa y Roca, con un gaucho argentino como telón de fondo, un campesino típico y el público objetivo de la marca.',
-        en: "This project focused on creating captivating imagery for Costa y Roca, an emerging wine brand. The goal was to visually portray the brand's elegance and craftsmanship through natural product photography. Lighting, texture, and color grading were key in highlighting the wine’s rich tones and the newly designed label. The result is a series of high-end, refined images that reflect the sophistication and quality of the Costa y Roca brand, set against the backdrop of an Argentinian Gaucho — a typical countryman and the brand's target audience.",
+        es: 'Este proyecto se centró en crear <strong>imágenes cautivadoras</strong> para <strong>Costa y Roca</strong>, una emergente <strong>marca de vino</strong>. El objetivo era retratar visualmente la <strong>elegancia</strong> y la <strong>artesanía</strong> de la marca a través de <strong>fotografía de productos naturales</strong>. La <strong>iluminación</strong>, la <strong>textura</strong> y el <strong>ajuste de color</strong> fueron clave para resaltar los tonos ricos del vino y la etiqueta recién diseñada. El resultado es una serie de <strong>imágenes de alta gama</strong> y <strong>refinadas</strong> que reflejan la <strong>sophistication</strong> y la <strong>calidad</strong> de la marca Costa y Roca, ambientadas en el contexto de un <strong>Gaucho Argentino</strong> — un campesino típico y el público objetivo de la marca.',
+        en: "This project focused on creating <strong>captivating imagery</strong> for <strong>Costa y Roca</strong>, an emerging <strong>wine brand</strong>. The goal was to visually portray the brand's <strong>elegance</strong> and <strong>craftsmanship</strong> through <strong>natural product photography</strong>. <strong>Lighting</strong>, <strong>texture</strong>, and <strong>color grading</strong> were key in highlighting the wine’s rich tones and the newly designed label. The result is a series of <strong>high-end</strong>, <strong>refined images</strong> that reflect the <strong>sophistication</strong> and <strong>quality</strong> of the Costa y Roca brand, set against the backdrop of an <strong>Argentinian Gaucho</strong> — a typical countryman and the brand's target audience.",
     },
     priority: 1,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [
+            "Imágenes Cautivadoras",
+            "Marca de Vino",
+            "Elegancia",
+            "Artesanía",
+            "Fotografía de Productos",
+            "Iluminación",
+            "Textura",
+            "Ajuste de Color",
+            "Tonos Ricos",
+            "Diseño de Etiqueta",
+            "Sofisticación",
+            "Sesión fotográfica"
+        ],
+        en: [
+            "Captivating Imagery",
+            "Wine Brand",
+            "Elegance",
+            "Craftsmanship",
+            "Product Photography",
+            "Lighting",
+            "Texture",
+            "Color Grading",
+            "Rich Tones",
+            "Label Design",
+            "Sophistication",
+            "Photoshoot"
+        ]
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 13,
@@ -196,12 +467,30 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/6e6697149847251.Y3JvcCw1MDAwLDM5MTAsMCw0OQ.jpg',
     link: 'https://www.behance.net/gallery/149847251/Casamiento-Colombres-Gomez-Pizarro-Sesion-Fotogr',
     description: {
-        es: 'Este proyecto se centró en crear imágenes cautivadoras para Costa y Roca, una marca de vinos emergente. El objetivo era representar visualmente la elegancia y la artesanía de la marca a través de fotografías de productos naturales. La iluminación, la textura y la gradación de color fueron clave para resaltar los tonos intensos del vino y la etiqueta de nuevo diseño. El resultado es una serie de imágenes refinadas y de alta gama que reflejan la sofisticación y la calidad de la marca Costa y Roca, con un gaucho argentino como telón de fondo, un campesino típico y el público objetivo de la marca.',
-        en: "This project focused on creating captivating imagery for Costa y Roca, an emerging wine brand. The goal was to visually portray the brand's elegance and craftsmanship through natural product photography. Lighting, texture, and color grading were key in highlighting the wine’s rich tones and the newly designed label. The result is a series of high-end, refined images that reflect the sophistication and quality of the Costa y Roca brand, set against the backdrop of an Argentinian Gaucho — a typical countryman and the brand's target audience.",
+        es: 'He realizado la <strong>fotógrafo de bodas no oficial</strong> para un amigo. Aunque fui contratado como fotógrafo, tuve la libertad de explorar mi <strong>ojo creativo</strong> sin las limitaciones de ser el fotógrafo principal. Esto me permitió centrarme en capturar <strong>posiciones</strong>, <strong>rostros</strong> y <strong>moods</strong>, lo que resultó en una <strong>sesión de fotos de bodas poco ortodoxa</strong> llena de <strong>color</strong>, <strong>emoción</strong> y <strong>diversión</strong>.',
+        en: "I was involved as an <strong>unofficial wedding photographer</strong> for a friend. While I was hired as the photographer, I had the freedom to explore my <strong>creative eye</strong> without the constraints of being the main, official photographer. This allowed me to focus on capturing <strong>poses</strong>, <strong>faces</strong>, and <strong>moods</strong>, resulting in an <strong>unorthodox wedding photoshoot</strong> that was full of <strong>color</strong>, <strong>emotion</strong>, and <strong>fun</strong>.",
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [
+            "Fotógrafía de Bodas",
+            "Creativo",
+            "Sesión Fotográfica",
+            "Sesión de Fotos de Bodas",
+            "Color",
+            "Emoción"
+        ],
+        en: [
+            "Wedding Photographer",
+            "Creative",
+            "Photoshoot",
+            "Wedding Photoshoot",
+            "Color",
+            "Emotion"
+        ]
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 14,
@@ -210,11 +499,30 @@ TRABAJOS_PORFOLIO.push({
     link: 'https://www.behance.net/gallery/149649961/Meteor-350-por-Virginia-Guidetti',
     description: {
         es: 'Para este proyecto, fui la segunda cámara en una sesión de fotos con Virginia Guidetti, modelo y corredora de motos, en la que aparecía la Meteor 350 de Royal Enfield. Las fotos y la edición que se muestran aquí son mías. El objetivo era destacar el diseño de inspiración vintage y el rendimiento robusto de la moto a través de imágenes dinámicas capturadas en las vibrantes calles de Buenos Aires. Se prestó especial atención a la gradación de color, el retoque y la textura para realzar tanto la motocicleta como la modelo, lo que dio como resultado una serie equilibrada y visualmente impactante que captura la esencia del motociclismo clásico y la aventura.',
-        en: "For this project, I served as the second camera for a photoshoot with Virginia Guidetti, model and bike racer, featuring the Meteor 350 by Royal Enfield. The photos and editing showcased here are my own. The focus was on highlighting the bike’s vintage-inspired design and rugged performance through dynamic imagery captured in the vibrant streets of Buenos Aires. Careful attention was given to color grading, retouching, and texturing to enhance both the motorcycle and the model, resulting in a balanced and visually striking series that captures the essence of classic motorcycling and adventure.",
+        en: "For this project, I served as the <strong>second camera</strong> for a photoshoot with <strong>Virginia Guidetti</strong>, model and bike racer, featuring the <strong>Meteor 350</strong> by <strong>Royal Enfield</strong>. The photos and editing showcased here are my own. The focus was on highlighting the bike’s <strong>vintage-inspired design</strong> and <strong>rugged performance</strong> through dynamic imagery captured in the <strong>vibrant streets of Buenos Aires</strong>. Careful attention was given to <strong>color grading</strong>, <strong>retouching</strong>, and <strong>texturing</strong> to enhance both the motorcycle and the model, resulting in a balanced and visually striking series that captures the essence of <strong>classic motorcycling</strong> and <strong>adventure</strong>.",
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [
+            "Fotógrafo",
+            "Royal Enfield",
+            "Fotografía Callejera",
+            "Corrección de Color",
+            "Retoque",
+            "Texturizado"
+        ],
+        en: [
+            "Phothographer",
+            "Photoshoot",
+            "Royal Enfield",
+            "Street Photography",
+            "Color Grading",
+            "Retouching",
+            "Texturing",
+        ]
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 15,
@@ -222,12 +530,36 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/04b042151586163.6314b9ddd768e.png',
     link: 'https://www.behance.net/gallery/151586163/World-Sighting-3d-world-building-experimentation',
     description: {
-        es: 'Este proyecto explora las posibilidades creativas de la creación de mundos en 3D a través de una serie de entornos experimentales. El objetivo era ampliar los límites de la narración visual mediante el diseño de planetas inmersivos, raros pero posibles, que invitan al espectador a interactuar con detalles intrincados y composiciones dinámicas. Se emplearon modelos simples con técnicas avanzadas de texturizado e iluminación para crear estos mundos ficticios, lo que dio como resultado una serie visualmente rica e imaginativa que muestra el potencial infinito del diseño en 3D en el arte digital.',
-        en: "This project explores the creative possibilities of 3D world-building through a series of experimental environments. The focus was on pushing the boundaries of visual storytelling by designing immersive, rare but possible planets that invite the viewer to engage with intricate details and dynamic compositions. Simple modeling with advanced texturing and lighting techniques were employed to craft these fictional worlds, resulting in a visually rich and imaginative series that showcases the endless potential of 3D design in digital art.",
+        es: "Este proyecto explora las posibilidades creativas de <strong>la construcción de mundos en 3D</strong> a través de una serie de <strong>entornos experimentales</strong>. El enfoque estuvo en ampliar los límites de <strong>la narración visual</strong> diseñando planetas inmersivos, raros pero posibles, que invitan al espectador a interactuar con <strong>detalles intrincados</strong> y <strong>composiciones dinámicas</strong>. Se utilizaron técnicas simples de modelado junto con <strong>texturización avanzada</strong> y <strong>iluminación</strong> para crear estos mundos ficticios, resultando en una serie visualmente rica e imaginativa que muestra el potencial infinito del <strong>diseño en 3D</strong> en el <em>arte digital</em>.",
+        en: "This project explores the creative possibilities of <strong>3D world-building</strong> through a series of <strong>experimental environments</strong>. The focus was on pushing the boundaries of <strong>visual storytelling</strong> by designing immersive, rare but possible planets that invite the viewer to engage with <strong>intricate details</strong> and <strong>dynamic compositions</strong>. Simple modeling with advanced <strong>texturing</strong> and <strong>lighting techniques</strong> were employed to craft these fictional worlds, resulting in a visually rich and imaginative series that showcases the endless potential of <strong>3D design</strong> in <em>digital art</em>.",
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: ["Construcción de Mundos en 3D",
+            "Entornos Experimentales",
+            "Narración Visual",
+            "Diseño Inmersivo",
+            "Composiciones Dinámicas",
+            "Texturización Avanzada",
+            "Técnicas de Iluminación",
+            "Arte Digital",
+            "Desarrollo de Conceptos Creativos",
+            "Visualización Conceptual"
+        ],
+        en: ["3D World-Building",
+            "Experimental Environments",
+            "Visual Storytelling",
+            "Immersive Design",
+            "Dynamic Compositions",
+            "Advanced Texturing",
+            "Lighting Techniques",
+            "Digital Art",
+            "Creative Concept Development",
+            "Conceptual Visualization"
+        ]
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 16,
@@ -240,7 +572,33 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [
+            "Intervenciones en 3D",
+            "Fotografía de Retratos",
+            "Mejora Digital",
+            "Diseño de Personajes",
+            "Diseño Abstracto y Conceptual",
+            "Técnicas de Iluminación",
+            "Edición en Postproducción",
+            "Photoshop",
+            "Exploración de la Identidad",
+            "Temas de Transformación"
+          ]
+          ,
+        en: [
+            "3D Interventions",
+            "Portrait Photography",
+            "Digital Enhancement",
+            "Character design",
+            "Abstract and Conceptual Design",
+            "Lighting Techniques",
+            "Post-Production Editing",
+            "Identity Exploration",
+            "Transformation Themes"
+          ]          
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 17,
@@ -253,7 +611,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 18,
@@ -266,7 +628,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.PUBLICITARIO
 }, {
     id: 19,
@@ -279,7 +645,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.PUBLICITARIO
 }, {
     id: 20,
@@ -292,7 +662,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 21,
@@ -305,7 +679,23 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        en: [
+            "Advertising Video Game Development",
+            'Advertising game',
+            "Safe Sex Promotion",
+            "Engaging Gameplay",
+            "Addictive Game Design",
+            "2D Environment Creation",
+            "Fast-Paced Game Dynamics",
+            "UI Design",
+            "Sound Design",
+            "Educational Game Development",
+            "Entertainment and Learning Balance"
+        ],
+        es: ['']
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 22,
@@ -318,7 +708,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 23,
@@ -331,7 +725,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'github',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 24,
@@ -344,7 +742,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'github',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: black; padding: 3em 0'
 }, {
@@ -358,7 +760,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'github',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 26,
@@ -371,7 +777,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Sketchfab',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 27,
@@ -384,7 +794,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 28,
@@ -397,7 +811,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Web',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 3em 0'
 }, {
@@ -411,7 +829,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 3,
     source: 'Web',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 30,
@@ -424,7 +846,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 31,
@@ -437,7 +863,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 32,
@@ -450,7 +880,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 33,
@@ -463,7 +897,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 34,
@@ -476,7 +914,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 35,
@@ -489,7 +931,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 36,
@@ -502,7 +948,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 37,
@@ -515,7 +965,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 38,
@@ -528,7 +982,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 39,
@@ -541,7 +999,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 40,
@@ -554,7 +1016,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'Behance',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 41,
@@ -567,7 +1033,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 1,
     source: 'Web',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 10vh 0; box-sizing: border-box'
 }, {
@@ -581,7 +1051,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Web',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 0 6em; box-sizing: border-box;'
 }, {
@@ -595,7 +1069,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Web',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 2em 0'
 }, {
@@ -609,7 +1087,11 @@ TRABAJOS_PORFOLIO.push({
     },
     priority: 2,
     source: 'Web',
-    keywords: [''],
+    keywords: {
+        es: [],
+        en: []
+    },
+    tools: [''],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
 });
 

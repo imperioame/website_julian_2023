@@ -20,14 +20,16 @@ export function addMobileElements() {
         spacer_banner_mi_persona.classList.add('spacer-1');
     }
 
-    createScrollButton();
+    //This is needed if the oribt controlls are available on mobile for Threejs
+    //createScrollButton();
+
 
     populatePorfolio();
 
 
 
-
-    window.addEventListener('scroll', scroll_event_listener_function);
+    //This is needed if the oribt controlls are available on mobile for Threejs
+    //window.addEventListener('scroll', scroll_event_listener_function);
 }
 
 

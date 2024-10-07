@@ -64,6 +64,8 @@ export function openModal(e) {
 
     const title = trabajo.title;
     const img = trabajo.img;
+    const keywords = window.currentLanguage == LANGUAGES.ESPANOL ? trabajo.keywords.es : trabajo.keywords.en;
+    const tools = trabajo.tools;
     const description = trabajo.description;
     const category = trabajo.category;
     const link = trabajo.link;
@@ -92,12 +94,53 @@ export function openModal(e) {
 
     close_modal.addEventListener('click', closeModal);
 
+    const html_description_container = document.createElement('div');
+    html_description_container.id = 'modal_description_container';
+
+    const html_tools_title = document.createElement('h2');
+    html_tools_title.id = 'modal_tools_title';
+    html_tools_title.innerHTML = window.currentLanguage == LANGUAGES.ESPANOL ? TEXTOS.es.MODAL_TOOLS : TEXTOS.en.MODAL_TOOLS;
+    const html_tools = document.createElement('ul');
+    html_tools.id = 'modal_tools';
+
+    tools.forEach(tool => {
+        const html_tool = document.createElement('li');
+        html_tool.innerHTML = tool;
+        html_tools.appendChild(html_tool);
+    });
+
+    html_description_container.appendChild(html_tools_title);
+    html_description_container.appendChild(html_tools);
+
+    const html_description_title = document.createElement('h2');
+    html_description_title.id = 'modal_description_title';
+    html_description_title.innerHTML = window.currentLanguage == LANGUAGES.ESPANOL ? TEXTOS.es.MODAL_DESCRIPTION : TEXTOS.en.MODAL_DESCRIPTION;
+
     const html_description = document.createElement('p');
     html_description.innerHTML = window.currentLanguage == LANGUAGES.ESPANOL ? description.es : description.en;
     html_description.id = 'modal_description';
 
+    html_description_container.appendChild(html_description_title);
+    html_description_container.appendChild(html_description);
+
+    const html_keywords_title = document.createElement('h2');
+    html_keywords_title.id = 'modal_keywords_title';
+    html_keywords_title.innerHTML = window.currentLanguage == LANGUAGES.ESPANOL ? TEXTOS.es.MODAL_KEYWORDS : TEXTOS.en.MODAL_KEYWORDS;
+    const html_keywords = document.createElement('ul');
+    html_keywords.id = 'modal_keywords';
+
+    keywords.forEach(keyword => {
+        const html_keyword = document.createElement('li');
+        html_keyword.innerHTML = keyword;
+        html_keywords.appendChild(html_keyword);
+    });
+
+    html_description_container.appendChild(html_keywords_title);
+    html_description_container.appendChild(html_keywords);
+
     const html_link = document.createElement('a');
     html_link.innerHTML = window.currentLanguage == LANGUAGES.ESPANOL ? TEXTOS.es.MODAL_LINK : TEXTOS.en.MODAL_LINK;
+    html_link.innerHTML += ' <i class="fa-solid fa-arrow-up-right-from-square smaller"></i>';
     html_link.href = link;
     html_link.id = 'modal_link';
     html_link.target = '_blank';
@@ -108,7 +151,7 @@ export function openModal(e) {
     modal.appendChild(close_modal);
     modal.appendChild(html_title);
     modal.appendChild(html_category);
-    modal.appendChild(html_description);
+    modal.appendChild(html_description_container);
     modal.appendChild(html_link);
 
     modal_overlay.appendChild(modal);
@@ -153,7 +196,6 @@ export function changeLanguage(new_language) {
     document.getElementById('boton_cv').href = `./cvweb.html#${new_language}`;
 
     document.getElementById('porfolio_bloque_interior_subtitle').innerHTML = textos_a_usar.CATEGORIAS_PORFOLIO.DISENO;
-    document.getElementById('modal_category').innerHTML = textos_a_usar.CATEGORIAS_PORFOLIO.DISENO;
     document.getElementById('seccion_contacto_titulo').innerHTML = textos_a_usar.TITULO_CONTACTO;
     document.getElementById('contacto_extra_input').placeholder = textos_a_usar.BLOQUE_CONTACTO_EXTRA.PLACEHOLDER_INPUT;
     document.getElementById('contacto_extra_button').innerHTML = textos_a_usar.BLOQUE_CONTACTO_EXTRA.BOTON_GENERAR_TEXTO;
@@ -173,6 +215,7 @@ export function changeLanguage(new_language) {
     a.href = 'https://media.marioa.me';
     a.target = '_blank';
     a.innerHTML = 'Julián Mario Amé';
+    a.innerHTML += ' <i class="fa-solid fa-arrow-up-right-from-square smaller"></i>';
     document.getElementById('footer').appendChild(a);
 }
 

@@ -61,7 +61,21 @@ TRABAJOS_PORFOLIO.push({
             "Team collaboration",
             "Project management"
         ],
-        es: []
+        es: [
+            "Desarrollo de VR",
+            "Realidad virtual interactiva",
+            "Diseño de entornos 3D",
+            "Interacciones de realidad virtual",
+            "Adaptación literaria",
+            "Diseño narrativo",
+            "Diseño UI/UX",
+            "Conceptualización",
+            "Experiencia de usuario inmersiva",
+            "Narración interactiva",
+            "Tecnología de realidad virtual",
+            "Colaboración en equipo",
+            "Gestión de proyectos"
+        ]        
     },
     tools: [
         "Unity",
@@ -100,7 +114,22 @@ TRABAJOS_PORFOLIO.push({
             "Brand visibility",
             "Brand recognition"
         ],
-        es: []
+        es: [
+            "Diseño audiovisual",
+            "Diseño gráfico",
+            "Edición de video",
+            "Campañas en redes sociales",
+            "Desarrollo de identidad visual",
+            "Liderazgo en campañas de marketing",
+            "Desarrollo de marca",
+            "Diseño de logotipos",
+            "Materiales digitales",
+            "Dirección creativa",
+            "Estrategia digital",
+            "Compromiso en redes sociales",
+            "Visibilidad de marca",
+            "Reconocimiento de marca"
+        ]        
     },
     tools: ['Photoshop', 'Illustrator', 'After Effects', 'Premiere Pro'],
     category: CATEGORIAS_PORFOLIO.PUBLICITARIO
@@ -130,7 +159,20 @@ TRABAJOS_PORFOLIO.push({
             "Bold 3D Design",
             "Creative Direction"
         ],
-        es: []
+        es: [
+            "Modelado 3D",
+            "Narración artística",
+            "Técnicas de texturización avanzadas",
+            "Técnicas de iluminación",
+            "Diseño de personajes",
+            "Diseño 3D",
+            "Narrativa visual",
+            "Modelado 3D",
+            "Conceptos visuales creativos",
+            "Arte 3D dinámico",
+            "Diseño 3D audaz",
+            "Dirección creativa"
+        ]        
     },
     tools: ['Blender', 'After Effects', 'Premiere Pro'],
     category: CATEGORIAS_PORFOLIO.D3
@@ -146,7 +188,19 @@ TRABAJOS_PORFOLIO.push({
     priority: 1,
     source: 'behance',
     keywords: {
-        es: [],
+        es: [
+            "Desarrollo de identidad visual",
+            "Diseño de sitios web responsivos",
+            "Proceso de branding",
+            "Diseño de logotipos",
+            "Diseño de activos digitales",
+            "Desarrollo en WordPress",
+            "Accesibilidad",
+            "Optimización para móviles",
+            "Consistencia de marca",
+            "Gestión de proyectos",
+            "Gestión de cuentas"
+        ],
         en: [
             "Visual Identity Development",
             "Responsive Website Design",
@@ -175,7 +229,19 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'behance',
     keywords: {
-        es: [],
+        es: [
+            "Desarrollo de novelas gráficas",
+            "Integración de inteligencia artificial",
+            "Narración visual",
+            "Generación de guiones",
+            "Curaduría de ilustraciones",
+            "Arte generado por IA",
+            "Dirección creativa",
+            "Alineación narrativa",
+            "Estilo visual cohesivo",
+            "Perfeccionamiento de aprendizaje automático",
+            "Narración gráfica innovadora"
+        ],
         en: [
             "Graphic Novel Development",
             "Artificial Intelligence Integration",
@@ -204,7 +270,21 @@ TRABAJOS_PORFOLIO.push({
     priority: 3,
     source: 'behance',
     keywords: {
-        es: [],
+        es: [
+            "Dirección creativa",
+            "Sesión fotográfica",
+            "Fotografía profesional",
+            "Postproducción",
+            "Edición",
+            "Fotografía en condiciones de poca luz",
+            "Mejora de la estética visual",
+            "Corrección de color",
+            "Retoque",
+            "Texturización",
+            "Composición de iluminación",
+            "Iluminación dinámica",
+            "Narración visual"
+        ],
         en: [
             "Creative Direction",
             "Photography Session",
@@ -235,7 +315,20 @@ TRABAJOS_PORFOLIO.push({
     priority: 1,
     source: 'behance',
     keywords: {
-        es: [],
+        es: [
+            "Participación en sesiones fotográficas",
+            "Postproducción",
+            "Mejora creativa",
+            "Fotografía de motocicletas",
+            "Corrección de color",
+            "Retoque de imágenes",
+            "Refinamiento de texturas",
+            "Mejora de iluminación",
+            "Ajuste de contraste",
+            "Composición visual",
+            "Destacar actuaciones dinámicas"
+        ]
+        ,
         en: [
             "Photoshoot Participation",
             "Post-Production",
@@ -293,7 +386,7 @@ TRABAJOS_PORFOLIO.push({
             "Marketing Support"
         ]
     },
-    tools: [''],
+    tools: ['Illustrator', "Photoshop"],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 9,
@@ -334,7 +427,7 @@ TRABAJOS_PORFOLIO.push({
             "Reality and Digital Art Fusion"
         ]
     },
-    tools: [''],
+    tools: ['Blender', 'Camera Raw', 'Photoshop'],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 10,
@@ -376,7 +469,7 @@ TRABAJOS_PORFOLIO.push({
             "Visually Emotional",
         ]
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw', 'Lightroom mobile'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 11,
@@ -416,7 +509,7 @@ TRABAJOS_PORFOLIO.push({
             "Luxury"
         ]
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 12,
@@ -459,7 +552,7 @@ TRABAJOS_PORFOLIO.push({
             "Photoshoot"
         ]
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 13,
@@ -490,7 +583,7 @@ TRABAJOS_PORFOLIO.push({
             "Emotion"
         ]
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 14,
@@ -522,7 +615,7 @@ TRABAJOS_PORFOLIO.push({
             "Texturing",
         ]
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 15,
@@ -559,7 +652,7 @@ TRABAJOS_PORFOLIO.push({
             "Conceptual Visualization"
         ]
     },
-    tools: [''],
+    tools: ['Blender', 'After Effects'],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 16,
@@ -584,8 +677,7 @@ TRABAJOS_PORFOLIO.push({
             "Photoshop",
             "Exploración de la Identidad",
             "Temas de Transformación"
-          ]
-          ,
+        ],
         en: [
             "3D Interventions",
             "Portrait Photography",
@@ -596,9 +688,9 @@ TRABAJOS_PORFOLIO.push({
             "Post-Production Editing",
             "Identity Exploration",
             "Transformation Themes"
-          ]          
+        ]
     },
-    tools: [''],
+    tools: ['Blender', 'Photoshop'],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 17,
@@ -612,10 +704,28 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'behance',
     keywords: {
-        es: [],
-        en: []
+        es: ["Diseño 3D",
+            "Diseño de personajes",
+            "Diseño abstracto",
+            "Audiovisuales coloridos",
+            "Experiencia visual lúdica",
+            "Iluminación dinámica",
+            "Texturas coloridas",
+            "Serie visual inmersiva",
+            "Diseño de personajes experimental"
+        ],
+        en: ["3D Design",
+            "Character Design",
+            "Abstract Design",
+            "Colorful Audiovisuals",
+            "Playful Visual Experience",
+            "Dynamic Lighting",
+            "Colorful Textures",
+            "Immersive Visual Series",
+            "Experimental Character Design"
+        ]
     },
-    tools: [''],
+    tools: ['Blender','After Effects'],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 18,
@@ -629,10 +739,43 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'behance',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Identidad de marca",
+            "Campaña Publicitaria",
+            "Iniciativa social",
+            "Campaña en redes sociales",
+            "Comunicación visual",
+            "Empoderamiento de comunidades",
+            "Educación y tecnología",
+            "Lenguaje de diseño",
+            "Tipografía audaz",
+            "Esquemas de colores vibrantes",
+            "Visuales dinámicos",
+            "Innovación",
+            "Accesibilidad",
+            "Desarrollo de identidad visual",
+            "Impacto Social"
+        ],
+        en: [
+            "Brand Identity",
+            "Advertising Campaign",
+            "Social Initiative",
+            "Social Media Campaign",
+            "Visual Communication",
+            "Empowering Communities",
+            "Education and Technology",
+            "Design Language",
+            "Bold Typography",
+            "Vibrant Color Schemes",
+            "Dynamic Visuals",
+            "Innovation",
+            "Accessibility",
+            "Visual Identity Development",
+            "Social Impact"
+        ]
+
     },
-    tools: [''],
+    tools: ['Photoshop','Illustrator', 'After Effects', 'Camera Raw', 'Premiere Pro'],
     category: CATEGORIAS_PORFOLIO.PUBLICITARIO
 }, {
     id: 19,
@@ -646,10 +789,36 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'behance',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Campaña publicitaria creativa",
+            "Conciencia ambiental",
+            "Reciclaje",
+            "Impacto Social",
+            "Integración de marca",
+            "Mensajes lúdicos",
+            "Entretenimiento y sostenibilidad",
+            "Colores vivos",
+            "Gráficos llamativos",
+            "Campaña de sostenibilidad",
+            "Inspirar acción"
+        ],
+        en: [
+            "Creative Advertising Campaign",
+            "Environmental Awareness",
+            "Recycling",
+            "Social Impact",
+            "Brand Integration",
+            "Bold Visuals",
+            "Playful Messaging",
+            "Entertainment and Sustainability",
+            "Vivid Colors",
+            "Eye-catching Graphics",
+            "Sustainability Campaign",
+            "Inspiring Action"
+        ]
+
     },
-    tools: [''],
+    tools: ['Illustrator', 'Photoshop'],
     category: CATEGORIAS_PORFOLIO.PUBLICITARIO
 }, {
     id: 20,
@@ -663,10 +832,30 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'behance',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Diseño de etiqueta de vino",
+            "Identidad de marca",
+            "Elegancia",
+            "Diseño minimalista",
+            "Uso del color",
+            "Diseño de texturas",
+            "Atractivo visual",
+            "Atractivo estético"
+        ],
+        en: [
+            "Wine Label Design",
+            "Brand Identity",
+            "Elegance",
+            "Artisanal Craftsmanship",
+            "Minimalist Design",
+            "Color Use",
+            "Texture Design",
+            "Visual Appeal",
+            "Aesthetic Appeal"
+        ]
+
     },
-    tools: [''],
+    tools: ['Photoshop','Illustrator'],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 21,
@@ -683,6 +872,7 @@ TRABAJOS_PORFOLIO.push({
         en: [
             "Advertising Video Game Development",
             'Advertising game',
+            "Videogame Development",
             "Safe Sex Promotion",
             "Engaging Gameplay",
             "Addictive Game Design",
@@ -693,9 +883,23 @@ TRABAJOS_PORFOLIO.push({
             "Educational Game Development",
             "Entertainment and Learning Balance"
         ],
-        es: ['']
+        es: [
+            "Videojuego publicitario",
+            "Desarrollo de juegos publicitarios",
+            "Desarrollo de videojuegos",
+            "Educación sobre sexo seguro",
+            "Experiencia atractiva",
+            "Jugabilidad educativa",
+            "Jugabilidad adictiva",
+            "Entorno 2D",
+            "Dinámicas rápidas",
+            "Diseño de UI",
+            "Diseño de sonido",
+            "Equilibrio entre entretenimiento y aprendizaje"
+        ]
+
     },
-    tools: [''],
+    tools: ['Construct', 'Photoshop','Illustrator', 'Audition','HTML5', 'CSS3'],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 22,
@@ -709,10 +913,39 @@ TRABAJOS_PORFOLIO.push({
     priority: 1,
     source: 'behance',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Estudio de caso",
+            "Investigación",
+            "Diseño UX/UI",
+            "Diseño centrado en usuarios",
+            "Prototipos",
+            "Pruebas de usuario",
+            "Aplicación de meditación",
+            "Impacto Social",
+            "Interfaz intuitiva",
+            "Investigación de usuarios",
+            "Diseño iterativo",
+            "Wireframes",
+            "Pruebas de usabilidad"
+        ],
+        en: [
+            "Case Study",
+            "Research",
+            "UX/UI Design",
+            "User centered Design",
+            "Prototyping",
+            "User Testing",
+            "Meditation App",
+            "Social Impact",
+            "Intuitive Interface",
+            "User Research",
+            "Iterative Design",
+            "Wireframes",
+            "Usability Testing"
+        ]
+
     },
-    tools: [''],
+    tools: ['Figma', 'Adobe XD', 'Optimal Workshop', 'Photoshop', 'Illustrator'],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 23,
@@ -726,10 +959,32 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'github',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Juego de mesa digital",
+            "Juego web",
+            "Cuadrícula hexagonal",
+            "Interfaz de usuario",
+            "Diseño de juegos",
+            "Juego para dos jugadores",
+            "Gráficos simples",
+            "Juego estratégico",
+            "Diseño interactivo",
+            "Desarrollo web"
+        ],
+        en: [
+            "Digital Board Game",
+            "Web Game",
+            "Hexagonal Grid",
+            "User Interface",
+            "Game Design",
+            "Two-Player Game",
+            "Simple Graphics",
+            "Strategic Gameplay",
+            "Interactive Design",
+            "Web Development"
+        ]
     },
-    tools: [''],
+    tools: ['Javascript', 'HTML5', 'CSS3'],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 24,
@@ -743,10 +998,31 @@ TRABAJOS_PORFOLIO.push({
     priority: 1,
     source: 'github',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Desarrollo web",
+            "Programación",
+            "Arte pixelado procedural",
+            "Algoritmo en JS",
+            "Procesamiento en tiempo real",
+            "Interfaz de usuario",
+            "Algoritmos",
+            "Algoritmos de IA",
+            "Estructuras de color"
+        ],
+        en: [
+            "Web development",
+            "Programming",
+            "Procedural Pixel Art",
+            "Algorithm in JS",
+            "Real-Time Processing",
+            "User Interface",
+            "Algorithms",
+            "AI Algorithms",
+            "Color Structures"
+        ]
+
     },
-    tools: [''],
+    tools: ['Javascript', 'HTML5', 'CSS3'],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: black; padding: 3em 0'
 }, {
@@ -761,10 +1037,29 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'github',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Juego web",
+            "Juego de mesa digital",
+            "Juego por turnos",
+            "IA competitiva",
+            "Interfaz de usuario tradicional",
+            "Mapa generado proceduralmente",
+            "Sistema de pathfinding para IA",
+        ],
+        en: [
+            "Web Game",
+            "Digital Board Game",
+            "Turn-Based Gameplay",
+            "Competitive AI",
+            "Traditional User Interface",
+            "Game design",
+            "Procedurally Generated Map",
+            "AI Pathfinding System",
+        ]
+
     },
-    tools: [''],
+    tools: ["JavaScript", "jQuery", "HTML5", "CSS3"
+    ],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 26,
@@ -778,10 +1073,32 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Sketchfab',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Paquete de assets 3D",
+            "Diseño 3D",
+            "Modelado 3D",
+            "Diseño de ambientes 3D",
+            "Assets de bajo poligonaje",
+            "Desarrollo de juegos",
+            "Assets optimizados",
+            "Entornos de juego",
+            "Atractivo visual"
+        ],
+        en: [
+            "3D Asset Pack",
+            "3D Design",
+            "3D Modeling",
+            "3D Environments",
+            "Low-Poly Assets",
+            "Game Development",
+            "Props",
+            "Optimized Assets",
+            "Game Environments",
+            "Visual Appeal"
+        ]
+
     },
-    tools: [''],
+    tools: ['Blender', 'Sketchfab', 'Photoshop', 'Rizom UV'],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 27,
@@ -795,10 +1112,28 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Sesión Fotográfica",
+            "Mejora de Visibilidad",
+            "Atracción de Clientes",
+            "Imágenes Profesionales",
+            "Técnicas de Iluminación",
+            "Composición",
+            "Mercado Freelance",
+            "Exhibición de Personalidad"
+        ],
+        en: [
+            "Photographic Session",
+            "Visibility Improvement",
+            "Client Attraction",
+            "Professional Images",
+            "Lighting Techniques",
+            "Composition",
+            "Freelance Marketplace",
+            "Personality Showcase"
+        ]
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw', 'Premiere Pro'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 28,
@@ -812,10 +1147,31 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Web',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Desarrollo de Página Web",
+            "Diseñador Principal",
+            "Agencia Digital",
+            "Proyectos de TI",
+            "Exhibición de Portafolio",
+            "Experiencia Amigable para el Usuario",
+            "Diseño Digital"
+        ],
+        en: [
+            "Webpage Development",
+            "Álterego Agency",
+            "Lead Designer",
+            "Digital Agency",
+            "IT Projects",
+            "Portfolio Showcase",
+            "User-Friendly Experience",
+            "Digital Design"
+        ]
+
     },
-    tools: [''],
+    tools: ["HTML5",
+        "CSS3",
+        "JavaScript"
+    ],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 3em 0'
 }, {
@@ -824,16 +1180,37 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/c85b13139617007.Y3JvcCw4MDgsNjMyLDAsMA.png',
     link: 'https://www.staleymartialarts.com/',
     description: {
-        es: '',
+        es: 'Este proyecto implicó el desarrollo de un <strong>sitio web en WordPress</strong> para <strong>Staley Martial Arts</strong>, un gimnasio ubicado en Chicago, EE. UU. Colaborando con el equipo de <em>Álterego Agency</em>, el enfoque fue crear una interfaz <strong>amigable para el usuario</strong> y limpia para proporcionar a los visitantes información esencial sobre el gimnasio, incluidos los horarios de las clases y otros detalles relevantes. El sitio web fue diseñado para garantizar la facilidad de navegación, ofreciendo una experiencia simplificada tanto para posibles clientes como para miembros actuales.',
         en: "This project involved the development of a <strong>WordPress website</strong> for <strong>Staley Martial Arts</strong>, a gym based in Chicago, USA. Collaborating with the team at <em>Álterego Agency</em>, the focus was on creating a <strong>user-friendly</strong> and clean interface to provide visitors with essential information about the gym, including class schedules and other relevant details. The website was designed to ensure ease of navigation, offering a streamlined experience for both potential clients and current members.",
     },
     priority: 3,
     source: 'Web',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Desarrollo de Sitio Web en WordPress",
+            "Staley Martial Arts",
+            "Interfaz Amigable para el Usuario",
+            "Diseño Limpio",
+            "Información Esencial",
+            "Horarios de Clases",
+            "Facilidad de Navegación",
+            "Experiencia Simplificada",
+            "Sitio Web de Gimnasio"
+        ],
+        en: [
+            "WordPress Website Development",
+            "Staley Martial Arts",
+            "User-Friendly Interface",
+            "Clean Design",
+            "Essential Information",
+            "Class Schedules",
+            "Ease of Navigation",
+            "Streamlined Experience",
+            "Gym Website"
+        ]
+
     },
-    tools: [''],
+    tools: ['Wordpress', 'Html5', 'CSS3', 'Photoshop'],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS
 }, {
     id: 30,
@@ -847,10 +1224,27 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Diseño de Animación 3D",
+            "Diseño de ambientes",
+            "Diseño de escenas 3D",
+            "Escenario Metafórico",
+            "Impacto Emocional",
+            "Visuales Simbólicos",
+            "Representación Abstracta"
+        ],
+        en: [
+            "3D Animation Design",
+            "Environment Design",
+            "3D Scene Design",
+            "Metaphorical Setting",
+            "Emotional Impact",
+            "Symbolic Visuals",
+            "Abstract Representation"
+        ]
+
     },
-    tools: [''],
+    tools: ['Blender', 'After Effects'],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 31,
@@ -864,10 +1258,25 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Diseñador Gráfico Freelance",
+            "Diseño Basado en Clientes",
+            "Banners",
+            "Portadas de Libros",
+            "Folletos",
+            "Identidad Visual",
+        ],
+        en: [
+            "Freelance Graphic Designer",
+            "Client-Based Design",
+            "Banners",
+            "Book Covers",
+            "Flyers",
+            "Visual Identity",
+        ]
+
     },
-    tools: [''],
+    tools: ['Illustrator', 'Photoshop'],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 32,
@@ -881,10 +1290,11 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: ["Diseñador Gráfico Freelance", "Diseño", "Banners", "Señales", "Ropa", "Versatilidad", "Compromiso Visual", "Necesidades del Cliente"],
+        en: ["Freelance Graphic Designer", "Design", "Banners", "Signs", "Clothing", "Versatility", "Visual Engagement", "Client Needs"]
+
     },
-    tools: [''],
+    tools: ['Illustrator', 'Photoshop'],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 33,
@@ -898,10 +1308,23 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: ["Diseñador Freelance",
+            "Diseño de Lata de Cerveza",
+            "Diseño Visual",
+            "Elementos Gráficos",
+            "Público Objetivo",
+            "Identidad de Marca"
+        ],
+        en: ["Freelance Designer",
+            "Beer Can Design",
+            "Visual Design",
+            "Graphic Elements",
+            "Target Audience",
+            "Brand Identity"
+        ]
+
     },
-    tools: [''],
+    tools: ['Photoshop', 'Illustrator'],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 34,
@@ -915,10 +1338,29 @@ TRABAJOS_PORFOLIO.push({
     priority: 1,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: ["Diseño Gráfico",
+            "Diseño Audaz",
+            "Gráficos Coloridos",
+            "Texturas Ásperas",
+            "Gradientes Vibrantes",
+            "Entornos Oscuros",
+            "Elementos 3D",
+            "Componentes Fotográficos",
+            "Expresión Visual"
+        ],
+        en: ["Graphic Design",
+            "Bold Design",
+            "Colorful Graphics",
+            "Gritty Textures",
+            "Vibrant Gradients",
+            "Dark Settings",
+            "3D Elements",
+            "Photographic Components",
+            "Visual Expression"
+        ]
+
     },
-    tools: [''],
+    tools: ['Photoshop', 'Blender'],
     category: CATEGORIAS_PORFOLIO.DISENO
 }, {
     id: 35,
@@ -932,10 +1374,26 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: ["Fotografía",
+            "Fotografía Nocturna",
+            "Fotografía Urbana",
+            "Buenos Aires",
+            "Luz Artificial",
+            "Efectos Bokeh",
+            "Luz y Sombra",
+            "Atmósfera Dinámica"
+        ],
+        en: ["Photography",
+            "Night Photography",
+            "Urban Photography",
+            "Buenos Aires",
+            "Artificial Light",
+            "Bokeh Effects",
+            "Light and Shadow",
+            "Dynamic Atmosphere"
+        ]
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 36,
@@ -949,10 +1407,30 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: ["Evento de Fotografía",
+            "Día Mundial de la Fotografía",
+            "Caminata Fotográfica",
+            "Buenos Aires",
+            "Dirección Creativa",
+            "Coordinación de Eventos",
+            "Autos Vintage",
+            "Modelos",
+            "Moteros",
+            "Configuraciones Diversas"
+        ],
+        en: ["Photography Event",
+            "World Photography Day",
+            "Photo Walk",
+            "Buenos Aires",
+            "Creative Direction",
+            "Event Coordination",
+            "Vintage Cars",
+            "Models",
+            "Bikers",
+            "Diverse Settings"
+        ]
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 37,
@@ -966,10 +1444,33 @@ TRABAJOS_PORFOLIO.push({
     priority: 1,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: ["Dirección Creativa",
+            "Artesano",
+            "Arte Digital",
+            "Arte Físico",
+            "Hacha Tribal",
+            "Cuento Folklórico",
+            "Sessión Fotográfica",
+            "Colaboración",
+            "Post-Producción",
+            "Edición",
+            "Modelaje"
+        ],
+        en: ["Creative Direction",
+            "Craftsman",
+            "Digital Art",
+            "Physical Art",
+            "Tribal Axe",
+            "Folkloric Tale",
+            "Photoshoot",
+            "Collaboration",
+            "Post-Production",
+            "Editing",
+            "Modeling"
+        ]
+
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw', 'My Hands', 'Carving tools'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 38,
@@ -983,10 +1484,27 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: ["Sesión Fotográfica",
+            "Luz Natural",
+            "Fotografía",
+            "Imágenes Impactantes",
+            "Colaboración",
+            "Fotógrafo Profesional",
+            "Actriz",
+            "Exploración Urbana"
+        ],
+        en: ["Photo Session",
+            "Natural Light",
+            "Photography",
+            "Striking Imagery",
+            "Collaboration",
+            "Professional Photographer",
+            "Actress",
+            "Urban Exploration"
+        ]
+
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 39,
@@ -1000,10 +1518,26 @@ TRABAJOS_PORFOLIO.push({
     priority: 1,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: ["Sesión Fotográfica",
+            "Luz Artificial",
+            "Bokeh",
+            "Fotografía Nocturna",
+            "Captivación Visual",
+            "Modelo",
+            "Auckland",
+            "Nueva Zelanda"
+        ],
+        en: ["Photoshoot",
+            "Artificial Light",
+            "Bokeh",
+            "Night Photography",
+            "Visual Captivation",
+            "Model",
+            "Auckland",
+            "New Zealand"
+        ]
     },
-    tools: [''],
+    tools: ['Photoshop', 'Camera Raw'],
     category: CATEGORIAS_PORFOLIO.FOTOGRAFIA
 }, {
     id: 40,
@@ -1017,10 +1551,24 @@ TRABAJOS_PORFOLIO.push({
     priority: 1,
     source: 'Behance',
     keywords: {
-        es: [],
-        en: []
+        es: ["Arte 3D",  
+            "Texturización",  
+            "Iluminación",  
+            "Composición",  
+            "Post-Procesamiento",  
+            "Visuales Dinámicos",  
+            "Narrativa"]
+            ,
+        en: ["3D Art",  
+            "Texturing",  
+            "Lighting",  
+            "Composition",  
+            "Post-Processing",  
+            "Dynamic Visuals",  
+            "Storytelling"]
+            
     },
-    tools: [''],
+    tools: ['Blender','After Effects', 'Photoshop'],
     category: CATEGORIAS_PORFOLIO.D3
 }, {
     id: 41,
@@ -1034,10 +1582,27 @@ TRABAJOS_PORFOLIO.push({
     priority: 1,
     source: 'Web',
     keywords: {
-        es: [],
-        en: []
+        es: ["Página Web Corporativa",  
+            "WordPress",  
+            "Catálogo de Productos",  
+            "Blog",  
+            "Informes Técnicos",  
+            "Estudios Académicos",  
+            "Interfaz Amigable",  
+            "Diseño Profesional",  
+            "Industria Mecánica"]
+            ,
+        en: ["Corporate Webpage",  
+            "WordPress",  
+            "Product Catalog",  
+            "Blog",  
+            "Technical Reports",  
+            "Academic Studies",  
+            "User-Friendly Interface",  
+            "Professional Design",  
+            "Mechanical Industry"]
     },
-    tools: [''],
+    tools: ['Wordpress', 'Html5', 'CSS3', 'Photoshop'],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 10vh 0; box-sizing: border-box'
 }, {
@@ -1046,16 +1611,28 @@ TRABAJOS_PORFOLIO.push({
     img: 'https://http2.mlstatic.com/storage/mshops-appearance-api/images/70/66709070/logo-2019050418345411800.png',
     link: 'https://www.imperio-usados.com.ar/',
     description: {
-        es: '',
+        es: "Este proyecto involucró la creación de una <strong>plataforma de comercio electrónico</strong> para <strong>Imperio Usados</strong>, un mercado de bienes usados. Usando una herramienta similar a <strong>WooCommerce</strong>, configuré el sitio para <em>ventas al público</em>. El resultado es una <strong>tienda en línea totalmente operativa</strong> adaptada a las necesidades del mercado de bienes usados.",
         en: "This project involved setting up a simple e-commerce platform for <strong>Imperio Usados</strong>, a marketplace for used goods. Using a tool similar to <strong>WooCommerce</strong>, I configured the site for <em>public-facing sales</em>. The result is a <strong>fully operational online store</strong> tailored to the needs of the used goods market.",
     },
     priority: 2,
     source: 'Web',
     keywords: {
-        es: [],
-        en: []
+        es: ["Plataforma de Comercio Electrónico",  
+            "WooCommerce",  
+            "Ventas al Público",  
+            "Tienda en Línea",  
+            "Mercado",  
+            "Bienes Usados"]
+            ,
+        en: ["E-commerce Platform",  
+            "WooCommerce",  
+            "Public-Facing Sales",  
+            "Online Store",  
+            "Marketplace",  
+            "Used Goods"]
+            
     },
-    tools: [''],
+    tools: ['Photoshop', 'MercadoLibre'],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 0 6em; box-sizing: border-box;'
 }, {
@@ -1070,28 +1647,67 @@ TRABAJOS_PORFOLIO.push({
     priority: 2,
     source: 'Web',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Coordinador Digital",
+            "catálogo de obras de arte",
+            "sitio web público",
+            "navegación fácil de usar",
+            "estándares web",
+            "activos digitales",
+            "misión de la fundación",
+            "obra del artista"
+          ]
+          ,
+        en: [
+            "Digital Coordinator",
+            "artwork catalogue",
+            "public-facing website",
+            "user-friendly navigation",
+            "web standards",
+            "digital assets",
+            "foundation's mission",
+            "artist's work"
+          ]          
     },
-    tools: [''],
+    tools: ['Php', 'Javascript', 'HTML5', 'CSS3', 'MySQL'],
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
     extra_css: 'background-color: white; padding: 2em 0'
 }, {
     id: 44,
     title: 'AI Adventure Text Game',
-    img: 'https://repository-images.githubusercontent.com/782311160/9a41e863-121d-4080-9017-caa079fd97d9',
+    img: 'https://repository-images.githubusercontent.com/782311160/a1f145a1-7107-4812-82c1-ea605cd80b78',
     link: 'https://ai-text-game.marioa.me/',
     description: {
         es: 'Este proyecto muestra el desarrollo de un <strong>juego de aventuras de texto al estilo old-school</strong>, donde los <strong>modelos LLM</strong> actúan como el Game Master. El objetivo de este juego era aprender a implementar <strong>redes neuronales de generación de texto</strong> utilizando la <em>API de Inferencia de Hugging Face</em>. Los jugadores pueden experimentar <strong>generaciones de historias aleatorias</strong> y elegir qué <em>modelo de IA</em> utilizar para generar la historia, junto con una función de inicio de sesión. Aunque muchas características no se incluyeron en esta versión inicial, no estoy manteniendo el proyecto por ahora.',
         en: "This project showcases the development of an <strong>old-school text adventure</strong> game, where <strong>LLM models</strong> act as the Game Master. The objective of this game was to learn how to implement <strong>text-generation neural networks</strong> using the <em>Hugging Face Inference API</em>. Players can experience <strong>random story generations</strong> and choose which <em>AI model</em> to use for generating the story, along with a login feature. Although many features were not included in this initial version, I am not maintaining the project for now.",
     },
-    priority: 2,
+    priority: 1,
     source: 'Web',
     keywords: {
-        es: [],
-        en: []
+        es: [
+            "Juego de aventura de texto",
+            "Diseño de Videojuegos", 
+            "Modelos LLM",
+            "Maestro de Juego",
+            "Redes neuronales de generación de texto",
+            "API de Inferencia de Hugging Face",
+            "Generaciones de historias aleatorias",
+            "Modelo de IA"
+          ]
+          ,
+        en: [
+            "Text adventure game",
+            "Video game design",
+            "LLM models",
+            "Game Master",
+            "Text-generation neural networks",
+            "Hugging Face Inference API",
+            "Random story generations",
+            "AI model"
+          ]          
     },
-    tools: [''],
+    tools: ['Hugging-Face', 'LLM', 'AI Models', 'Javascript', 'React', 'Node', 'HTML5', 'CSS3', 'MySQL'],
+    extra_css: 'background-color: black; padding: 3em 0',
     category: CATEGORIAS_PORFOLIO.WEBJUEGOS,
 });
 
@@ -1113,6 +1729,9 @@ TEXTOS.es = {
         FOTOGRAFIA: 'Fotografía',
         WEBJUEGOS: 'Web & Juegos'
     },
+    MODAL_DESCRIPTION: 'Descripción',
+    MODAL_KEYWORDS: 'Palabras clave',
+    MODAL_TOOLS: 'Herramientas',
     MODAL_LINK: 'Ver trabajo',
     TITULO_CONTACTO: 'Contacto',
     BLOQUE_CONTACTO_TITULO: 'Escribime aquí 👇',
@@ -1147,6 +1766,9 @@ TEXTOS.en = {
         FOTOGRAFIA: 'Photography',
         WEBJUEGOS: 'Web & Games'
     },
+    MODAL_DESCRIPTION: 'Description',
+    MODAL_KEYWORDS: 'Keywords',
+    MODAL_TOOLS: 'Tools',
     MODAL_LINK: 'See work',
     TITULO_CONTACTO: 'Contact form',
     BLOQUE_CONTACTO_TITULO: 'Contact me here 👇',

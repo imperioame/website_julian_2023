@@ -10,6 +10,7 @@ import gsap from 'gsap';
 
 let window_width = window.outerWidth;
 let window_height = window.outerHeight;
+let aspect_ratio = window_width / window_height
 
 
 //Agrego un loader para poder darle un indicio al usuario que espere
@@ -74,7 +75,8 @@ document.getElementById('three_canvas').appendChild(renderer.domElement);
 
 
 const scene = new THREE.Scene();
-renderer.setClearColor(0x141414);
+
+//renderer.setClearColor(0x141414);
 const camera = new THREE.PerspectiveCamera(
     15,
     window_width / window_height,

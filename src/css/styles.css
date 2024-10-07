@@ -161,7 +161,7 @@ body {
     pointer-events: none;
 }
 
-#three_overlay {
+#three_background_texture, #three_overlay {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -169,10 +169,45 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+#three_background_texture{
+    background-image: url('../imgs/bokeh_background.jpg');
+    mix-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100% !important;
+    animation: blurry 10s ease-in-out infinite;
+}
+
+@keyframes blurry {
+    0% {
+        filter: blur(1px);
+        opacity: 0.5;
+    }
+    50% {
+        filter: blur(20px);
+        opacity: 0.25;
+    }
+    100% {
+        filter: blur(1px);
+        opacity: 0.5;    }
+}
+
+#three_overlay{
     display: flex;
     flex-direction: row;
     align-items: center;
     pointer-events: none;
+}
+
+#three_background_texture{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #loading_container {

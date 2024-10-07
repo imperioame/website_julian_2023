@@ -46,7 +46,7 @@ export function findInObject(object, element) {
 }
 
 function closeModal(e){
-    if(e.target.id != 'modal_overlay' && e.target.id != 'close_modal' && e.target.id != 'modal_link') return;
+    if(e.target.id != 'modal_overlay' && e.target.id != 'close_modal' && e.target.id != 'close_modal_icon' && e.target.id != 'modal_link') return;
     document.getElementById('modal_overlay').remove();
 }
 
@@ -88,11 +88,12 @@ export function openModal(e) {
 
     const close_modal = document.createElement('div');
     close_modal.id = 'close_modal';
-    const close_modal_icon = document.createElement('i');
-    close_modal_icon.classList.add('fa-solid', 'fa-xmark');
-    close_modal.appendChild(close_modal_icon);
-
     close_modal.addEventListener('click', closeModal);
+    const close_modal_icon = document.createElement('i');
+    close_modal_icon.id = 'close_modal_icon';
+    close_modal_icon.classList.add('fa-solid', 'fa-xmark');
+    close_modal_icon.addEventListener('click', closeModal);
+    close_modal.appendChild(close_modal_icon);
 
     const html_description_container = document.createElement('div');
     html_description_container.id = 'modal_description_container';

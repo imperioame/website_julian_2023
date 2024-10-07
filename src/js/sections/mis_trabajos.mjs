@@ -140,10 +140,11 @@ function createPorfolioCard(page_section, porfolio_job) {
 
     const card_trabajo = document.createElement('a');
     card_trabajo.classList.add('card_trabajo');
-    card_trabajo.target = '_blank';
+    //card_trabajo.target = '_blank';
     card_trabajo.title = porfolio_job.title;
     card_trabajo.dataset.trabajo_id = porfolio_job.id;
-    card_trabajo.href = porfolio_job.link;
+    //card_trabajo.href = porfolio_job.link;
+    card_trabajo.addEventListener('click', openModal);
 
     const img_trabajo = document.createElement('img');
     img_trabajo.src = porfolio_job.img;

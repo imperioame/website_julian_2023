@@ -10,6 +10,10 @@ html {
     --accent_color: #bd34fe;
     --accent_color_hover: #9f18dd;
     --complementary_accent_color: #FF964D;
+    --title_gradient_origin: #93f5ec;
+    --title_gradient_end: #a77bf3;
+    --complementary_blue: #89b1ff;
+
     --red: #990b0b;
     --red_bright_desaturated: #f37676;
     --green: #0b9917;
